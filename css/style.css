@@ -253,3 +253,9 @@ form .form-control {
 .footer-bottom {
     background-color: #242933;
 }
+
+@media (max-width:768px){
+    .hero{
+        background-position: center;
+    }
+}
