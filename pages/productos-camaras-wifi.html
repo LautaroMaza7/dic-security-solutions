@@ -51,7 +51,7 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link active dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -103,7 +103,7 @@
               <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contacto</a>
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -156,16 +156,12 @@
               aria-labelledby="dropdownMenuButton"
             >
               <li>
-                <a
-                  class="dropdown-item"
-                  href="../pages/productos-camaras-analogicas.html"
+                <a class="dropdown-item" href="../pages/productos.html"
                   >Camaras Analogicas</a
                 >
               </li>
               <li>
-                <a
-                  class="dropdown-item"
-                  href="../pages/productos-camaras-wifi.html"
+                <a class="dropdown-item" href="../pages/productos.html"
                   >Camaras WiFi</a
                 >
               </li>
@@ -181,61 +177,165 @@
             <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item m-2">
-            <a class="nav-link active" href="#contact">Contacto</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
     </div>
     <!-- NavbarMobile -->
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <!-- Products -->
+    <div class="productos">
+      <div class="container">
+        <div class="text-center">
+          <p class="text-white mt-3">Nuestros Productos</p>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h5 class="text-center mb-4">Camaras Wifi</h5>
+        <div class="products-container">
+          <div class="product" onclick="" data-name="p-1">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2020/08/1-300x300.jpg"
+              alt=""
+            />
+            <p>C1C 720p - Cámara WIFI interior de resolución HD</p>
+            <div class="price">$0.00</div>
+          </div>
+
+          <div class="product" data-name="p-2">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2022/03/3-2-300x300.jpg"
+              alt=""
+            />
+            <p>C1C-B 1080p Wi-Fi bidireccional</p>
+            <div class="price">$0.00</div>
+          </div>
+
+          <div class="product" data-name="p-3">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2020/09/2-300x300.jpg"
+              alt=""
+            />
+            <p>C6N - Cámara Wifi 1080p - Paneo y seguimiento inteligente</p>
+            <div class="price">$0.00</div>
+          </div>
+
+          <div class="product" data-name="p-4">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/07/1-1-768x768.jpg"
+              alt=""
+            />
+            <p>C6W - 4MPX y 360° con zoom automático</p>
+            <div class="price">$0.00</div>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2018/11/01-2-768x768.jpg"
+              alt=""
+            />
+            <p>EZVIZ C6TC - 360° 1080p Cámara de seguridad con Wi-Fi</p>
+            <div class="price">$0.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products -->
+
+    <!-- PRICING -->
+    <!--     <section id="pricing" class="bg-light">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-8 mx-auto text-center">
-            <h6 class="text-danger">CONTACTO</h6>
-            <h1>
-              Pongase en contacto con nosotros y lo atenderemos a la brevedad
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur nisi necessitatibus
-              repellat distinctio eveniet eaque fuga in cumque optio consectetur
-              harum vitae debitis sapiente praesentium aperiam aut
-            </p>
+            <h6 class="text-danger">PRECIOS</h6>
+            <h1></h1>
           </div>
         </div>
-
-        <form action="" class="row g-3 justify-content-center">
-          <div class="col-md-5">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nombre Completo"
-            />
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect text-center">
+              <h6>BASICO</h6>
+              <h1>$99</h1>
+              <hr />
+              <ul class="list-unstyled mb-4">
+                <li><i class="bx bxs-check-circle"></i> Support</li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum dolor sit
+                </li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum sit about
+                </li>
+                <li><i class="bx bxs-check-circle"></i> Lorem ipsum</li>
+                <li><i class="bx bxs-check-circle"></i>Lorem ipsum sit amet</li>
+              </ul>
+              <button class="btn btn-danger">Adquirir</button>
+            </div>
           </div>
-          <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="E-mail" />
+          <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect text-center">
+              <h6>ESTANDAR</h6>
+              <h1>$199</h1>
+              <hr />
+              <ul class="list-unstyled mb-4">
+                <li><i class="bx bxs-check-circle"></i> Support</li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum dolor sit
+                </li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum sit about
+                </li>
+                <li><i class="bx bxs-check-circle"></i> Lorem ipsum</li>
+                <li><i class="bx bxs-check-circle"></i>Lorem ipsum sit amet</li>
+              </ul>
+              <button class="btn btn-danger">Adquirir</button>
+            </div>
           </div>
-          <div class="col-md-10">
-            <input type="text" class="form-control" placeholder="Asunto" />
+          <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect text-center">
+              <h6>PREMIUM</h6>
+              <h1>$299</h1>
+              <hr />
+              <ul class="list-unstyled mb-4">
+                <li><i class="bx bxs-check-circle"></i> Support</li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum dolor sit
+                </li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum sit about
+                </li>
+                <li><i class="bx bxs-check-circle"></i> Lorem ipsum</li>
+                <li><i class="bx bxs-check-circle"></i>Lorem ipsum sit amet</li>
+              </ul>
+              <button class="btn btn-danger">Adquirir</button>
+            </div>
           </div>
-          <div class="col-md-10">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              class="form-control"
-              placeholder="Mensaje"
-            ></textarea>
+          <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect text-center">
+              <h6>PREMIUM EXCLUSIVE</h6>
+              <h1>$399</h1>
+              <hr />
+              <ul class="list-unstyled mb-4">
+                <li><i class="bx bxs-check-circle"></i> Support</li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum dolor sit
+                </li>
+                <li>
+                  <i class="bx bxs-check-circle"></i> Lorem ipsum sit about
+                </li>
+                <li><i class="bx bxs-check-circle"></i> Lorem ipsum</li>
+                <li><i class="bx bxs-check-circle"></i>Lorem ipsum sit amet</li>
+              </ul>
+              <button class="btn btn-danger">Adquirir</button>
+            </div>
           </div>
-          <div class="col-md-10 d-grid">
-            <button class="btn btn-danger">Contactar</button>
-          </div>
-        </form>
+        </div>
       </div>
-    </section>
-    <!-- CONTACT -->
+    </section> -->
+    <!-- PRICING -->
 
     <footer>
       <div class="footer-top">
