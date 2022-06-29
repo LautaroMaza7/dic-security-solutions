@@ -301,6 +301,9 @@ form .form-control {
     }
 }
 @media (max-width:480px){
+    .offcanvas{
+        transition: transform .4s cubic-bezier(0.4, 0, 1, 1);
+    }
     .offcanvas-start{
         width: 350px!important;
     }
