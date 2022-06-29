@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/alarmas.css" />
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo" src="../img/logo-horizontal.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-link dropdown drop-down02">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Camaras de Seguridad
+                  </a>
+                  <ul
+                    class="dropdown-menu sub-menu02"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li class="nav-link">
+                      <a class="nav-link" href="../pages/productos.html"
+                        >Camaras Analogicas</a
+                      >
+                    </li>
+                    <li class="nav-link">
+                      <a class="nav-link" href="../pages/productos.html"
+                        >Camaras Wifi</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-link">
+                  <a class="nav-link" href="../pages/productos-alarmas.html">Alarmas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- NavbarMobile -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Dic Security Solutions
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          href="../index.html"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item m-2">
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+          </li>
+
+          <div class="dropdown">
+            <li
+              class="dropdown-toggle m-2"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Productos
+            </li>
+            <ul
+              class="dropdown-menu sub-menu01"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <a class="dropdown-item" href="../pages/productos.html"
+                  >Camaras Analogicas</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/productos.html"
+                  >Camaras WiFi</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/productos-alarmas.html"
+                  >Alarmas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <li class="nav-item m-2">
+            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- NavbarMobile -->
+
+    <!-- HERO -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="../img/AX-PRO-landingmobile-700x521.jpg" media="(max-width:480px)" />
+            <img
+              src="../img/AX-PRO-landing-page-es-4000x1333.jpg"
+              class="d-block w-100 slider-mobile"
+              alt="..."/>
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- //HERO -->
+
+    <section class="knowledge">
+      <div class="knowledge__container container">
+        <!-- <figure class="knowledge__picture">
+          <img src="./images/macbook.png" class="knowledge__img" />
+        </figure> -->
+        <iframe
+          id="#"
+          class="knowledge__picture"
+          allowfullscreen=""
+          src="https://www.youtube-nocookie.com/embed/T4FisTDbZVU?rel=0&amp;autoplay=1&amp;controls=1&amp;mute=1&amp;enablejsapi=1&amp;origin=https://www.hikvision.com"
+          data-at-module="media"
+          frameborder="0"
+          scrolling="no"
+          style="overflow: hidden"
+          data-video-id="T4FisTDbZVU"
+          title="Hikvision AX PRO - the Intrusion Alarm Solution"
+        ></iframe>
+        <div class="knowledege__texts">
+          <h2 class="subtitle">
+            Que es el sistema AX PRO de alarma de intrusión inalámbrico
+          </h2>
+          <br><br>
+          <p class="knowledge__paragraph">
+            En Dic Security Solutions creemos que la innovación hace que los productos sean
+            más funcionales y, al mismo tiempo, más fáciles de utilizar. El
+            sistema de alarma inalámbrica de intrusión AX PRO es el ejemplo
+            perfecto: un nuevo e increíble diseño que combina los potentes y
+            fiables sistemas de seguridad del pasado con la sencillez de la
+            mejor tecnología del futuro.
+            <p>
+            El sistema AX PRO es convencional y
+            revolucionario a la vez, posee estabilidad inalámbrica demostrada,
+            incluye una amplia gama de productos de primera calidad y es fácil
+            de utilizar tanto por los instaladores como por los clientes
+            finales. Su sencilla instalación y excelente protección garantizan
+            una tranquilidad permanente tanto para propietarios comerciales como
+            para las familias en sus hogares.
+            </p> 
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h4 class="text-center">¿Cómo funciona el sistema AX PRO?</h4>
+      </div>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/esquema-sistema-alarma-ax-pro-casa-1320x630.jpeg"
+              class="d-block hero"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-danger">BLOG</h6>
+            <h1>Latest News From The Blog</h1>
+            <p class="mt-4 fw-lighter">
+              Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+              repellat distinctio eveniet eaque fuga in cumque optio consectetur
+              harum vitae debitis sapiente praesentium aperiam aut
+            </p>
+          </div>
+        </div>
+        <div class="row g-6">
+          <div class="col-md-3">
+            <div class="blog-post card-effect">
+              <img src="../img/AX-PRO-Landingpage-05.png" alt="" />
+              <h6 class="mt-3 text-card">
+                Evite una intrusión antes de que suceda
+              </h6>
+              <p class="mt-4 fw-lighter">
+                Debe instalarlo próximo a ventanas, puertas y otras áreas donde
+                se producen intrusiones para lograr una seguridad completa. Los
+                detectores AX PRO brindan una detección precisa en interiores y
+                exteriores y una protección integral, de día y de noche.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="blog-post card-effect">
+              <img src="../img/AX-PRO-Landingpage-10.png" alt="" />
+              <h6 class="mt-3 text-card">
+                Detecte riesgos antes de que se produzcan
+              </h6>
+              <p class="mt-4 fw-lighter">
+                El sistema AX PRO también hace que los hogares sean más seguros
+                para las familias. Detecta incendios y fugas de agua antes de
+                que se produzca un desastre, con el fin de garantizar una
+                seguridad óptima hasta en el último rincón de la propiedad.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="blog-post card-effect">
+              <img src="../img/AX-PRO-Landingpage-11.png" alt="" />
+              <h6 class="mt-3 text-card">
+                Manténgase informado mediante videos en tiempo real
+              </h6>
+              <p class="mt-4 fw-lighter">
+                Gracias a la tecnología IVaaS de Hikvision, los propietarios de
+                viviendas o negocios pueden comprobar las alarmas a través de
+                videoclips o imágenes GIF cuando estén fuera de la propiedad, y
+                así estar tranquilos e informados.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="blog-post card-effect">
+              <img src="../img/AX-PRO-Landingpage-15.png" alt="" />
+              <h6 class="mt-3 text-card">
+                Control inteligente con un sistema expandible
+              </h6>
+              <p class="mt-4 fw-lighter">
+                Configure el control inteligente en su hogar con una amplia gama
+                de dispositivos de control inteligente, relés, tomacorrientes y
+                más. De hecho, el sistema AX PRO es flexible y puede vincularse
+                con otros dispositivos Hikvision, lo que ofrece aún más
+                flexibilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BLOG -->
+
+    <!-- BLOG -->
+    <!--     <section id="blog" class="bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <h6 class="text-danger">BLOG</h6>
+              <h1>Latest News From The Blog</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                repellat distinctio eveniet eaque fuga in cumque optio consectetur
+                harum vitae debitis sapiente praesentium aperiam aut
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="blog-post card-effect">
+                <img src="img/blog1.jpg" alt="" />
+                <h5 class="mt-4">
+                  <a href="#"
+                    >harum vitae debitis sapiente praesentium aperiam au</a
+                  >
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                  repellat distinctio eveniet
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-post card-effect">
+                <img src="img/blog2.jpg" alt="" />
+                <h5 class="mt-4">
+                  <a href="#"
+                    >harum vitae debitis sapiente praesentium aperiam au</a
+                  >
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                  repellat distinctio eveniet
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-post card-effect">
+                <img src="img/blog3.jpg" alt="" />
+                <h5 class="mt-4">
+                  <a href="#"
+                    >harum vitae debitis sapiente praesentium aperiam au</a
+                  >
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+                  repellat distinctio eveniet
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- BLOG -->
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <a href="../index.html"
+                ><img class="logo-footer" src="../img/LOGO-dic.png" alt=""
+              /></a>
+            </div>
+            <div class="col-lg-2">
+              <h5 class="text-white">Marca</h5>
+              <ul class="list-unstyled">
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white">Contacto</h5>
+              <ul class="list-unstyled">
+                <li class="text-white-50">Buenos Aires, Argentina</li>
+                <li class="text-white-50">Email: dic.sscontacto@gmail.com</li>
+                <li class="text-white-50">Celular: (+54) 11-6486-4919</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0 text-white-50">
+                © 2022 Derechos reservados Dic Security Solutions | Diseñado x
+                <span class="text-white">Lau7aro Maza</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/code.js"></script>
+  </body>
+</html>

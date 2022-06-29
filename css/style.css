@@ -6,13 +6,13 @@
     --dark: #21252f;
     --body: #888;
     --white: #ffffff;
-    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.3);
 }
 
 body {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
-    color: var(--body);
+    color: var(--dark);
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -37,10 +37,33 @@ img {
 .logo {
     width: 160px;
 }
+.logo-footer{
+    width: 140px;
+}
+
+.drop-down02 .sub-menu02
+{
+	position: relative!important;
+    padding: 5px;
+}
+.sub-menu01{
+	left: 110px!important;
+	top: -40px!important;
+}
 
 .navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
+}
+.nav-link{
+    color: var(--dark)!important;
+}
+.offcanvas-title{
+    margin-top: 20px;
+    color: var(--primary);
+}
+.dropdown{
+    color: var(--dark);
 }
 
 .navbar .nav-link.active {
@@ -53,7 +76,7 @@ img {
     border-radius: 0;
 }
 
-.hero {
+/* .hero {
     background-image: url(../img/camara-exterior.jpg);
     background-size: cover;
     background-position: revert;
@@ -62,7 +85,13 @@ img {
     z-index: 2;
 }
 
-.hero::after {
+.hero-banner{
+    color: var(--dark);
+    margin-top: 85px;
+    text-shadow: 2px 2px 2px white;
+} */
+/* .hero-slider::after {
+    background-image: url(../img/grande-c3wpro.jpg);
     content: "";
     width: 100%;
     height: 100%;
@@ -70,16 +99,10 @@ img {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.hero-banner{
-    color: var(--dark);
-    margin-top: 85px;
-    text-shadow: 2px 2px 2px white;
-}
+} */
 
 section {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
 }
 
@@ -148,7 +171,7 @@ section {
     background-image: url(../img/instalacion-camaras-videovigilancia.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 500px;
+    min-height: 200px;
 }
 
 .project {
@@ -182,7 +205,9 @@ section {
     transform: scale(1.1);
 }
 
-
+#pricing{
+    margin-top: 200px;
+}
 .pricing i {
     font-size: 20px;
     color: var(--primary);
@@ -237,8 +262,8 @@ form .form-control {
 
 
 .footer-top {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 0;
     background-color: var(--dark);
 }
 
@@ -249,6 +274,9 @@ form .form-control {
 .footer-top a:hover {
     color: var(--white);
 }
+.footer .detail-contact {
+    color: var(--white)!important;
+}
 
 .footer-bottom {
     background-color: #242933;
@@ -257,5 +285,26 @@ form .form-control {
 @media (max-width:768px){
     .hero{
         background-position: center;
+    }
+    .hero-banner{
+        margin-top: 0px;
+    }
+    #imagen1{
+        background: url(../img/grande-c3wpro.jpg)!important;
+    }
+    .logo-footer{
+        width: 80px;
+    }
+    .iconbox {
+        width: 42px;
+        height: 42px;
+    }
+}
+@media (max-width:480px){
+    .offcanvas-start{
+        width: 350px!important;
+    }
+    .col-img{
+        margin-left: 12px;
     }
 }
