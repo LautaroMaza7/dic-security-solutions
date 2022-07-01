@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
-          <img class="logo" src="../img/logo-horizontal.png" alt="" />
+          <img class="logo-web" src="../img/logo-horizontal.png" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -121,18 +121,18 @@
       aria-labelledby="offcanvasExampleLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          Dic Security Solutions
-        </h5>
-        <button
+        <a class="navbar-brand" href="../index.html">
+          <img class="logo-offcanvas" src="../img/LOGO-dic.png" alt="" />
+        </a>
+        <!-- <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
           href="../index.html"
-        ></button>
+        ></button> -->
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body text-center">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item m-2">
             <a class="nav-link active" aria-current="page" href="../index.html"
@@ -145,23 +145,24 @@
             >
           </li>
 
-          <div class="dropdown">
-            <li
-              class="dropdown-toggle m-2"
-              type="button"
-              id="dropdownMenuButton"
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="offcanvasNavbarDropdown"
+              role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
               Productos
-            </li>
+            </a>
             <ul
-              class="dropdown-menu sub-menu01"
-              aria-labelledby="dropdownMenuButton"
+              class="dropdown-menu dropdown-menu02 text-center m-2"
+              aria-labelledby="offcanvasNavbarDropdown"
             >
               <li>
                 <a
-                  class="dropdown-item"
+                  class="dropdown-item text-cam"
                   href="../pages/productos-camaras-analogicas.html"
                   >Camaras Analogicas</a
                 >
@@ -174,12 +175,15 @@
                 >
               </li>
               <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
                 <a class="dropdown-item" href="../pages/productos-alarmas.html"
                   >Alarmas</a
                 >
               </li>
             </ul>
-          </div>
+          </li>
 
           <li class="nav-item m-2">
             <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>

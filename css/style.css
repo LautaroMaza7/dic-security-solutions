@@ -34,8 +34,12 @@ img {
     box-shadow: var(--box-shadow);
 }
 
-.logo {
+.logo-web {
     width: 160px;
+}
+.logo-offcanvas{
+    width: 100px;
+    padding-left: 15px;
 }
 .logo-footer{
     width: 140px;
@@ -62,8 +66,13 @@ img {
     margin-top: 20px;
     color: var(--primary);
 }
-.dropdown{
+.dropdown-menu02{
     color: var(--dark);
+    position:unset!important; 
+    transform: translate3d(0px, 0px, 0px)!important;
+}
+.text-cam{
+    white-space: inherit!important;
 }
 
 .navbar .nav-link.active {
@@ -301,11 +310,18 @@ form .form-control {
     }
 }
 @media (max-width:480px){
+    .navbar{
+        padding: 5px!important;
+    }
     .offcanvas{
-        transition: transform .4s cubic-bezier(0.4, 0, 1, 1);
+        transition: transform .3s ease-out;;
     }
     .offcanvas-start{
-        width: 350px!important;
+        width: 200px!important;
+    }
+    .logo-web{
+        width: 140px;
+        margin-left: -20px;
     }
     .col-img{
         margin-left: 12px;
