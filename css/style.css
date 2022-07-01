@@ -39,7 +39,7 @@ img {
 }
 .logo-offcanvas{
     width: 100px;
-    padding-left: 15px;
+    margin-left: 35px;
 }
 .logo-footer{
     width: 140px;
@@ -61,6 +61,9 @@ img {
 }
 .nav-link{
     color: var(--dark)!important;
+}
+.offcanvas-body {
+    margin-top: 30px;
 }
 .offcanvas-title{
     margin-top: 20px;
