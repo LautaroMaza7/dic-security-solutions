@@ -337,4 +337,7 @@ form .form-control {
     .service-description{
         margin-top: -35px;
     }
+    .title-feat{
+        font-size: 1.5rem;
+    }
 }
