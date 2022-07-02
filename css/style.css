@@ -136,9 +136,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary);
-    color: var(--white);
-    font-size: 32px;
+    background-color: transparent;
+    color: var(--primary);
+    /* font-size: 32px; */
     border-radius: 100px;
     flex: none;
 }
@@ -165,8 +165,8 @@ section {
 
 
 .service:hover .iconbox {
-    background-color: var(--white);
-    color: var(--primary);
+    /* background-color: var(--primary);
+    color: var(--primary); */
 }
 
 .service:hover h5,
@@ -180,7 +180,7 @@ section {
 }
 
 .col-img {
-    background-image: url(../img/instalacion-camaras-videovigilancia.jpg);
+    background-image: url(../img/camara-cel.webp);
     background-position: center;
     background-size: cover;
     min-height: 200px;
@@ -328,5 +328,13 @@ form .form-control {
     }
     .col-img{
         margin-left: 12px;
+    }
+    .service-title{
+        position: relative;
+        right: -60px;
+        top: -52px;
+    }
+    .service-description{
+        margin-top: -35px;
     }
 }
