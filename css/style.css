@@ -39,13 +39,12 @@ img {
 }
 .logo-offcanvas{
     width: 100px;
-    margin-left: 35px;
 }
 .logo-footer{
     width: 140px;
 }
 
-.drop-down02 .sub-menu02
+/* .drop-down02 .sub-menu02
 {
 	position: relative!important;
     padding: 5px;
@@ -53,17 +52,74 @@ img {
 .sub-menu01{
 	left: 110px!important;
 	top: -40px!important;
-}
+} */
 
 .navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
+    
 }
+.navbar-dark .navbar-nav a.nav-link {
+    color: #ffffff;
+    font-size: 1.1em;
+  }
+  .dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+  }
+  @media only screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+      columns: 3;
+    }
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  .dropdown-menu li .dropdown-item {
+    color: gray;
+    padding: 0.5em 1em;
+    font-size:0.9rem ;
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--primary);
+  }
+  .dropdown-menu li:first-child a:hover {
+    background-color: #f1f1f1;
+  }
+  /* @media only screen and (max-width: 992px) {
+    .dropdown-menu.show {
+      flex-wrap: wrap;
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  } */
+  /* @media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .dropdown:hover .dropdown-menu {
+      width: 40vw;
+      flex-wrap: wrap;
+    }
+  } */
+  
+
 .nav-link{
     color: var(--dark)!important;
 }
 .offcanvas-body {
-    margin-top: 30px;
+    margin-top: 90px;
+    
 }
 .offcanvas-title{
     margin-top: 20px;
@@ -71,8 +127,9 @@ img {
 }
 .dropdown-menu02{
     color: var(--dark);
-    position:unset!important; 
-    transform: translate3d(0px, 0px, 0px)!important;
+    position:unset!important;
+    width: 100%; 
+    transform: translate3d(-5px, 0px, 0px)!important;
 }
 .text-cam{
     white-space: inherit!important;
@@ -86,6 +143,9 @@ img {
     padding: 14px 18px;
     border-width: 2px;
     border-radius: 0;
+}
+.btn-close{
+    margin: -20px 5px 10px!important;
 }
 
 /* .hero {
@@ -112,6 +172,7 @@ img {
     left: 0;
     z-index: -1;
 } */
+
 
 section {
     padding-top: 60px;
@@ -165,10 +226,10 @@ section {
 }
 
 
-.service:hover .iconbox {
-    /* background-color: var(--primary);
-    color: var(--primary); */
-}
+/* .service:hover .iconbox {
+    background-color: var(--primary);
+    color: var(--primary);
+} */
 
 .service:hover h5,
 .service:hover p {
@@ -302,9 +363,6 @@ form .form-control {
     .hero-banner{
         margin-top: 0px;
     }
-    #imagen1{
-        background: url(../img/grande-c3wpro.jpg)!important;
-    }
     .logo-footer{
         width: 80px;
     }
@@ -318,10 +376,14 @@ form .form-control {
         padding: 5px!important;
     }
     .offcanvas{
-        transition: transform .3s ease-out;;
+        transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
     }
     .offcanvas-start{
-        width: 200px!important;
+        width: 250px!important;
+    }
+    .dropdown ul li a {
+        
+        font-size: 13px!important;
     }
     .logo-web{
         width: 140px;

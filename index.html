@@ -9,13 +9,20 @@
       href="./img/favicon-16x16.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/boxicons.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/boxicons.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/slider-carousel.css" />
 
     <title>Dic Security Solutions</title>
   </head>
@@ -38,28 +45,28 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"
                 >Inicio</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
-                id="navbarDropdown"
+                id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Productos
+                Servicios
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
                 <li class="nav-link dropdown drop-down02">
                   <a
                     class="nav-link dropdown-toggle"
@@ -96,7 +103,120 @@
                     >Alarmas</a
                   >
                 </li>
-              </ul>
+
+                <li class="nav-link dropdown drop-down02">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Camaras de Seguridad
+                  </a>
+                  <ul
+                    class="dropdown-menu sub-menu02"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li class="nav-link">
+                      <a
+                        class="nav-link"
+                        href="./pages/productos-camaras-analogicas.html"
+                        >Camaras Analogicas</a
+                      >
+                    </li>
+                    <li class="nav-link">
+                      <a
+                        class="nav-link"
+                        href="./pages/productos-camaras-wifi.html"
+                        >Camaras Wifi</a
+                      >
+                    </li>
+                  </ul>
+                </li> -->
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onclick="abrelink()"
+              >
+                Servicios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="text-center">
+                  <li>
+                    <a class="dropdown-item" href="#">Camaras de seguridad</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/productos-camaras-wifi.html"
+                      >Camaras Wifi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/productos-camaras-analogicas.html"
+                      >Camaras Analogicas</a
+                    >
+                  </li>
+                  <ul>
+                    <li>
+                      <a class="dropdown-item text-center" href="#">Alarmas</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-center" href="."
+                        >Alarmas Smart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item text-center"
+                        href="./pages/productos-alarmas.html"
+                        >Alarmas Smart Pro</a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a class="dropdown-item mt-4" href="#">Redes</a>
+                  </li>
+                  <ul>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Seguridad contra Incendios</a
+                      >
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
@@ -105,9 +225,22 @@
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
+
+          <ul class="navbar-nav">
+            <div class="social-icons">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-whatsapp"></i></a>
+              <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            </div>
+          </ul>
         </div>
       </div>
     </nav>
+    <script type="text/javascript">
+      function abrelink() {
+        window.location.href = "./pages/servicios.html";
+      }
+    </script>
     <!-- Navbar -->
 
     <!-- NavbarMobile -->
@@ -121,65 +254,112 @@
         <a class="navbar-brand" href="./index.html">
           <img class="logo-offcanvas" src="img/LOGO-dic.png" alt="" />
         </a>
-        <!-- <button
+        <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-        ></button> -->
+        ></button>
       </div>
-      <div class="offcanvas-body text-center">
+      <div class="offcanvas-body">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item m-2">
             <a class="nav-link active" aria-current="page" href="./index.html"
               >Inicio</a
             >
           </li>
-          <li class="nav-item m-2">
-            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-          </li>
 
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle ms-2"
+              class="nav-link dropdown-toggle m-2"
               href="#"
-              id="offcanvasNavbarDropdown"
+              id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Productos
+              Servicios
             </a>
-            <ul
-              class="dropdown-menu dropdown-menu02 text-center m-2"
-              aria-labelledby="offcanvasNavbarDropdown"
+
+            <div
+              class="dropdown-menu dropdown-menu02"
+              aria-labelledby="navbarDropdown"
             >
-              <li>
-                <a
-                  class="dropdown-item text-cam"
-                  href="./pages/productos-camaras-analogicas.html"
-                  >Camaras Analogicas</a
-                >
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="./pages/productos-camaras-wifi.html"
-                  >Camaras WiFi</a
-                >
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="./pages/productos-alarmas.html"
-                  >Alarmas</a
-                >
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <a class="dropdown-item py-3" href="./pages/servicios.html"
+                    >Servicios</a
+                  >
+                </li>
+              </ul>
+              <ul class="">
+                <li>
+                  <a class="dropdown-item" href="#">Camaras de seguridad</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./pages/productos-camaras-wifi.html"
+                    >Camaras Wifi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./pages/productos-camaras-analogicas.html"
+                    >Camaras Analogicas</a
+                  >
+                </li>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">Alarmas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Alarmas Smart</a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/productos-alarmas.html"
+                      >Alarmas Smart Pro</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+
+              <ul class="">
+                <li>
+                  <a class="dropdown-item" href="#">Redes</a>
+                </li>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">Control de acceso</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="dropdown-item" href="#">Video Porteria</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a class="dropdown-item fs-6" href="#"
+                      >Seguridad contra <br />
+                      Incendios</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item m-2">
+            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
           </li>
 
           <li class="nav-item m-2">
@@ -283,7 +463,6 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-8 mx-auto text-center">
-            <h6 class="text-danger">SERVICIOS</h6>
             <h1>Servicios que brindamos</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur nisi necessitatibus
@@ -372,6 +551,93 @@
     </section>
     <!-- SERVICES -->
 
+    <!-- Soluciones -->
+    <section id="slider" class="pt-5">
+      <div class="container">
+        <!-- <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">PORQUE ELEGIRNOS?</h6>
+            <h1>La mejor solucion para tus problemas de iluminación</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur nisi necessitatibus
+              repellat distinctio eveniet eaque fuga in cumque optio consectetur
+              harum vitae debitis sapiente praesentium aperiam aut
+            </p>
+          </div>
+        </div> -->
+        <div class="slider">
+          <div class="owl-carousel">
+            <div class="slider-card">
+              <div
+                class="d-flex justify-content-center align-items-center mb-4"
+              >
+                <img src="./img/iluminación-comecial-slider.jpg" alt="" />
+              </div>
+              <h5 class="mb-0 text-center"><b>Tiendas</b></h5>
+              <p class="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                temporibus quidem magni qui doloribus quasi natus inventore nisi
+                velit minima.
+              </p>
+            </div>
+            <div class="slider-card">
+              <div
+                class="d-flex justify-content-center align-items-center mb-4"
+              >
+                <img src="./img/pantallas-led-slider.jpg" alt="" />
+              </div>
+              <h5 class="mb-0 text-center"><b>Oficinas</b></h5>
+              <p class="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                temporibus quidem magni qui doloribus quasi natus inventore nisi
+                velit minima.
+              </p>
+            </div>
+            <div class="slider-card">
+              <div
+                class="d-flex justify-content-center align-items-center mb-4"
+              >
+                <img src="./img/fabricas-slider.jpg" alt="" />
+              </div>
+              <h5 class="mb-0 text-center"><b>Fabricas</b></h5>
+              <p class="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                temporibus quidem magni qui doloribus quasi natus inventore nisi
+                velit minima.
+              </p>
+            </div>
+            <div class="slider-card">
+              <div
+                class="d-flex justify-content-center align-items-center mb-4"
+              >
+                <img src="./img/restaurant-slider.jpg" alt="" />
+              </div>
+              <h5 class="mb-0 text-center"><b>Locales</b></h5>
+              <p class="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                temporibus quidem magni qui doloribus quasi natus inventore nisi
+                velit minima.
+              </p>
+            </div>
+            <div class="slider-card">
+              <div
+                class="d-flex justify-content-center align-items-center mb-4"
+              >
+                <img src="./img/led-cocina-slider.jpg" alt="" />
+              </div>
+              <h5 class="mb-0 text-center"><b>Hogares</b></h5>
+              <p class="text-center p-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                temporibus quidem magni qui doloribus quasi natus inventore nisi
+                velit minima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Soluciones -->
+
     <!-- FOOTER -->
     <footer>
       <div class="footer-top text-center">
@@ -423,7 +689,20 @@
       </div>
     </footer>
     <!-- FOOTER -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/code.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/code.js"></script> -->
+    <script src="./js/index.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
