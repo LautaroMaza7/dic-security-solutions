@@ -69,10 +69,16 @@ img {
     border-radius: 0;
     padding: 0.7em;
   }
+
+  .dropdown-toggle::after {
+    margin-left: 5px;
+  }
+ 
+
+
   @media only screen and (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
       display: flex;
-      columns: 3;
     }
     .dropdown-menu.show {
       display: flex;
@@ -82,14 +88,14 @@ img {
     list-style: none;
     padding: 0;
   }
-  .dropdown-menu li .dropdown-item {
+  /* .dropdown-menu li .dropdown-item {
     color: gray;
     padding: 0.5em 1em;
     font-size:0.9rem ;
   }
   .dropdown-menu li .dropdown-item:hover {
-    background-color: #f1f1f1;
-  }
+    background-color:white;
+  } */
   .dropdown-menu li:first-child a {
     font-weight: bold;
     font-size: 13px;
@@ -97,8 +103,37 @@ img {
     color: var(--primary);
   }
   .dropdown-menu li:first-child a:hover {
-    background-color: #f1f1f1;
+    background-color: white;
   }
+
+  .accordion-body{
+    /* padding: 0%!important; */
+    margin-top: -10px;
+    background-color: transparent!important;
+  }
+  .accordion-button{
+    padding: 8px!important;
+  }
+  .accordion-collapse collapse{
+    display: flex;
+    justify-items: flex-start;
+  }
+  .accordion-body ul a {
+    padding-left: -10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: white;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: red;
+  }
+  .accordion-button:focus {
+    box-shadow: none!important;
+  }
+
   /* @media only screen and (max-width: 992px) {
     .dropdown-menu.show {
       flex-wrap: wrap;
@@ -119,6 +154,7 @@ img {
 }
 .offcanvas-body {
     margin-top: 90px;
+    text-align: calc(15px);
     
 }
 .offcanvas-title{
@@ -147,6 +183,7 @@ img {
 .btn-close{
     margin: -20px 5px 10px!important;
 }
+
 
 /* .hero {
     background-image: url(../img/camara-exterior.jpg);
@@ -357,6 +394,34 @@ form .form-control {
 }
 
 @media (max-width:768px){
+    .accordion-body {
+        padding:0px!important ;
+        margin-top: 10px;
+    }
+    .accordion-body ul a {
+        padding-left: -10px;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 5px;
+        padding-left: 0px;
+        font-weight: bold;
+    }
+    .accordion-button:not(.collapsed) {
+        color: #DE0024;
+    }
+    .accordion-button::after {
+        color: #DE0024;
+        margin-left: 15px;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        pointer-events: none;
+        width: 100%;
+      }
+      .dropdown-menu.show {
+        pointer-events: none;
+        width: 100%;
+      }
     .hero{
         background-position: center;
     }
@@ -379,7 +444,7 @@ form .form-control {
         transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
     }
     .offcanvas-start{
-        width: 250px!important;
+        width: 300px!important;
     }
     .dropdown ul li a {
         
