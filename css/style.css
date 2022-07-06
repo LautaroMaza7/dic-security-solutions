@@ -39,6 +39,7 @@ img {
 }
 .logo-offcanvas{
     width: 100px;
+    margin-left: 50px;
 }
 .logo-footer{
     width: 140px;
@@ -444,7 +445,7 @@ form .form-control {
         transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
     }
     .offcanvas-start{
-        width: 300px!important;
+        width: 260px!important;
     }
     .dropdown ul li a {
         
