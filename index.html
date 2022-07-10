@@ -17,381 +17,260 @@
     />
     <link rel="stylesheet" href="./css/boxicons.min.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/slider-carousel.css" />
+    <link rel="stylesheet" href="css/next-sidebar.css" />
 
     <title>Dic Security Solutions</title>
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo-web" src="img/logo-horizontal.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Inicio</a
-              >
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                onclick="abrelink()"
-              >
-                Servicios
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <ul>
-                  <div
-                    class="accordion accordion-flush"
-                    id="accordionFlushExample"
-                  >
-                    <div class="accordion-item .bg-transparent">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseOne"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseOne"
-                        >
-                          <li>
-                            <a class="dropdown-item" onclick="abrelink()"
-                              >Camaras de Seguridad</a
-                            >
-                          </li>
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapseOne"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample"
-                      >
-                        <div class="accordion-body">
-                          <ul class="text-wrap">
-                            <a
-                              class="dropdown-item"
-                              href="./pages/productos-camaras-wifi.html"
-                              >Camaras Wifi</a
-                            >
-
-                            <a
-                              class="dropdown-item"
-                              href="./pages/productos-camaras-analogicas.html"
-                              >Camaras Analogicas</a
-                            >
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item .bg-transparent">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#flush-collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseTwo"
-                        >
-                          <li>
-                            <a class="dropdown-item" onclick="abrelink()"
-                              >Alarmas</a
-                            >
-                          </li>
-                        </button>
-                      </h2>
-                      <div
-                        id="flush-collapseTwo"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample"
-                      >
-                        <div class="accordion-body">
-                          <ul class="text-wrap">
-                            <a class="dropdown-item" href="#">Alarmas Smart</a>
-
-                            <a
-                              class="dropdown-item"
-                              href="./pages/productos-alarmas.html"
-                              >Alarmas Smart Pro</a
-                            >
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="ms-2">
-                      <li>
-                        <a class="dropdown-item" href="#">Redes</a>
-                      </li>
-                      <ul>
-                        <li>
-                          <a class="dropdown-item" href="#">Servicio Tecnico</a>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Control de acceso</a
-                          >
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <a class="dropdown-item" href="#">Video Porteria</a>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Seguridad contra Incendios</a
-                          >
-                        </li>
-                      </ul>
-                    </ul>
-                  </div>
-                </ul>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-            </li>
-          </ul>
-
-          <ul class="navbar-nav">
-            <div class="social-icons">
-              <a href="#"><i class="bx bxl-facebook"></i></a>
-              <a href="#"><i class="bx bxl-whatsapp"></i></a>
-              <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <script type="text/javascript">
-      function abrelink() {
-        window.location.href = "./pages/servicios.html";
-      }
-    </script>
-    <!-- Navbar -->
-
-    <!-- NavbarMobile -->
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo-offcanvas" src="img/LOGO-dic.png" alt="" />
-        </a>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item m-2">
-            <a
-              class="nav-link active fs-5 fw-bolder"
-              aria-current="page"
-              href="./index.html"
-              >Inicio</a
-            >
-          </li>
-
-          <div class="accordion border-0" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item border-0 mb-2 mt-2">
-              <h2
-                class="accordion-header text-center"
-                id="panelsStayOpen-headingOne"
-              >
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  <a class="dropdown-item fs-5 fw-bolder" onclick="abrelink()"
-                    >Servicios</a
-                  >
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body border-0">
-                  <div class="accordion-item border-0">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo"
-                      >
-                        <a
-                          class="dropdown-item text-uppercase text-wrap"
-                          onclick="abrelink()"
-                          >Camaras de Seguridad</a
-                        >
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="panelsStayOpen-headingTwo"
-                    >
-                      <div class="accordion-body">
-                        <ul style="padding-left: 10px">
-                          <a
-                            class="dropdown-item mb-2 mt-2"
-                            href="./pages/productos-camaras-wifi.html"
-                          >
-                            Camaras Wifi</a
-                          >
-
-                          <a
-                            class="dropdown-item mb-2 mt-2"
-                            href="./pages/productos-camaras-analogicas.html"
-                            >Camaras Analogicas</a
-                          >
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border-0">
-                    <h2
-                      class="accordion-header"
-                      id="panelsStayOpen-headingThree"
-                    >
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree"
-                      >
-                        <li>
-                          <a
-                            class="dropdown-item text-uppercase"
-                            onclick="abrelink()"
-                            >Alarmas</a
-                          >
-                        </li>
-                      </button>
-                    </h2>
-                    <div
-                      id="panelsStayOpen-collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="panelsStayOpen-headingThree"
-                    >
-                      <div class="accordion-body">
-                        <ul style="padding-left: 15px">
-                          <a class="dropdown-item mb-2 mt-2" href="#"
-                            >Alarmas Smart</a
-                          >
-
-                          <a
-                            class="dropdown-item mt-2"
-                            href="./pages/productos-alarmas.html"
-                            >Alarmas Smart Pro</a
-                          >
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="accordion-item border-0 mx-2 text-uppercase"
-                    style="font-weight: bold; color: #de0024"
-                  >
-                    <li class="mb-4 mt-4">
-                      <a class="dropdown-item text-wrap" href="#"
-                        >Seguridad contra Incendios</a
-                      >
-                    </li>
-                    <li class="mb-3 mt-3">
-                      <a class="dropdown-item" href="#">Control de Acceso</a>
-                    </li>
-                    <li class="mb-3 mt-3">
-                      <a class="dropdown-item" href="#">Video Porteria</a>
-                    </li>
-                    <li class="mb-3 mt-3">
-                      <a class="dropdown-item" href="#">Redes</a>
-                    </li>
-                    <li class="mb-3 mt-1">
-                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
-                    </li>
-                  </div>
+  <body class="app ">
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
                 </div>
               </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
             </div>
           </div>
-
-          <li class="nav-item m-2">
-            <a class="nav-link fs-5 fw-bolder" href="./pages/proyectos.html"
-              >Proyectos</a
-            >
-          </li>
-
-          <li class="nav-item m-2">
-            <a class="nav-link fs-5 fw-bolder" href="./pages/nosotros.html"
-              >Nosotros</a
-            >
-          </li>
-          <li class="nav-item m-2">
-            <a class="nav-link fs-5 fw-bolder" href="./pages/contacto.html"
-              >Contacto</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="./index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="./pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a href="./pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a href="./pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="./pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="./pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="./pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        
+      </ul>
     </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light sticky-top bg-white ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+          <a class="navbar-brand " href="./index.html">
+            <img class="logo-web" src="./img/logo-horizontal.png" alt="" />
+          </a>
+      </ul>
+      <ul class="navbar-nav me-auto justify-content-center">
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad &raquo; </a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="./pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas &raquo; </a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <ul class="navbar-nav" id="iconosnav">
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+      </ul>
+  </nav>
     <!-- NavbarMobile -->
 
     <!-- HERO -->
@@ -715,11 +594,13 @@
     <!-- <script src="js/code.js"></script> -->
     <script src="./js/index.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="js/next-sidebar.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"

@@ -1,3 +1,18 @@
+function servicios() {
+    window.location.href = "../pages/servicios.html";
+}
+function camaraswifi() {
+    window.location.href = "../pages/productos-camaras-wifi.html";
+}
+function camarasana() {
+    window.location.href = "../pages/productos-camaras-analogicas.html";
+}
+function alarmassmart() {
+    window.location.href = "../pages/servicios.html";
+}
+  function alarmaspro() {
+    window.location.href = "../pages/productos-alarmas.html";
+}
 // Owlcarousel
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({

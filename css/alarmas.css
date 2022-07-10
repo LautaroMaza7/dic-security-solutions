@@ -21,7 +21,9 @@
     width: 90%;
     height: 100%;
 }
-
+.knowledege__texts .subtitle{
+    font-size: 23px;
+}
 .knowledge__paragraph{
     line-height: 1.7;
     margin-bottom: 15px;
@@ -48,6 +50,9 @@
         gap: 3em;
         text-align: center;
     }
+    .knowledege__texts .subtitle{
+        font-size: 20px;
+    }
     
     .knowledge__picture{
         grid-row: 1/2;
@@ -56,9 +61,6 @@
         height: 80%;
         margin-bottom: 80px;
         margin-top: 20px;
-    }
-    .slider-mobile{
-
     }
     .hero{
         width: 100%;
