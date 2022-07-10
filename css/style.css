@@ -13,6 +13,7 @@ body {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
     color: var(--dark);
+    overflow:visible;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -30,13 +31,15 @@ img {
     width: 100%;
 }
 
-/* .navbar {
+.navbar {
     box-shadow: var(--box-shadow);
-} */
+    padding: 2px;
+}
 
 .logo-web {
-    width: 160px;
-    margin-left: 145px;
+    width: 60px;
+    padding-top: 5px;
+    margin-right: 200px;
 }
 #iconosnav{
     margin-right: 150px!important;
@@ -423,8 +426,7 @@ form .form-control {
         display: none;
     }
     .logo-web{
-        width: 140px;
-        margin-left: 270px;
+        margin-right: 20px!important;
     }
     /* .accordion-body {
         padding:0px!important ;
@@ -466,9 +468,9 @@ form .form-control {
     .hero-banner{
         margin-top: 0px;
     }
-    .logo-footer{
-        width: 80px;
-    }
+    /* .logo-web{
+        margin-left: 100px;
+    } */
     .iconbox {
         width: 42px;
         height: 42px;
@@ -478,10 +480,10 @@ form .form-control {
     #iconosnav{
         display: none;
     }
-    .logo-web{
+    /* .logo-web{
         width: 140px;
         margin-left: 60px!important;
-    }
+    } */
     /* .logo-web{
         margin-left: 15px;
     }
@@ -490,9 +492,9 @@ form .form-control {
     } */
 }
 @media (max-width:320px){
-    .logo-web{
+    /* .logo-web{
         margin-left: 50px!important;
-    }
+    } */
 }
 @media (max-width:480px){
     /* .offcanvas{
@@ -512,8 +514,8 @@ form .form-control {
         display: none;
     }
     .logo-web{
-        width: 140px;
-        margin-left: 100px;
+        width: 50px;
+        margin-right: 20px!important;
     }
     .col-img{
         margin-left: 12px;
