@@ -20,6 +20,10 @@ h1,h2,h3,h4,h5,h6,
 .display-4 {
     color: var(--dark);
     font-weight: 700;
+    
+}
+h1{
+    font-size: 2.5rem;
 }
 
 a {
@@ -35,11 +39,12 @@ img {
     box-shadow: var(--box-shadow);
     padding: 2px;
 }
-
+.navbar-brand{
+    margin-right: 200px;
+}
 .logo-web {
     width: 60px;
     padding-top: 5px;
-    margin-right: 200px;
 }
 #iconosnav{
     margin-right: 150px!important;
@@ -68,10 +73,14 @@ img {
     font-weight: 700;
     
 }
-.navbar-dark .navbar-nav a.nav-link {
-    color: #ffffff;
-    font-size: 1.1em;
-  }
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--dark);
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #DE0024;
+}
+
   /* .dropdown-menu {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border: none;
@@ -155,6 +164,16 @@ img {
     }
   } */
   
+
+  .dropdown-item{
+    color: var(--dark);
+  }
+  .dropdown-item:hover {
+    background-color:var(--primary)!important;
+  }
+  ul #dropdown-custom .dropdown-menu li .dropdown-item:hover {
+    background-color:var(--primary)!important;
+  }
   .dropdown-menu li {
     position: relative;
     }
@@ -425,8 +444,8 @@ form .form-control {
     #iconosnav{
         display: none;
     }
-    .logo-web{
-        margin-right: 20px!important;
+    .navbar-brand{
+        margin-left: 150px!important;
     }
     /* .accordion-body {
         padding:0px!important ;
@@ -477,6 +496,10 @@ form .form-control {
     }
 }
 @media (max-width:375px){
+    .navbar-brand{
+        margin-right:40px;
+        margin-left: 0px!important;
+    }
     #iconosnav{
         display: none;
     }
@@ -491,12 +514,16 @@ form .form-control {
         margin-left: -12px;
     } */
 }
-@media (max-width:320px){
-    /* .logo-web{
-        margin-left: 50px!important;
-    } */
+@media (max-width:1024px){
+    
+    #iconosnav {
+        margin-left: 10px!important;
+    }
 }
 @media (max-width:480px){
+    .navbar-brand{
+        margin-left: 10px;
+    }
     /* .offcanvas{
         transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
     }
@@ -513,9 +540,11 @@ form .form-control {
     #iconosnav{
         display: none;
     }
+    /* .navbar-brand{
+        margin-left: 60px!important;
+    } */
     .logo-web{
         width: 50px;
-        margin-right: 20px!important;
     }
     .col-img{
         margin-left: 12px;

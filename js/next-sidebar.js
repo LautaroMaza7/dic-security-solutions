@@ -66,15 +66,15 @@ $(function () {
     });
 }());
 
-// function windowSize() {
-//   windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
-//   if(windowWidth < 768) {
-//     if($('.app').hasClass('is-collapsed')) {
-//       $('.app').removeClass('is-collapse');
-//     }
-//   }
-//   $('.app').addClass('is-collapsed')
-// }
+ /* function windowSize() {
+   windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+   if(windowWidth < 768) {
+     if($('.app').hasClass('is-collapsed')) {
+       $('.app').removeClass('is-collapse');
+     }
+   }
+   $('.app').addClass('is-collapsed')
+ } */
 
 // windowSize();
 
