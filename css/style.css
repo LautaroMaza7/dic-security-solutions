@@ -445,7 +445,7 @@ form .form-control {
         display: none;
     }
     .navbar-brand{
-        margin-left: 150px!important;
+        margin-left: 150px;
     }
     /* .accordion-body {
         padding:0px!important ;
@@ -497,7 +497,7 @@ form .form-control {
 }
 @media (max-width:375px){
     .navbar-brand{
-        margin-right:40px;
+        margin-right:30px;
         margin-left: 0px!important;
     }
     #iconosnav{
@@ -522,7 +522,8 @@ form .form-control {
 }
 @media (max-width:480px){
     .navbar-brand{
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-right: 20px;
     }
     /* .offcanvas{
         transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
