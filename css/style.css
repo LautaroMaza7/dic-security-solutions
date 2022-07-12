@@ -278,7 +278,22 @@ section {
     justify-content: center;
     background-color: transparent;
     color: var(--primary);
+    margin-left: 120px;
     /* font-size: 32px; */
+    border-radius: 100px;
+    flex: none;
+}
+.iconbox-beneficios {
+    width: 54px;
+    height: 54px;
+    margin: 20px 20px;
+    margin-left: 100px;
+    border-radius: 100px;
+    flex: none;
+}
+.iconbox-proyect{
+    width: 54px;
+    height: 54px;
     border-radius: 100px;
     flex: none;
 }
@@ -289,6 +304,41 @@ section {
     z-index: 2;
     overflow: hidden;
     user-select: none;
+}
+.pwhole{
+    position: relative;
+    width: 100%;
+}
+#features{
+    padding: 15px;
+}
+
+.detail-camimg{
+    margin-top: 170px;
+    margin-left: -300px;
+}
+.img-detail{
+    width: 140%;
+}
+
+.beneficios{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+    padding: 100px 100px;
+}
+.service-beneficios::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 
 .service::after {
@@ -303,8 +353,14 @@ section {
     opacity: 0;
     transition: all 0.4s ease;
 }
-
-
+.service-title{
+    text-align: center;
+}
+.service-description{
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-align: center;
+}
 /* .service:hover .iconbox {
     background-color: var(--primary);
     color: var(--primary);
@@ -323,8 +379,10 @@ section {
 .col-img {
     background-image: url(../img/camaraseguridad-cel.jpg);
     background-position: center;
-    background-size: cover;
-    min-height: 200px;
+    background-size:cover;
+    margin-left: 20px;
+    width: 60%;
+    min-height: 100px;
 }
 
 .project {
@@ -521,6 +579,10 @@ form .form-control {
     }
 }
 @media (max-width:480px){
+    .title-feat{
+        text-align: center;
+        font-size: 1.3rem;
+    }
     .navbar-brand{
         margin-left: 0px;
         margin-right: 20px;
