@@ -283,14 +283,7 @@ section {
     border-radius: 100px;
     flex: none;
 }
-.iconbox-beneficios {
-    width: 54px;
-    height: 54px;
-    margin: 20px 20px;
-    margin-left: 100px;
-    border-radius: 100px;
-    flex: none;
-}
+
 .iconbox-proyect{
     width: 54px;
     height: 54px;
@@ -314,32 +307,19 @@ section {
 }
 
 .detail-camimg{
-    margin-top: 170px;
-    margin-left: -300px;
+    margin-left:-100px;
 }
 .img-detail{
-    width: 140%;
+    width: 80%;
+}
+.subtitle-detail{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 40px;
+    user-select: none;
 }
 
-.beneficios{
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    overflow: hidden;
-    padding: 100px 100px;
-}
-.service-beneficios::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.4s ease;
-}
 
 .service::after {
     content: '';
@@ -579,6 +559,35 @@ form .form-control {
     }
 }
 @media (max-width:480px){
+    /* .img-cellpone{
+        width: 160px!important;
+        height: 320px!important;
+    } */
+    .XUUsC {
+        margin-left: 80px!important;
+    }
+    .myVideo{
+        width: 57.5%!important;
+        margin-left: 95px!important;
+        margin-top: -27.5rem!important;
+        border-radius: 20px!important;
+     }
+
+     .subtitle-detail{
+        font-weight: normal!important;
+        font-size: 20px;
+        margin-top: 50px;
+        text-align: center;
+        user-select: none;
+    }
+    .img-detail {
+        width: 100%
+    }
+    .detail-camimg {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
     .title-feat{
         text-align: center;
         font-size: 1.3rem;
@@ -612,14 +621,14 @@ form .form-control {
     .col-img{
         margin-left: 12px;
     }
-    .service-title{
+    /* .service-title{
         position: relative;
         right: -60px;
         top: -52px;
     }
     .service-description{
         margin-top: -35px;
-    }
+    } */
     h1{
         font-size: 1.5rem;
     }

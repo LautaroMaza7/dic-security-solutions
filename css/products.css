@@ -8,32 +8,32 @@
  } */
 
  .XUUsC{
-   margin-left: 128px;
+   margin-left: 300px;
    margin-bottom:-50px;
  }
 
 .myVideo{
-   width: 29.5%;
+   width: 29%;
    /* height: 17%; */
-   margin-left: 142px;
+   margin-left: 315px;
    margin-top: -439px;
    border-radius: 25px;
 }
  .productos{
     background-color: #242933;
     padding: 3px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 0px;
     font-weight: 100;
  }
  .beneficios-title{
-   background-color: #242933;
    padding: 3px;
-   margin-top: 50px;
-   margin-bottom: -60px;
+   margin-top: 30px;
+   margin-bottom: 40px;
    font-size: 23px;
 
 }
+
 .products-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
