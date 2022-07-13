@@ -30,8 +30,12 @@
    padding: 3px;
    margin-top: 30px;
    margin-bottom: 40px;
-   font-size: 23px;
 
+}
+.camaras-description{
+   margin-top: 30px;
+   line-height:2.7rem;
+   font-size: 18px;
 }
 
 .products-container{

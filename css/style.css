@@ -8,7 +8,12 @@
     --white: #ffffff;
     --box-shadow: 0 8px 22px rgba(0,0,0,0.3);
 }
-
+.text-danger{
+    color: #DE0024!important;
+}
+.text-verde{
+    color: green;
+}
 body {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
@@ -123,33 +128,27 @@ img {
   .dropdown-menu li:first-child a:hover {
     background-color: white;
   } */
- /*  .accordion-body{
-    margin-top: -10px;
-    background-color: transparent!important;
-  } */
-  /* .accordion-button{
-    padding: 8px!important;
-  } */
-  /* .accordion-collapse collapse{
-    display: flex;
-    justify-items: flex-start;
+  .accordion-item{
+    padding: 25px!important;
   }
-  
-  .accordion-body ul a {
-    padding-left: -10px;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: bold;
+  .accordion-button{
+    padding: 8px!important;
+    font-weight: 700;
+  }
+  .accordion-body{
+    font-size: 16px;
   }
   .accordion-button:not(.collapsed) {
+    box-shadow: none!important;
     background-color: white;
+    color: #242933;
   }
   .accordion-button:not(.collapsed)::after {
-    background-image: red;
+    color: #DE0024!important;
   }
   .accordion-button:focus {
     box-shadow: none!important;
-  } */
+  }
   /* @media only screen and (max-width: 992px) {
     .dropdown-menu.show {
       flex-wrap: wrap;
@@ -275,7 +274,7 @@ section {
     height: 54px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center!important;
     background-color: transparent;
     color: var(--primary);
     margin-left: 120px;
@@ -313,12 +312,12 @@ section {
     width: 80%;
 }
 .subtitle-detail{
-    font-weight: 700;
     font-size: 20px;
     margin-top: -20px;
-    margin-left: 40px;
+    margin-left: 20px;
     user-select: none;
 }
+
 
 
 .service::after {
@@ -364,7 +363,15 @@ section {
     width: 60%;
     min-height: 100px;
 }
-
+.col-img2{
+    background-image: url(https://www.digittecnic.com/wp-content/uploads/2019/01/tipo-camaras-seguridad.jpg);
+    background-position: center;
+    background-size:contain;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 200px;
+}
 .project {
     position: relative;
     overflow: hidden;
@@ -544,6 +551,9 @@ form .form-control {
         margin-right:30px;
         margin-left: 0px!important;
     }
+    /* .iconbox {
+        margin-left: 0px!important;
+    } */
     #iconosnav{
         display: none;
     }
@@ -563,6 +573,15 @@ form .form-control {
         width: 160px!important;
         height: 320px!important;
     } */
+    .iconbox{
+        margin-left: 130px!important;
+    }
+    .camaras-description{
+        margin-top: 30px;
+        text-align: justify;
+        line-height:1.8rem!important;
+        font-size: 14px!important;
+     }
     .XUUsC {
         margin-left: 60px!important;
     }
@@ -596,16 +615,6 @@ form .form-control {
         margin-left: 0px;
         margin-right: 20px;
     }
-    /* .offcanvas{
-        transition: transform .3s cubic-bezier(0.4, 0, 1, 1)!important;
-    }
-    .offcanvas-end{
-        width: 200px!important;
-    }
-    .dropdown ul li a {
-        
-        font-size: 13px!important;
-    } */
     .navbar-expand {
         padding: 8px;
     }
@@ -621,14 +630,14 @@ form .form-control {
     .col-img{
         margin-left: 12px;
     }
-    /* .service-title{
-        position: relative;
-        right: -60px;
-        top: -52px;
+    .col-img2{
+        margin-top: -20px;
+        margin-left: 0!important;
     }
-    .service-description{
-        margin-top: -35px;
-    } */
+    .service-title{
+        text-align: center;
+        margin-top: 30px;
+    }
     h1{
         font-size: 1.5rem;
     }
