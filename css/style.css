@@ -533,6 +533,12 @@ form .form-control {
         height: 42px;
     }
 }
+@media (max-width:1024px){
+    
+    #iconosnav {
+        margin-left: 10px!important;
+    }
+}
 @media (max-width:375px){
     .navbar-brand{
         margin-right:30px;
@@ -552,24 +558,18 @@ form .form-control {
         margin-left: -12px;
     } */
 }
-@media (max-width:1024px){
-    
-    #iconosnav {
-        margin-left: 10px!important;
-    }
-}
 @media (max-width:480px){
     /* .img-cellpone{
         width: 160px!important;
         height: 320px!important;
     } */
     .XUUsC {
-        margin-left: 80px!important;
+        margin-left: 60px!important;
     }
     .myVideo{
-        width: 57.5%!important;
-        margin-left: 95px!important;
-        margin-top: -27.5rem!important;
+        width: 61%!important;
+        margin-left: 78px!important;
+        margin-top: -27.2rem!important;
         border-radius: 20px!important;
      }
 
@@ -585,7 +585,7 @@ form .form-control {
     }
     .detail-camimg {
         margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 35px;
     }
 
     .title-feat{
