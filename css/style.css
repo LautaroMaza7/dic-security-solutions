@@ -577,7 +577,7 @@ form .form-control {
         height: 320px!important;
     } */
     .iconbox{
-        margin-left: 130px!important;
+        margin-left: 0px!important;
     }
     .camaras-description{
         margin-top: 30px;
@@ -638,8 +638,11 @@ form .form-control {
         margin-left: 0!important;
     }
     .service-title{
-        text-align: center;
-        margin-top: 30px;
+        text-align: initial!important;
+    }
+    .service-description{
+        line-height: inherit!important;
+        text-align: initial!important;
     }
     h1{
         font-size: 1.5rem;
