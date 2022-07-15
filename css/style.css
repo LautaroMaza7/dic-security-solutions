@@ -524,6 +524,14 @@ form .form-control {
 }
 
 
+/*CLIENT LOGO*/
+.slide1 img{margin-top:25px}
+.slide5 img{margin-top:35px;}
+.slide4 img{margin-top:3px;}
+.bx-viewport{box-shadow:none !important;}
+/*CLIENT LOGO*/
+
+
 .footer-top {
     padding-top: 60px;
     padding-bottom: 0;
