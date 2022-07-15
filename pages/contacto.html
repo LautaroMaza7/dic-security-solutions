@@ -285,9 +285,37 @@
       </ul>
   </nav>
     <!-- NavbarMobile -->
+    <!-- <form action="" class="row g-3 justify-content-center">
+      <div class="col-md-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nombre Completo"
+        />
+      </div>
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="E-mail" />
+      </div>
+      <div class="col-md-10">
+        <input type="text" class="form-control" placeholder="Asunto" />
+      </div>
+      <div class="col-md-10">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="5"
+          class="form-control"
+          placeholder="Mensaje"
+        ></textarea>
+      </div>
+      <div class="col-md-10 d-grid">
+        <button class="btn btn-danger">Contactar</button>
+      </div>
+    </form> -->
 
     <!-- CONTACT -->
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="row mb-3">
           <div class="col-md-8 mx-auto text-center">
             <h6 class="text-danger">CONTACTO</h6>
@@ -297,34 +325,6 @@
           </div>
         </div>
         
-        <!-- <form action="" class="row g-3 justify-content-center">
-          <div class="col-md-5">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nombre Completo"
-            />
-          </div>
-          <div class="col-md-5">
-            <input type="text" class="form-control" placeholder="E-mail" />
-          </div>
-          <div class="col-md-10">
-            <input type="text" class="form-control" placeholder="Asunto" />
-          </div>
-          <div class="col-md-10">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              class="form-control"
-              placeholder="Mensaje"
-            ></textarea>
-          </div>
-          <div class="col-md-10 d-grid">
-            <button class="btn btn-danger">Contactar</button>
-          </div>
-        </form> -->
       <div class="content mt-5">
         <div class="contact">
           <div class="other">
@@ -347,7 +347,7 @@
             </div>
             <div>
               <h5 class="info">Zonas de Trabajo </h5>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d306490.42398101423!2d-58.80158699772609!3d-34.455747220209545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1657818395771!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d306490.42398101423!2d-58.80158699772609!3d-34.455747220209545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1657818395771!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="form">
@@ -381,17 +381,89 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col align-self-center">
-              <div class="social-icons">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+
+    <section class="container mt-5">
+      <!--Contact heading-->
+      <div class="row">
+         <!-- <div class="col-sm-12 text-center mb-4">
+          <a class="btn btn-danger" target="_blank" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f8876459b9ac2&mfid=1619175810225_f8876459b9ac2#/checkout/openButton"> Donate Now <i class="fa fa-dollar"></i></a>
+        </div> -->
+         <!--Grid column-->
+         <div class="col-sm-12 mb-4 col-md-5">
+            <!--Form with header-->
+            <div class="card border-danger rounded-0">
+               <div class="card-header p-0">
+                  <div class="bg-danger text-white text-center py-2">
+                     <h3 class="text-white"><i class="fa fa-envelope"></i> Dejanos un Mensaje:</h3>
+                     <p class="m-0">Pongase en contacto con nosotros y lo atenderemos a la brevedad.</p>
+                  </div>
+               </div>
+               <div class="card-body p-3">
+                  
+                     <div class="form-group">
+                     <label> Nombre y Apellido </label>
+                     <div class="input-group">
+                        <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nombre y Apellido">
+                     </div>
+           </div>
+                     <div class="form-group">
+                        <label>Email</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label>Asunto</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <input type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Asunto">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label>Mensaje</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <input type="text" class="form-control" name="mesg">
+                        </div>
+                     </div>
+                     <div class="text-center">
+                        <input type="submit" name="submit" value="enviar" class="btn btn-danger btn-block rounded-0 py-2">
+                     </div>
+                
+              </div>
+             
+               </div>
+            </div>
+         <!--Grid column-->
+       
+         <!--Grid column-->
+         <div class="col-sm-12 col-md-7">
+            <!--Google map-->
+            <div class="mb-4">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d708007.1428160284!2d-59.48586204071106!3d-34.48086960488007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb3faddba8be7%3A0x93e8f54e16d05cc5!2sBuenos%20Aires%20Metropolitan%20Area!5e0!3m2!1ses!2sar!4v1657888309241!5m2!1ses!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <!--Buttons-->
+            <div class="row text-center">
+               <div class="col-md-4">
+                  <a class="bg-danger px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
+                  <p>Buenos Aires, Argentina</p>
+               </div>
+               <div class="col-md-4">
+                  <a href="https://api.whatsapp.com/send?phone=541164864919" class="bg-danger px-3 py-2 rounded text-white mb-2 d-inline-block"><i  class="fab fa-whatsapp"></i></a>
+                  <p>(+54) 11-6486-4919</p>
+               </div>
+               <div class="col-md-4">
+                  <a class="bg-danger px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
+                  <p> dic.sscontacto@gmail.com</p>
+               </div>
+            </div>
+         </div>
+         <!--Grid column-->
+         </div>
+   </section>
     <!-- CONTACT -->
     
 

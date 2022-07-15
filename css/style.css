@@ -14,6 +14,9 @@
 .btn-danger{
     background-color: #DE0024!important;
 }
+.bg-danger{
+    background-color: #DE0024!important;
+}
 .btn-tecno{
     color: rgb(48 151 211);
     font-size: 1rem;
@@ -427,6 +430,9 @@ section {
     margin-top: 8px;
 }
 
+#team{
+    margin-top: -80px;
+}
 .team-member img {
     width: 125px;
     height: 125px;
@@ -452,30 +458,6 @@ section {
     transition: all 0.4s ease;
     border: 2px solid var(--primary);
 }
-.contact-icon{
-    display: flex;
-    justify-content: space-evenly;
-}
-.contact-icon a{
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary);
-    border-radius: 2px solid var(--primary);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    align-items: center;
-    border-radius: 100px;
-    transition: all 0.4s ease;
-    border: 2px solid var(--primary);
-}
-.contact-icon a:hover {
-    color: var(--primary);
-    background-color: transparent;
-    border-color: var(--primarys);
-    text-decoration: none!important;
-}
 
 .social-icons a:hover {
     color: var(--primary);
@@ -493,6 +475,52 @@ form .form-control {
     border: transparent;
     border-radius: 0;
     background-color: rgba(0,0,0,0.02);
+}
+
+
+/* about us */
+#origin{
+    overflow:hidden;
+    overflow-wrap: break-word;
+    margin-top: -60px;
+}
+#about{
+	padding-top: 80px;
+	padding-bottom: 80px;
+    overflow: auto;
+}
+#about h1{
+	padding-bottom: 70px;
+}
+#about-col ul{
+	padding-top: 0px;
+	margin-left: 60px;
+}
+#banner-row{
+    margin-left: 110px;
+}
+#about-col ul li{
+	padding-top: 15px;
+}
+.img-nosotros {
+    width: 500px;
+}
+
+/* products */
+#product{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#product h1{
+	padding-bottom: 70px;
+}
+#product-col2 ul{
+	padding-top: 90px;
+}
+
+#product-col2 ul li{
+	padding-top: 15px;
 }
 
 
@@ -516,76 +544,6 @@ form .form-control {
 .footer-bottom {
     background-color: #242933;
 }
-
-
-/*CONTACT*/
-
-.map{
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-}
-.map:after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: linear-gradient(45deg, rgba(7, 45, 72, 0.8), rgba(195, 195, 195, 0.8));
-}
-
-
-
-
-.content{
-	position: relative;
-	top: 0px;
-	height: calc(100vh - 60px);
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-}
-
-
-.contact{
-	width: 80%;
-	max-width: 1080px;
-	display: flex;
-	 box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
- border-radius: 15px;
- overflow: hidden;
- margin-top: 80px;
-}
-
-
-/* .other{
-	width: 60%;
-	background-size: contain;
-	background-position: center;
-	position: relative;
-	display: flex;
- flex-direction: column;
- justify-content: flex-end;
-}
-
-
-.other:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: linear-gradient(45deg, #e74c3c47, rgba(36, 51, 66, 0.81));
-} */
-
-
-
-
-
 
 .form{
 	width: 40%;
@@ -882,6 +840,23 @@ h2 {}
     .col-img2{
         margin-top: -20px;
         margin-left: 0!important;
+    }
+    .img-nosotros{
+        width: 100%;
+        height: 100%;
+    }
+    #about-col ul{
+        margin-left: -20px!important;
+        font-size: 1rem!important;
+    }
+    #about h1 {
+        padding-bottom: 30px!important;
+    }
+    #banner-row{
+        margin-left: 0px!important;
+    }
+    #banner-col2{
+        margin-left: -55px!important;
     }
     .service-title{
         text-align: initial!important;
