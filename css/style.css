@@ -885,4 +885,7 @@ h2 {}
     .contact{
         margin-top: -20px!important;
     }
+    #client > .owl-carousel > .owl-dots{
+        display: none!important;
+    }
 }

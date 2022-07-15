@@ -46,6 +46,9 @@
     font-size: 30px !important;
     z-index: 1;
   }
+  #client > .owl-dots{
+    display: none!important;
+}
   .owl-dots {
     text-align: center;
   }
