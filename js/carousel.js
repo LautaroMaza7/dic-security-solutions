@@ -30,16 +30,16 @@ $(document).ready(function(){
         margin:10,
         nav:false,
         autoplay:true,
-        autoplayTimeout:1500,
+        autoplayTimeout:4000,
         responsive:{
-            1000:{
-                items:1
+            0:{
+                items:5
             },
             600:{
-                items:1
+                items:4
             },
             1000:{
-                items:4
+                items:5
             }
         }
     })

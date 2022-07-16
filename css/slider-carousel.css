@@ -46,7 +46,7 @@
     font-size: 30px !important;
     z-index: 1;
   }
-  #client > .owl-dots{
+  .owl-dots{
     display: none!important;
 }
   .owl-dots {
@@ -64,4 +64,34 @@
   .owl-dots .owl-dot.active {
     background: #DE0024 !important;
   }
+
+
+#logo-client{
+  background-color: #f1e8e84d;
+  
+}
+.img-client{
+  max-width: 30%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#logo-client, img:hover{
+  transition: opacity 1s;
+  opacity: 1;
+}
+#client-logo{
+  padding-top:20px ;
+}
+#client-logo3{
+  padding-top:20px ;
+}
+#client-logo7{
+  padding-top: 18px;
+}
+#client-logo9{
+  padding-top:8px ;
+}
+#client-logo10{
+  padding-top:20px ;
+}
 /* SLIDER CAROUSEL */
