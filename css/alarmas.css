@@ -7,6 +7,13 @@
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
+.navbar .nav-link.active {
+    color: red;
+}
+
+section[id]{
+    scroll-margin-top: 10px!important;
+}
 
 .knowledge__container{
     display: grid;

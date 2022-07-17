@@ -31,6 +31,7 @@ btn-oscuro{
 .text-verde{
     color: green;
 }
+
 body {
     font-family: "Sora", sans-serif;
     line-height: 1.7;
@@ -115,7 +116,7 @@ img {
     margin-left: 50px;
 }
 .logo-footer{
-    width: 140px;
+    width: 80px;
 }
 
 /* .drop-down02 .sub-menu02
@@ -361,18 +362,18 @@ section {
     padding: 15px;
 }
 
-.detail-camimg{
+/* .detail-camimg{
     margin-left:-100px;
-}
+} */
 .img-detail{
-    width: 80%;
+    width: 100%;
 }
-.subtitle-detail{
+/* .subtitle-detail{
     font-size: 20px;
     margin-top: -20px;
     margin-left: 20px;
     user-select: none;
-}
+} */
 
 
 
@@ -837,8 +838,8 @@ form .form-control {
 
 
 .footer-top {
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5;
     background-color: var(--dark);
 }
 
@@ -1152,12 +1153,7 @@ button{
     .XUUsC {
         margin-left: 60px!important;
     }
-    .myVideo{
-        width: 61%!important;
-        margin-left: 78px!important;
-        margin-top: -27.2rem!important;
-        border-radius: 20px!important;
-     }
+
     #contact{
         margin-top: -150px;
     }
@@ -1176,12 +1172,18 @@ button{
         user-select: none;
     }
     .img-detail {
-        width: 100%
-    }
+      width: 60%;
+      margin-left: 70px;
+  }
     .detail-camimg {
         margin-top: 10px;
         margin-left: 35px;
     }
+    .myVideo {
+      width: 80%!important;
+      margin-left: 40px!important;
+      /* height: 17%; */
+  }
 
     .title-feat{
         text-align: center;
