@@ -176,17 +176,24 @@ section[id]{
    }
    .text-cams{
       font-size: 25px!important;
-      margin-bottom: -18px;
+      margin-bottom: -38px;
       margin-left: -30px;
    }
    .text-cams-cctv{
       font-size: 25px!important;
-      margin-bottom: -18px;
+      margin-bottom: -80px;
       margin-right: 100px;
    }
+   .text-cams-cctv01{
+         font-size: 15px;
+         margin-bottom: -90px;
+         margin-left: 150px;
+   }
+
    .text-cams2{
       font-size: 11px;
-      margin-bottom: -80px;
+      margin-left: -30px;
+      margin-bottom: -100px;
    }
    .knowledge__paragraph{
       margin-top: -70px;

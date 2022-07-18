@@ -1121,6 +1121,10 @@ button{
         width: 160px!important;
         height: 320px!important;
     } */
+
+    .btm-product{
+      margin-bottom: 0!important;
+    }
     .contact-text{
         letter-spacing: normal;
         font-size: 15px;
