@@ -4,9 +4,6 @@ function servicios() {
 function camaraswifi() {
     window.location.href = "../pages/productos-camaras-wifi.html";
 }
-function camaraswifi() {
-    window.location.href = "./index.html/#Camaras";
-}
 function camarasana() {
     window.location.href = "../pages/productos-camaras-analogicas.html";
 }

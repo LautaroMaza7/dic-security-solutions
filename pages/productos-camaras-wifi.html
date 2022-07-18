@@ -182,7 +182,7 @@
     </div>
   </div>
       <div class="container-wide">
-          <nav class="navbar navbar-expand navbar-light bg-white ">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
               <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
@@ -306,6 +306,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture>
+            <source srcset="https://mfs.ezvizlife.com/b5137f80dbad38d942e1ec4d107ee418.jpg?ver=20220718" media="(max-width:480px)" />
             <img
               src="https://mfs.ezvizlife.com/df84f36d9b1dfc436be83fcd9078b1f5.jpg?ver=20220717"
               class="d-block w-100 slider-mobile"
@@ -313,8 +314,8 @@
           </picture>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Camaras Wifi</h1>
-              <p><a class="btn btn-lg btn-primary" href="#wifi">leer mas</a></p>
+              <h1 class="text-cams">Camaras Wifi</h1>
+              <p><a class="btn btn-lg btn-danger text-cams2" href="#wifi">leer mas</a></p>
             </div>
           </div>
         </div>
@@ -323,10 +324,16 @@
 
     <section id="wifi" class="knowledge">
       <div class="knowledge__container container">
-        <figure class="knowledge__picture">
-          <img src="../img/cam-wifi-ezviz.jpg" class="knowledge__img">
-        </figure>
-        <div class="knowledege__texts text-center">
+        
+          <iframe
+          id="#"
+          class="knowledge__picture shadow-lg"
+          src="../img/C6N-Video-comercial_480p.mp4"
+          frameborder="0"
+          scrolling="no"
+          style="overflow: hidden"
+        ></iframe>
+        <div class="knowledege__texts">
           <p class="knowledge__paragraph">
             Las cámaras de vigilancia Wi-Fi son últimas en llegar al mercado.
             Funcionan manera inalámbrica mediante Internet, y por tanto prescinden de todo cableado.
@@ -340,7 +347,7 @@
 
 
     <section>
-      <div class="container">
+      <div class="container" >
         <div class="row mb-2">
           <div class="col-md-6">
             <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
@@ -351,23 +358,99 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-md-6">
-            <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-              <div class="col p-4 d-flex flex-column position-static">
-                <h5 class="mb-5 text-center">Beneficios que nuestros productos brindan:</h5>
-                <picture>
-                  <source srcset="../img/details-camara-2x6.jpg" media="(max-width:480px)">
-                  <img class="img-detail" src="../img/details-camara-4x3.jpg" alt="">
-                </picture>
+            <div class="container px-4 py-5" id="featured-3">
+              <h5 class="pb-3 mb-5 border-bottom text-center">Beneficios que nuestros productos brindan:</h5>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/full-hd.png" style="width: 65px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">1080p</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/batery.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; margin-top: -8px; line-height: 20px;">Bateria de litio recargable.</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/360-degrees.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 12px; line-height: 20px;">Cobertura visual de 360° con giro e inclinación motorizados</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/amoled.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Visión Nocturna a Color</p>
+                </div>
+              </div>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/converser-icon.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Comunicacion bidireccional</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/alarma-icono.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Defensa activa</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/wifi-icon.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Compatible con wifi de 2,4 GHz</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/h.265.png" style="width: 70px; margin-top: 5px" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Compresión de video en formato H.265</p>
+                </div>
+              </div>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/gota-66.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Protección contra el agua y el polvo IP65</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/human.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Detección de Personas con Tecnología de IA</p>   
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="../img/talk-icon.png" style="width: 60px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; margin-top: 5px; line-height: 20px;">Alerta de voz personalizables</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3 text-start">
+                    <img src="../img/mic-icon.png" style="width: 40px;" alt="">
+                  </div>
+                  <p style="font-size: 11px; line-height: 20px;">Funciona con panel solar EZVIZ para cargar la batería</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
     
 
-    <section>
+    <section style="margin-top:-180px ;">
       <div class="container">
         <div class="row">
           <div class="row mb-5">
@@ -385,7 +468,9 @@
               <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-verde mb-3">Verdadero</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" style="margin-bottom: 3px; color:green;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
                     Sí, si cuenta con una central NVR, va a poder ver desde una aplicación en su celular y además desde una pantalla
                   </p>
                 </div>
@@ -400,7 +485,9 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-verde mb-3">Verdadero</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" style="margin-bottom: 3px; color:green;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
                     Sí, la NVR es un adicional a las cámaras, destinado a empresas o comercios, donde necesiten la central de grabación.
                   </p>
                 </div>
@@ -415,7 +502,9 @@
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-danger mb-3">Falso</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" style="margin-bottom: 3px; color:red;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
                     El precio siempre incluye la instalación y garantía de la misma, la cual se abona una única vez.
                   </p>
                 </div>
@@ -428,21 +517,16 @@
 
 
     <!-- Products -->
-    <div class="productos sticky-top">
-      <div class="container">
+    <div class="productos sticky-top bg-white ">
+      <div class="container  border-bottom border-danger fw-bolder">
         <div class="text-center">
-          <p class="text-white mt-3">Nuestros Productos</p>
+          <p class="fs-6  mt-3">Nuestros Productos</p>
         </div>
       </div>
     </div>
 
-  
-
-    
-
     <section>
       <div class="container">
-        <h5 class="text-center mb-4">Camaras Wifi</h5>
         <div class="products-container">
           <div class="product" onclick="" data-name="p-1">
             <img
@@ -450,7 +534,7 @@
               alt=""
             />
             <p>C1C 720p - Cámara WIFI interior de resolución HD</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/c1c-720p.html" class="btn btn-danger" style="margin-bottom:-60px ;">Leer más</a>
           </div>
 
           <div class="product" data-name="p-2">
@@ -459,7 +543,7 @@
               alt=""
             />
             <p>C1C-B 1080p Wi-Fi bidireccional</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/c1c.html" class="btn btn-danger" style="margin-bottom:-60px ;" >Leer más</a>
           </div>
 
           <div class="product" data-name="p-3">
@@ -468,7 +552,7 @@
               alt=""
             />
             <p>C6N - Cámara Wifi 1080p - Paneo y seguimiento inteligente</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/c6n.html" class="btn btn-danger">Leer más</a>
           </div>
 
           <div class="product" data-name="p-4">
@@ -477,26 +561,17 @@
               alt=""
             />
             <p>C6W - 4MPX y 360° con zoom automático</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/c6w.html" class="btn btn-danger" style="margin-bottom:-60px ;">Leer más</a>
           </div>
 
-          <div class="product" data-name="p-5">
+          <!-- <div class="product" data-name="p-5">
             <img
               src="https://www.tiendaezviz.com.ar/wp-content/uploads/2018/11/01-2-768x768.jpg"
               alt=""
             />
             <p>EZVIZ C6TC - 360° 1080p Cámara de seguridad con Wi-Fi</p>
-            <div class="price">$0.00</div>
-          </div>
-
-          <div class="product" onclick="" data-name="p-1">
-            <img
-              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-2-300x300.jpg"
-              alt=""
-            />
-            <p>BC1 - Kit de cámara con batería</p>
-            <div class="price">$0.00</div>
-          </div>
+            <a href="#" class="btn btn-danger">Leer más</a>
+          </div> -->
 
           <div class="product" data-name="p-2">
             <img
@@ -504,16 +579,7 @@
               alt=""
             />
             <p>BC1C Cámara IP con batería 7800MAH WIFI INT/EXT</p>
-            <div class="price">$0.00</div>
-          </div>
-
-          <div class="product" data-name="p-3">
-            <img
-              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2022/01/1-300x300.jpg"
-              alt=""
-            />
-            <p>DP2C Mirilla Digital de Puerta con Pantalla LCD 4.3″</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/bc1c.html" class="btn btn-danger">Leer más</a>
           </div>
 
           <div class="product" data-name="p-4">
@@ -522,7 +588,7 @@
               alt=""
             />
             <p>LC1C - Solución 2 en 1 para exteriores</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/lc1c.html" class="btn btn-danger">Leer más</a>
           </div>
 
           <div class="product" data-name="p-5">
@@ -531,12 +597,63 @@
               alt=""
             />
             <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
-            <div class="price">$0.00</div>
+            <a href="../pages/lc3.html" class="btn btn-danger">Leer más</a>
           </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-300x300.jpg"
+              alt=""
+            />
+            <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
+            <a href="../pages/" class="btn btn-danger">Leer más</a>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-300x300.jpg"
+              alt=""
+            />
+            <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
+            <a href="../pages/" class="btn btn-danger">Leer más</a>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-300x300.jpg"
+              alt=""
+            />
+            <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
+            <a href="../pages/" class="btn btn-danger">Leer más</a>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-300x300.jpg"
+              alt=""
+            />
+            <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
+            <a href="../pages/" class="btn btn-danger">Leer más</a>
+          </div>
+
+          <div class="product" data-name="p-5">
+            <img
+              src="https://www.tiendaezviz.com.ar/wp-content/uploads/2021/11/1-300x300.jpg"
+              alt=""
+            />
+            <p>LC3 - Cámara de pared con luz Seguridad inteligente</p>
+            <a href="../pages/" class="btn btn-danger">Leer más</a>
+          </div>
+
         </div>
       </div>
     </section>
     <!-- Products -->
+
+
+
+
+
 
     <!-- PRICING -->
     <!--     <section id="pricing" class="bg-light">

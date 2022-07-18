@@ -192,7 +192,7 @@
     </div>
   </div>
       <div class="container-wide">
-          <nav class="navbar navbar-expand navbar-light sticky-top bg-white ">
+          <nav class="navbar navbar-expand navbar-light fixed-top bg-white ">
       <ul class="navbar-nav me-auto">
           <li class="nav-item active">
               <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
@@ -315,15 +315,17 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <picture>
+            <source srcset="../img/slider-camaras-cctv-750x300.jpg" media="(max-width:480px)" />
             <img
-              src="../img/cctv-slider.jpg"
+              src="../img/slider-camaras-cctv.jpg"
               class="d-block w-100 slider-mobile"
               alt="..."/>
           </picture>
           <div class="container">
             <div class="carousel-caption text-start ">
-              <h1 class="text-uppercase">Camaras Analogicas</h1>
-              <p><a class="btn btn-lg btn-danger" href="#wifi">leer mas</a></p>
+              <h1 class="text-cams-cctv text-white">Camaras 
+                 Analogicas</h1>
+              <p><a class="btn btn-lg btn-danger text-cams2" href="#wifi">leer mas</a></p>
             </div>
           </div>
         </div>
@@ -332,26 +334,39 @@
 
     <section id="wifi" class="knowledge">
       <div class="knowledge__container container">
-        <figure class="knowledge__picture">
-          <img src="https://www.welivesecurity.com/wp-content/uploads/2018/09/Descubren-vulnerabilidad-cr%C3%ADtica-c%C3%A1maras-seguridad-CCTV.jpg" class="knowledge__img">
-        </figure>
+        <iframe
+          id="#"
+          class="knowledge__picture2 shadow-lg"
+          src="../img/Cámaras AcuSense de Hikvision Videovigilancia inteligente y eficiente_480p.mp4"
+          frameborder="0"
+          scrolling="no"
+          style="overflow: hidden"
+        ></iframe>
         <div class="knowledege__texts">
           <p class="knowledge__paragraph">
             Las cámaras analógicas con conexión CCTV se caracterizan por ser algo más costosas, no obstante, también son más seguras. Sus principales cualidades son:
             <br>
-            Requieren de instalación debido a que hay que realizar un trabajo de cableado.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg> Requieren de instalación debido a que hay que realizar un trabajo de cableado.
             <br>
-            El cableado es coaxial y envía los datos a una central.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg> El cableado es utp y envía los datos a una central.
             <br>
-            De este modo, son inmunes a la inhibición.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg> De este modo, son inmunes a la inhibición.
             <br>
-            La distancia máxima que admite el cableado es de 100 m, a mayor distancia de cable la imagen pierde calidad.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg> La distancia máxima que admite el cableado es de 100 m, a mayor distancia de cable la imagen pierde calidad.
             <br>
-            Son vulnerables al sabotaje del cable, no obstante, esto requiere tiempo y trabajo.
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg> Son vulnerables al sabotaje del cable, no obstante, esto requiere tiempo y trabajo.
             <br>
-            Los cables están protegidos, si se intenta sabotear, salta la alarma.
-            <br>
-            Es importante destacar que, aunque la cámara no tenga conexión directa a Internet, las cámaras están conectadas a un grabador que envía las imágnes a una centralita. Esta está conectada a un router. Gracias a ello, se puede acceder a la cámara mediante una app y controlarla desde Internet.</p>
+            Es importante destacar que, aunque la cámara no tenga conexión directa a Internet, las cámaras están conectadas a un grabador que envía las imágnes a una central. Esta está conectada a un router. Gracias a ello, se puede acceder a la cámara mediante una app y controlarla desde un dispositivo mobil.</p>
         </div>
       </div>
     </section>
@@ -375,7 +390,9 @@
               <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-verde mb-3">Verdadero</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" style="margin-bottom: 3px; color:green;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
                     Todas nuestras cámaras vienen con la posibilidad de poder ver tanto en una pantalla como en varios celulares.
                   </p>
                 </div>
@@ -390,7 +407,9 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-danger mb-3">Falso</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" style="margin-bottom: 3px; color:red;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
                     El video grabado queda guardado en un disco duro incorporado a la DVR, lo cual es un beneficio de este tipo de sistemas.
                   </p>
                 </div>
@@ -405,7 +424,9 @@
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p class="mt-4">
-                    <span class="text-danger mb-3">Falso</span> <br>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" style="margin-bottom: 3px; color:red;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
                     El precio siempre incluye la instalación y garantía de la misma, la cual se abona una única vez.
                   </p>
                 </div>
@@ -417,17 +438,16 @@
     </section>
 
     <!-- Products -->
-    <div class="productos">
-      <div class="container">
+    <div class="productos sticky-top bg-white ">
+      <div class="container  border-bottom border-danger fw-bolder">
         <div class="text-center">
-          <p class="text-white mt-3">Nuestros Productos</p>
+          <p class="fs-6  mt-3">Nuestros Productos</p>
         </div>
       </div>
     </div>
 
     <section>
       <div class="container">
-        <h5 class="text-center mb-4">Camaras Analogicas</h5>
         <div class="products-container">
           <div class="product" onclick="" data-name="p-1">
             <img

@@ -14,9 +14,18 @@
 .btn-danger{
     background-color: #DE0024!important;
 }
-btn-oscuro{
-    background-color: #000;
+.btn-dark{
+    color: #fff;
+    background-color: black;
+    border-color: black;
 }
+
+.btn-dark:hover{
+  color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
 .bg-danger{
     background-color: #DE0024!important;
 }
@@ -518,8 +527,8 @@ form input.form-control {
 
 form .form-control {
     border: transparent;
-    border-radius: 0;
-    background-color: rgba(0,0,0,0.02);
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.11);
 }
 
 
