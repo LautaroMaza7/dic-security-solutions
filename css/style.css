@@ -709,7 +709,6 @@ form .form-control {
   /* Location, Phone, Email Section */
   .contact-list {
     list-style-type: none;
-    margin-left: -30px;
     padding-right: 20px;
   }
   
@@ -725,15 +724,15 @@ form .form-control {
   }
   
   .place {
-    margin-left: 62px;
+    margin-left: 25px;
   }
   
   .phone {
-    margin-left: 56px;
+    margin-left: 20px;
   }
   
   .gmail {
-    margin-left: 53px;
+    margin-left: 20px;
   }
   
   .contact-text a {
