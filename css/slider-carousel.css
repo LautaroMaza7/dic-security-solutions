@@ -18,17 +18,15 @@
   }
 
   .slider-card {
-    background: #fff;
+    border-radius: 50px 0px 50px 0px;
     padding: 0px 0px;
     margin: 50px 15px 90px 15px;
-    border-radius: 5px;
-    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
     transform: scale(0.9);
     opacity: 0.5;
     transition: all 0.3s;
   }
   .slider-card img {
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 50px 5px 0px 0px;
   }
   .owl-nav .owl-prev {
     position: absolute;
@@ -66,30 +64,26 @@
   }
 
 
-#logo-client{
-  background-color: #f1e8e84d;
-  
-}
 .img-client{
-  max-width: 30%;
+  max-width: 60%;
   opacity: 0.5;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 #logo-client, img:hover{
   transition: opacity 1s;
   opacity: 1;
 }
 #client-logo{
-  padding-top:20px ;
+  padding-top:50px ;
 }
 #client-logo3{
-  padding-top:20px ;
+  padding-top:50px ;
 }
 #client-logo7{
-  padding-top: 18px;
+  padding-top: 35px;
 }
 #client-logo9{
-  padding-top:8px ;
+  padding-top:20px ;
 }
 #client-logo10{
   padding-top:20px ;

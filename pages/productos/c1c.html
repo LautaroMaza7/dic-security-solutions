@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="/img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/next-sidebar.css" />
+    <link rel="stylesheet" href="/css/c1c.css">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app ">
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="/pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" onclick="dictecno()">
+            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
+          </a>
+        </li>
+        <div class="mt-3">
+          <span class="icon-holder">
+          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
+          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
+          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
+        </span>
+        </div>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+        <a class="navbar-brand " href="/index.html">
+          <img class="logo-web" src="/img/LOGO-PNG -COLOR.png" alt="" />
+        </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="/pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="/pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="/pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <div id="contact-header">
+              <i class="fas fa-phone mx-2"></i>
+              <span>(+54) 11-6486-4919</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="margin-top: 80px;"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="c1c-slider-title" id="cp-b27fbf47d6ff423a8b6d62e4e559c613">
+                <p class="c1c-slider-text-title">C1C</p>
+            </div>
+            <div class="c1c-slider-subtitle" id="cp-26172394aaeb47ff94fd116fe2a8648e">
+               <p class="c1c-slider-paragraf">Nítida como la visión de un búho</p>
+            </div>
+            
+          <picture>
+            <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/9578cec592028c428c0391620d52f953.jpg" media="(max-width:480px)" />
+            <img
+              src="https://s3.amazonaws.com/mfs.ezvizlife.com/c1149f62775ea60e866270f7254dcf77.jpg"
+              class="d-block w-100 slider-mobile"
+              alt="..."/>
+          </picture>    
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="text-ele" id="cp-66cb0536f0614213b871178d0e8fc615" style="position: initial; top: 1150px; left: 50%;">
+            <p style="font-size: 30px; font-weight: 400; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+            Cámara wifi interior de resolución HD</p>
+        </div>
+        <div class="text-ele" id="cp-0218965508284ac7905aeecbb72d7b24" style="position: initial; top: 940px;">
+            <p style="font-size: 20px; font-weight: 400; line-height: 27px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+            La seguridad inteligente para el hogar alcanza la más nítida visión nocturna. Diseñada para una instalación rápida y sencilla, la excelente visión nocturna de la C1C protege cada rincón, incluso en lugares poco iluminados.</p>
+        </div>
+    </div>
+
+
+     <div class="container">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-4 text-center">
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                <img src="/img/full-hd.png" style="width: 65px;" alt="">
+              </div>
+              <p style="font-size: 13px; line-height: 20px;">1080p</p>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                <img src="/img/batery.png" style="width: 50px;" alt="">
+              </div>
+              <p style="font-size: 13px; margin-top: -8px; line-height: 20px;">Bateria de litio recargable.</p>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                <img src="/img/360-degrees.png" style="width: 50px;" alt="">
+              </div>
+              <p style="font-size: 12px; line-height: 20px;">Cobertura visual de 360° con giro e inclinación motorizados</p>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                <img src="/img/amoled.png" style="width: 50px;" alt="">
+              </div>
+              <p style="font-size: 13px; line-height: 20px;">Visión Nocturna a Color</p>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                  <img src="/img/converser-icon.png" style="width: 50px;" alt="">
+                </div>
+                <p style="font-size: 13px; line-height: 20px;">Comunicacion bidireccional</p>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                  <img src="/img/alarma-icono.png" style="width: 50px;" alt="">
+                </div>
+                <p style="font-size: 13px; line-height: 20px;">Defensa activa</p>
+              </div>
+          </div>
+    </div>
+
+
+    <div>
+        <div class="pwhole1" id="cp-b1c75eefca604fbea60e88e7c9636832" >
+            <div class="text-ele1" id="cp-ed22a6445d284915b8d0909c7fa07db91" >
+                <p >
+            C1C 720p Micrófono</p>
+            </div>
+            <div class="text-ele01" id="cp-2bf2489aef864d3d814beec66fb515ee" >
+                <p >
+            C1C 1080p Micrófono</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/fd152b72b981aa607a291c7d6cfb50fd.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/5c1eb808972cf93d615057b06a43ebde.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+<!--
+    <div>
+        <div class="pwhole2" id="cp-5be354db4f3848e584df9e26b58faa54" >
+            <div class="text-ele2" id="cp-ed22a6445d284915b8d0909c7fa07db910" >
+                <p >
+                Obtenga una excelente visión nocturna a mayor distancia con la C1C y disfrute de su protección todo el día. Las luces led infrarrojas avanzadas junto con la configuración óptica mejorada le permiten poder ver, incluso en situaciones de poca luz, hasta 12 metros.</p>
+            </div>
+            <div class="text-ele02" id="cp-2ad1dceada974df5852ffe15d29affdc1" >
+                <p >
+                Excelente visión, incluso de noche</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/5a6ffe88e08005e2c58e4469016265b7.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/5d283d50227e9a789251b0e3f9b48bec.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+
+    <div>
+        <div class="pwhole3" id="cp-0ad2f7b8f646416cb0525cc3c64fd007" >
+            <div class="text-ele3" id="cp-ebef543e6390446d86baa8d3cb3e496b" >
+                <p >
+                Siempre a la vanguardia</p>
+            </div>
+            <div class="text-ele03" id="cp-ed22a6445d284915b8d0909c7fa07db9" >
+                <p >
+                Para los momentos en los que no puede estar presente, la C1C vigila su propiedad mediante la función de detección de movimiento y le alerta inmediatamente en su dispositivo móvil con imágenes capturadas si sucede algún imprevisto. (Las alertas instantáneas deben activarse manualmente).</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/9fbd20661b0219d579a6efa444a8f6ba.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/6e9a9273ceb57d3b3b0185c36e27355d.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+
+    <div>
+        <div class="pwhole4" id="cp-9f15463c56464e169b6af079ae12a791" >
+            <div class="text-ele4" id="cp-5e76979b88b4434b9817f90318144658" >
+                <p >
+                Comunicación en cualquier momento, en cualquier lugar</p>
+            </div>
+            <div class="text-ele04" id="cp-fcc099aa1b814f99a640cb6822017a75" >
+                <p >
+                Hable con sus seres queridos y disuada a los desconocidos no deseados utilizando la función de comunicación bidireccional de la C1C. Utilizando la aplicación EZVIZ en su dispositivo móvil, puede comunicarse fácil y cómodamente desde cualquier lugar.</p>
+            </div>
+            <div class="text-ele041" id="cp-51b79ed4003242afb4720351db7d7178" >
+                <p >
+                Las imágenes se presentan solo con fines ilustrativos.</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/a682c790790be8617cda84379686bda9.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/6a92fe31fc0a43a1590266bd3b97317d.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+
+    <div>
+        <div class="pwhole5" id="cp-a371d82908e04de1b109de2526fa2e69" >
+            <div class="text-ele5" id="cp-d5ad7a7e8cbe40deb765b6fa3230c9d2" >
+                <p >
+                Conéctela, ubíquela y ¡Listo!</p>
+            </div>
+            <div class="text-ele05" id="cp-5400dab34c0c4fc6a2d82170a1f5920b" >
+                <p >
+                La base magnética y el equipo de montaje facilitan la instalación. Tan solo coloque la C1C sobre un estante o fíjela en la pared o en el techo, ¡y listo! Una vez instalada, puede ajustar manualmente su posición para controlar cualquier zona.</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/3bc33e73222392166dc7f98533433d51.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/687ed5f947ed1cafb932a92e1f6026e7.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+
+    <div style="margin-bottom: -200px;">
+        <div class="pwhole6" id="cp-39c52a1ea9ac450e85681a00ecec8832">
+            <div class="text-ele6" id="cp-32fbbb47d855469892b88a000186a286" >
+                <p >
+                Distintas opciones de almacenamiento</p>
+            </div>
+            <div class="text-ele06" id="cp-475e3ddda87743d383d31b3817f67e71" >
+                <p >
+                Guarde sus grabaciones con distintas opciones flexibles y seguras. La C1C incluye una ranura integrada para tarjetas microSD que permite almacenar hasta 256 GB de imágenes grabadas. También puede guardar sus imágenes en la plataforma de servicio en la nube EZVIZ Cloud* para mayor seguridad.</p>
+            </div>
+            <div class="text-ele061" id="cp-07c139d042c44885bbb0e1d8efd07e87" >
+                <p >
+                Compatible con tarjetas microSD</p>
+            </div>
+            <div class="text-ele062" id="cp-e32495800c894aa6bf3cc417eef36588" >
+                <p >
+                Almacenamiento cifrado en la nube</p>
+            </div>
+            <div class="text-ele063" id="cp-5356847e0c2140a6b82f8bce66dfa037" >
+                <p >
+                * El servicio de almacenamiento en la nube solo está disponible en algunos mercados. Compruebe la disponibilidad antes de realizar cualquier compra.</p>
+            </div>
+            <div class="text-ele064" id="cp-7c877ec1bb1d427f9f1a19798d4cd266" >
+                <p >
+                EZVIZ NVR</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/dc5c925449a42df6b4be76e9c6db4254.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/752192010de1e1f4b3ca2ca547961718.jpg">
+            </picture>
+            
+        </div>
+    </div>
+
+
+
+    <div>
+        <div class="pwhole7" id="cp-05014cb010af4ed5b8c119d785813964" >
+            <div class="text-ele7" id="cp-fc2d8f7c8443499daff19bcc8270c6b3" >
+                <p >
+                Con la aplicación EZVIZ y el software EZVIZ Studio puede captar, guardar, proteger y compartir lo que desee.</p>
+            </div>
+            <div class="text-ele07" id="cp-bc300edf973f4cd38cdee2020d978eb6" >
+                <p >
+                La seguridad al alcance de su mano</p>
+            </div>
+            <div class="text-ele071" id="cp-fab7ef52c40c4760af987c631eeba753" >
+                <p >
+                Vista en directo</p>
+            </div>
+            <div class="text-ele072" id="cp-45456fd3c4ef40e8a7c4ee4b1f0530a2" >
+                <p >
+                Conversación en tiempo real</p>
+            </div>
+            <div class="text-ele073" id="cp-20e3bfb26cfe4f2c82e2a9941d3603f8" >
+                <p >
+                Alertas instantáneas</p>
+            </div>
+            <div class="text-ele074" id="cp-4c42c3a7cec047c9b0165b8ab793637d" >
+                <p >
+                Historial de vídeo</p>
+            </div>
+            <div class="text-ele075" id="cp-acbb44b0fe134b76a39c789424930dcf" >
+                <p >
+                Zoom de hasta 8x</p>
+            </div>
+            <div class="text-ele076" id="cp-69fd1ced828f4177a522338b2751112b" >
+                <p >
+                Hogar inteligente habilitado</p>
+            </div>
+            <div class="text-ele077" id="cp-d59287cdbdcc480c9e702e5a19b5b01a" >
+                <p >
+                * Las imágenes de la interfaz de la aplicación EZVIZ tienen solo fines ilustrativos.</p>
+            </div>
+            <picture>
+                <source srcset="https://s3.amazonaws.com/mfs.ezvizlife.com/9d02d5cea7a52e144a2932bafe40636b.jpg" media="(max-width:480px)" />
+                <img src="https://s3.amazonaws.com/mfs.ezvizlife.com/60a40636d6283a78e2e5111689c09510.jpg">
+            </picture>
+            
+        </div>
+    </div> -->
+
+
+
+
+    <!-- <section>
+      <div class="container" >
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="container px-4 py-5" id="featured-3">
+              <h5 class="pb-3 mb-5 border-bottom text-center">Beneficios que nuestros productos brindan:</h5>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/full-hd.png" style="width: 65px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">1080p</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/batery.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; margin-top: -8px; line-height: 20px;">Bateria de litio recargable.</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/360-degrees.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 12px; line-height: 20px;">Cobertura visual de 360° con giro e inclinación motorizados</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/amoled.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Visión Nocturna a Color</p>
+                </div>
+              </div>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/converser-icon.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Comunicacion bidireccional</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/alarma-icono.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Defensa activa</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/wifi-icon.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Compatible con wifi de 2,4 GHz</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/h.265.png" style="width: 70px; margin-top: 5px" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Compresión de video en formato H.265</p>
+                </div>
+              </div>
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/gota-66.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Protección contra el agua y el polvo IP65</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/human.png" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; line-height: 20px;">Detección de Personas con Tecnología de IA</p>   
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3">
+                    <img src="/img/talk-icon.png" style="width: 60px;" alt="">
+                  </div>
+                  <p style="font-size: 13px; margin-top: 5px; line-height: 20px;">Alerta de voz personalizables</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3 text-start">
+                    <img src="/img/mic-icon.png" style="width: 40px;" alt="">
+                  </div>
+                  <p style="font-size: 11px; line-height: 20px;">Funciona con panel solar EZVIZ para cargar la batería</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+    
+
+
+<!-- <section>
+    sddsds
+</section>
+    <footer>
+      <div class="footer-top text-center">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <a href="/index.html"
+                ><img class="logo-footer" src="/img/LOGO-PNG -COLOR.png" alt=""
+              /></a>
+            </div>
+            <div class="col-lg-2">
+              <h5 class="text-white">Marca</h5>
+              <ul class="list-unstyled">
+                <li><a href="/pages/servicios.html">Servicios</a></li>
+                <li><a href="/pages/productos.html">Productos</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white">Contacto</h5>
+              <ul class="list-unstyled">
+                <li class="text-white-50">Buenos Aires, Argentina</li>
+                <li class="text-white-50">Email: dic.sscontacto@gmail.com</li>
+                <li class="text-white-50">Celular: (+54) 11-6486-4919</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0 text-white-50">
+                © 2022 Derechos reservados Dic Security Solutions | Diseñado x
+                <span class="text-white">Lau7aro Maza</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/next-sidebar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

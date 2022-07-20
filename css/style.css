@@ -14,6 +14,36 @@
 .btn-danger{
     background-color: #DE0024!important;
 }
+
+.btn-card {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 50px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn-card:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  color: white;
+
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #74EBD5 0%, #9FACE6 100%);
+
+}
+
 .btn-dark{
     color: #fff;
     background-color: black;
@@ -324,8 +354,11 @@ section {
 }
 
 .card-effect {
-    box-shadow: var(--box-shadow);
-    background-color: var(--white);
+    -webkit-border-radius: 50px;
+border-radius: 50px;
+background: white;
+-webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     padding: 25px;
     transition: all 0.35s ease;
 }
@@ -357,7 +390,7 @@ section {
 }
 
 
-.service {
+.service-1 {
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -386,17 +419,18 @@ section {
 
 
 
-.service::after {
+.service-1::after {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -100%;
     left: 0;
-    background-color: var(--primary);
+    top: -100%;
+    background-color: #DE0024;
     z-index: -1;
-    opacity: 0;
-    transition: all 0.4s ease;
+    opacity: 0.92;
+    transition: all 0.4s ease-out;
+    
 }
 .service-title{
     text-align: center;
@@ -406,19 +440,25 @@ section {
     overflow-wrap: break-word;
     text-align: center;
 }
-/* .service:hover .iconbox {
-    background-color: var(--primary);
-    color: var(--primary);
+/* .service-1 p{
+  display: none;
 } */
-
-.service:hover h5,
-.service:hover p {
-    color: var(--white);;
+.service-1:hover p{
+  /* margin-bottom: 25px; */
+  transition: all 1 ease;
 }
 
-.service:hover::after {
-    opacity: 1;
+
+.service-1:hover h5, .service-1:hover p{
+  font-weight: 700;
+  color: white;
+}
+
+.service-1:hover::after {
     top: 0;
+    border-radius: 30px;
+    transition: all 1 ease;
+
 }
 
 .col-img {
@@ -1143,7 +1183,7 @@ button{
         padding-top:12px!important ;
       }
       #client-logo3{
-        padding-top:18px!important ;
+        padding-top:15px!important ;
       }
       #client-logo7{
         padding-top: 12px!important;

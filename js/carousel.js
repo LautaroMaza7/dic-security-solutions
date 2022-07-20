@@ -39,7 +39,7 @@ $(document).ready(function(){
                 items:4
             },
             1000:{
-                items:5
+                items:4
             }
         }
     })
