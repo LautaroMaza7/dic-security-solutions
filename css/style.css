@@ -1195,7 +1195,10 @@ button{
         padding-top:16px!important ;
       }
     .iconbox{
-        margin-left: 0px!important;
+        margin-left:130px!important;
+    }
+    .iconbox > h5 p{
+      text-align: center;
     }
     .camaras-description{
         margin-top: 30px;
@@ -1288,13 +1291,6 @@ button{
     }
     #banner-col2{
         margin-left: -55px!important;
-    }
-    .service-title{
-        text-align: initial!important;
-    }
-    .service-description{
-        line-height: inherit!important;
-        text-align: initial!important;
     }
     h1{
         font-size: 1.5rem;
