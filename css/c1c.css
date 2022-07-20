@@ -30,7 +30,7 @@
     height: 600px; margin-bottom: -113px;
   }
   .text-ele1{
-    position: absolute; width: 97px; bottom: -143%; left: 55%; margin-left: -520px;
+    position: absolute; width: 97px; bottom: -111%; left: 55%; margin-left: -520px;
   }
   .text-ele1 > p{
     font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: right; font-style: normal; text-decoration: none;
@@ -234,7 +234,7 @@
 
   /* pagina de productos */
  
-  @media (max-width:480px){
+  @media (max-width:400px){
     .c1c-slider-title{
        position: absolute;
        width: 93.333vw;
@@ -271,7 +271,7 @@
     .text-ele1 {
         position: absolute;
         width: 16vw;
-        bottom: -280vw;
+        bottom: -250vw;
         left: 50%;
         margin-left: -44.8vw;
     }
@@ -285,7 +285,7 @@
     .text-ele01 {
         position: absolute;
         width: 16vw;
-        bottom: -280vw;
+        bottom: -250vw;
         left: 50%;
         margin-left: 29.2vw;
     }
