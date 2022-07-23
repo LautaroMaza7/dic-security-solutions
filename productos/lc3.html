@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/c1c.css">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app " >
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" onclick="dictecno()">
+            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
+          </a>
+        </li>
+        <div class="mt-3">
+          <span class="icon-holder">
+          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
+          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
+          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
+        </span>
+        </div>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+        <a class="navbar-brand " href="../index.html">
+          <img class="logo-web" src="../img/LOGO-PNG -COLOR.png" alt="" />
+        </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <div id="contact-header">
+              <i class="fas fa-phone mx-2"></i>
+              <span>(+54) 11-6486-4919</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+<div class="pcontainer" style="position: relative; width: 1920px; left: 50%; top: 0px; margin-left: -960px; margin-top: 0px; background-image: url('about:blank'); background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center;"><div class="pwhole" style="height: 602px;"><div class="text-ele" style="position: absolute; width: 200px; top: 190px; left: 545px;"><p style="font-size: 100px; font-weight: 400; line-height: 100px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">LC3</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 299px; left: 545px;"><p style="font-size: 35px; font-weight: 400; line-height: 50px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">Cámara de seguridad inteligente con lámpara de pared</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/c3e21491811bf8acb0b073011e8149f6.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 1200px; top: 100px; left: 50%; margin-left: -600px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Una cámara dos en uno con iluminación inteligente y seguridad avanzada</p></div><div class="text-ele" style="position: absolute; width: 1000px; top: 160px; left: 50%; margin-left: -500px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">La LC3 es una innovadora combinación de un reflector de luminosidad regulable y una potente cámara de seguridad de 4 MP que mejora la seguridad de su hogar a todos los niveles, incluso de noche. La LC3, que también sirve de elegante lámpara de pared, se adapta a cualquier hogar para iluminar los lugares oscuros con controles inteligentes a distancia. La LC3, en esencia una cámara de seguridad, dispone de detección de personas con tecnología de IA, defensa activa y audio bidireccional para una vigilancia óptima de espacios exteriores, como terrazas, pasillos, patios y más.</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 400px; left: 601px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Resolución de 2K</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 400px; left: 809px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Detección de personas con tecnología de IA</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 400px; left: 1003px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Visión Nocturna a Color*</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 545px; left: 912px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Luminosidad de 700 lúmenes</p></div><div class="text-ele" style="position: absolute; width: 170px; top: 545px; left: 505px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Almacenamiento de memoria eMMC de 32 GB incorporado</p></div><div class="text-ele" style="position: absolute; width: 120px; top: 400px; left: 1171px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Audio Bidireccional</p></div><div class="text-ele" style="position: absolute; width: 120px; top: 545px; left: 723px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Campo visual diagonal de 157 grados</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 545px; left: 1083px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Wi-Fi de 2.4 GHz con dos antenas</p></div><div class="text-ele" style="position: absolute; width: 120px; top: 545px; left: 1269px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Protección contra el agua y el polvo IP65</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 620px; left: 50%; margin-left: -400px;"><p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">*El modo de visión nocturna a color se activará automáticamente cuando la luz alcance su máxima luminosidad.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/1cbc426a8f7a0e382b74ee8966593460.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 1000px; top: 100px; left: 50%; margin-left: -500px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Luminosidad regulable con controles sencillos en la aplicación.</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 160px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Con una lámpara de pared regulable de hasta 700 lúmenes, la LC3 ofrece una iluminación personalizada sencilla y de bajo consumo que se controla fácilmente mediante la aplicación EZVIZ. Utilice la LC3 para iluminar su llegada a casa, crear un ambiente acogedor en el patio trasero o emitir una advertencia sonora al detectar personas o movimiento. Usted elige.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/1d1c6cee57c5d346c55801eeea452438.jpg"></div><div class="pwhole" style="height: 647px;"><div class="text-ele" style="position: absolute; width: 800px; top: 100px; left: 50%; margin-left: -400px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Detalles mejorados con mayor resolución.</p></div><div class="text-ele" style="position: absolute; width: 644px; top: 160px; left: 50%; margin-left: -322px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">La LC3 ofrece un video no solo más luminoso, sino también más nítido. Gracias a una cámara de 4 MP, la LC3 se distingue por ofrecer imágenes de alta calidad con detalles muy bien definidos. Es ideal incluso para la vigilancia de áreas extensas.</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 580px; left: 623px;"><p style="font-size: 18px; font-weight: 400; line-height: 26px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">2MP(1920×1080)</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 580px; left: 1096px;"><p style="font-size: 18px; font-weight: 400; line-height: 26px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">4MP(2560×1440)</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/8c5058642e8634d6a758317f1116d253.jpg"></div><div class="pwhole" style="height: 653px;"><div class="text-ele" style="position: absolute; width: 800px; top: 100px; left: 50%; margin-left: -400px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Imágenes nítidas y a todo color, incluso de noche.</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 160px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Diseñada con un amplio diafragma de f2.3 y una visión nocturna de hasta 10 metros (unos 30 pies), la LC3 ofrece imágenes nítidas en condiciones de escasa iluminación. Y lo que es mejor, la LC3 ofrece soporte adicional para la vigilancia nocturna gracias a su visión nocturna a color, que puede activarse de forma automática o manual con el uso de la lámpara incorporada*.</p></div><div class="text-ele" style="position: absolute; width: 1000px; top: 280px; left: 50%; margin-left: -500px;"><p style="font-size: 14px; font-weight: 400; line-height: 12px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">*El modo de visión nocturna a color se activará cuando la luz de la LC3 alcance la máxima luminosidad.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/2811ae7ef8cc3f3e07b7ee26cd0cb153.jpg"></div><div class="pwhole" style="height: 649px;"><div class="text-ele" style="position: absolute; width: 1000px; top: 90px; left: 50%; margin-left: -500px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Detección de personas basada en tecnología de inteligencia artificial para alertas importantes.</p></div><div class="text-ele" style="position: absolute; width: 1200px; top: 190px; left: 50%; margin-left: -600px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Con un procesador de IA de aprendizaje profundo incorporado, la LC3 puede detectar y diferenciar las formas humanas de otros objetos en movimiento en tiempo real, lo que mejora la precisión de la alarma y le envía notificaciones automáticas únicamente cuando sea necesario.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/5704308ed743376465c1afcc885a625d.jpg"></div><div class="pwhole" style="height: 651px;"><div class="text-ele" style="position: absolute; width: 440px; top: 210px; left: 460px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Protección permanente alrededor de su propiedad.</p></div><div class="text-ele" style="position: absolute; width: 350px; top: 315px; left: 460px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Con la cámara y la alarma integradas, la LC3 activará automáticamente una fuerte sirena de 100 dB y encenderá los reflectores al detectar intrusos sospechosos, lo cual la convierte en un centinela eficaz para la protección de su hogar.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/af83e31e91da87e4392d50482d4ac8f0.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 460px; top: 210px; left: 1045px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Hable a las visitas como si estuviera presente.</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 315px; left: 1045px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">¡Comuníquese con cualquier persona que se encuentre en la puerta de su casa con apenas tocar su teléfono inteligente! La LC3 cuenta con un micrófono y un altavoz integrados que le permiten dar la bienvenida a las visitas o rechazar a invitados no deseados en cualquier momento y desde cualquier lugar.</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 279px; left: 486px;"><p style="font-size: 25px; font-weight: 400; line-height: 12px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">¡Hola!</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 385px; left: 590px;"><p style="font-size: 20px; font-weight: 400; line-height: 12px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">¡Hola! ¡Adelante!</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/dc57958a825527afaa2cd03454638635.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 900px; top: 100px; left: 50%; margin-left: -451px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Ángulo de cámara ajustable para una visibilidad óptima.</p></div><div class="text-ele" style="position: absolute; width: 740px; top: 160px; left: 50%; margin-left: -370px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">La LC3 ha sido diseñada con gran maestría y cuenta con un amplio campo visual diagonal de hasta 157 grados. Esta característica reduce los puntos ciegos durante la vigilancia y ofrece mayor flexibilidad a la hora de configurar la cámara. Gire y dirija manualmente la cámara hacia el ángulo visual que prefiera para lograr una máxima covertura.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/71db9005b3588e493c5d20bdaf7732da.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 470px; top: 185px; left: 500px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">Antena doble incorporada para un rendimiento de máxima fiabilidad.</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 335px; left: 500px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">Con la LC3, tendrá mucho menos dificultades por la inestabilidad de la conexión a Internet en el patio, la puerta de la casa y otros lugares alejados del ruteador Wi-Fi. La antena doble de la LC3 cuenta con funciones para penetrar paredes y contra interferencias, que le permite ejecutar fácilmente las transmisiones de largo alcance para ofrecer un rendimiento constante.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/24d7171e8eebbb02934dfa2cf7914088.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 600px; top: 210px; left: 440px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">Construida para durar.</p></div><div class="text-ele" style="position: absolute; width: 460px; top: 280px; left: 440px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">La cámara LC3 tiene una carcasa de clasificación IP65, que ofrece altos niveles de resistencia contra el polvo y el agua. En pocas palabras, garantiza una protección duradera incluso en las condiciones climáticas más difíciles.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/c515836548c492d9dc0f2f2e62811f2e.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 860px; top: 100px; left: 50%; margin-left: -430px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Ahorre en almacenamiento de video y ancho de banda.</p></div><div class="text-ele" style="position: absolute; width: 1000px; top: 160px; left: 50%; margin-left: -500px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">La LC3 incorpora la avanzada tecnología de compresión de video H.265, con la que se consigue una mejor calidad de video y utiliza solo la mitad de ancho de banda y la mitad de espacio de almacenamiento que el anterior estándar H.264.</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 508px; left: 470px;"><p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Ancho de banda requerido: 100%</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 508px; left: 970px;"><p style="font-size: 20px; font-weight: 400; line-height: 12px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Ancho de banda requerido: 50%</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 575px; left: 970px;"><p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Espacio de almacenamiento requerido: 50%</p></div><div class="text-ele" style="position: absolute; width: 400px; top: 575px; left: 470px;"><p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Espacio de almacenamiento requerido: 100%</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/2cda43da48f87e3c4432d8f584729d50.jpg"></div><div class="pwhole" style="height: 650px;"><div class="text-ele" style="position: absolute; width: 800px; top: 100px; left: 50%; margin-left: -400px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Protegemos sus datos y su privacidad.</p></div><div class="text-ele" style="position: absolute; width: 680px; top: 160px; left: 50%; margin-left: -340px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">La seguridad y la privacidad de sus datos son la piedra angular de cada producto que diseñamos. La transmisión de datos entre la LC3 y la nube de EZVIZ está encriptada de extremo a extremo. Solo usted tiene las claves para desencriptar sus datos.</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 509px; left: 701px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Encriptación AES de 128 bits</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 509px; left: 50%; margin-left: -75px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Protocolo de encriptación TLS</p></div><div class="text-ele" style="position: absolute; width: 180px; top: 509px; left: 50%; margin-left: 115px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Múltiples pasos de autenticación</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/1fdaca569215ac9075a267a13c03dbc1.jpg"></div><div class="pwhole" style="height: 750px;"><div class="text-ele" style="position: absolute; width: 900px; top: 100px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Un producto asequible con almacenamiento incorporado.</p></div><div class="text-ele" style="position: absolute; width: 880px; top: 160px; left: 50%; margin-left: -440px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">La LC3 trae incorporada una memoria eMMC de 32 GB, lo que implica que ya no es necesario complicarse ni gastar dinero de más en costosas tarjetas de almacenamiento. La capacidad de almacenamiento incorporada garantiza un almacenamiento de video fácil y seguro en todo momento. También puede optar por agregar otro nivel de protección si guarda sus datos en EZVIZ CloudPlay con una suscripción a este servicio. Sus datos estarán seguros en caso de que su dispositivo se dañe o extravíe.</p></div><div class="text-ele" style="position: absolute; width: 160px; top: 647px; left: 777px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Almacenamiento de memoria eMMC de 32 GB incorporado</p></div><div class="text-ele" style="position: absolute; width: 160px; top: 647px; left: 1005px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Soporta almacenamiento en EZVIZ CloudPlay*</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 770px; left: 50%; margin-left: -400px;"><p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">*El servicio de almacenamiento en la nube solo está disponible en ciertos mercados. Por favor, verifique la disponibilidad antes de hacer cualquier compra.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/fe973d14464553e3a2172c23afc4edb7.jpg"></div><div class="pwhole" style="height: 971px;"><div class="text-ele" style="position: absolute; width: 600px; top: 100px; left: 50%; margin-left: -300px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Seguridad al alcance de su mano.</p></div><div class="text-ele" style="position: absolute; width: 1000px; top: 160px; left: 50%; margin-left: -500px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Con la aplicación EZVIZ, puede capturar, guardar, proteger y compartir lo que es valioso para usted.</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 316px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Vista en Vivo</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 381px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Recepción de Audio</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 451px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Alertas Instantáneas</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 524px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Historial de Videos</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 590px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Zoom de hasta 8x</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 656px; left: 1070px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Habilitada para Hogar Inteligente</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 773px; left: 50%; margin-left: -400px;"><p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Las imágenes de la interfaz de la aplicación EZVIZ son solo para fines ilustrativos.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/f5a39af492b60e8f0d29da3ac551f483.jpg"></div></div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/next-sidebar.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

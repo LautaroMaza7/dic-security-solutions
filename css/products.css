@@ -6,7 +6,13 @@
     text-transform: uppercase;
     text-align: center;
  } */
- 
+
+ #J-prd__page{
+   display: none;
+ }
+ .pwhole{
+   margin-top: 80px;
+ }
  .XUUsC{
    margin-left: 300px;
    margin-bottom:-50px;
@@ -203,4 +209,11 @@ box-shadow:  20px 20px 60px #bebebe,
       margin-top: -70px;
    }
 }
- 
+@media (max-width: 900px){
+   #J-prd__page{
+     display: block!important;
+   }
+   #pcontainer{
+     display: none!important;
+   }
+ }

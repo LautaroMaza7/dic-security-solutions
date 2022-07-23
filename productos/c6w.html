@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/c1c.css">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app " >
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" onclick="dictecno()">
+            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
+          </a>
+        </li>
+        <div class="mt-3">
+          <span class="icon-holder">
+          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
+          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
+          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
+        </span>
+        </div>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+        <a class="navbar-brand " href="../index.html">
+          <img class="logo-web" src="../img/LOGO-PNG -COLOR.png" alt="" />
+        </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <div id="contact-header">
+              <i class="fas fa-phone mx-2"></i>
+              <span>(+54) 11-6486-4919</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+
+    <div class="pcontainer" style="position: relative; width: 1920px; left: 50%; top: 0px; margin-left: -960px; margin-top: 0px; background-image: url('about:blank'); background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center;"><div class="pwhole" style="height: 600px;"><div class="text-ele" style="position: absolute; width: 300px; top: 150px; left: 530px;"><p style="font-size: 110px; font-weight: 400; line-height: 130px; color: rgb(74, 74, 74); text-align: left; font-style: normal; text-decoration: none;">C6W</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 270px; left: 500px;"><p style="font-size: 30px; font-weight: 400; line-height: 30px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Cámara Wi-Fi con Paneo e Inclinación</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/d5f3e059fabc55fcc1bbe43a787dfeff.jpg"></div><div class="pwhole" style="height: 572px;"><div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">La decoración que protege su hogar.</p></div><div class="text-ele" style="position: absolute; width: 980px; top: 130px; left: 50%; margin-left: -490px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">Elegante y versátil, la cámara C6W es toda la protección que necesita para una casa grande. Graba con una resolución de 2K y rastrea automáticamente el movimiento con un zoom 4x para asegurarse de que nada se le escape a la vista.</p></div><div class="text-ele" style="position: absolute; width: 80px; top: 300px; left: 435px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Resolución de 2K</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 300px; left: 610px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Seguimiento con Zoom Automático</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 300px; left: 820px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Detección de Personas</p></div><div class="text-ele" style="position: absolute; width: 120px; top: 300px; left: 1005px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Vista Panorámica de 360°</p></div><div class="text-ele" style="position: absolute; width: 80px; top: 300px; left: 1205px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">WDR verdadero</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 300px; left: 1370px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Visión Nocturna de Infrarrojo hasta 10 m</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 440px; left: 515px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Obturador de Privacidad</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 440px; left: 720px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Conversación Bidireccional</p></div><div class="text-ele" style="position: absolute; width: 100px; top: 440px; left: 910px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Tecnología de Video H.265</p></div><div class="text-ele" style="position: absolute; width: 120px; top: 440px; left: 1110px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Tarjeta MicroSD de hasta 256 GB</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 440px; left: 1310px;"><p style="font-size: 14px; font-weight: 400; line-height: 18px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Almacenamiento EZVIZ CloudPlay</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/afebea868b100432b027c4e6bd8bb389.jpg"></div><div class="pwhole" style="height: 662px;"><div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Graba todos los rincones con una resolución de 2K.</p></div><div class="text-ele" style="position: absolute; width: 700px; top: 130px; left: 50%; margin-left: -350px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">La pequeña pero potente cámara graba imágenes en una resolución de 2K, proporcionando detalles nítidos incluso con zoom digital de 4x.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/cec332d12b7f9ee1767951fd47b52b27.jpg"></div><div class="pwhole" style="height: 658px;"><div class="text-ele" style="position: absolute; width: 570px; top: 10px; left: 1010px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Rastreo de movimiento con zoom automático, especialmente el movimiento humano.</p></div><div class="text-ele" style="position: absolute; width: 570px; top: 150px; left: 1010px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Después de activar la función de seguimiento con zoom automático, la cámara se acerca automáticamente hasta 4 veces para rastrear un objeto en movimiento y así poder saber fácilmente lo que está pasando cuando se está viendo en directo. En la aplicación, también se tiene la opción de rastrear el movimiento específicamente de personas.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/d3fb18b36d1a26e6df1d5e4ed94ccf55.jpg"></div><div class="pwhole" style="height: 660px;"><div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">La cobertura de toda la habitación es algo muy sencillo.</p></div><div class="text-ele" style="position: absolute; width: 700px; top: 130px; left: 50%; margin-left: -350px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">Vigile cada rincón con una sola cámara C6W. Su amplio campo de visión de 360 grados asegura una cobertura completa, para que no se pierda de nada.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/85124cda83f3a6bfe99eba1790e92099.jpg"></div><div class="pwhole" style="height: 660px;"><div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">WDR verdadero para imágenes realmente claras.</p></div><div class="text-ele" style="position: absolute; width: 760px; top: 130px; left: 50%; margin-left: -380px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">La cámara C6W utiliza la tecnología de WDR verdadero, basada en sensores para eliminar la sobreexposición o la subexposición en escenas de alto contraste, produciendo imágenes con brillo uniforme desde el amanecer hasta el anochecer.</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 570px; left: 540px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">C6W con WDR verdadero</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 570px; left: 1085px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">WDR Digital</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/93daed849bc824ce63f43f1baf581e66.jpg"></div><div class="pwhole" style="height: 660px;"><div class="text-ele" style="position: absolute; width: 500px; top: 70px; left: 420px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Conversación bidireccional</p></div><div class="text-ele" style="position: absolute; width: 500px; top: 130px; left: 420px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Utilice la aplicación EZVIZ en su dispositivo móvil para llamar a casa cuando esté afuera. Le encantará la oportunidad de tener una conversación bidireccional ahora que ambas partes pueden hablar y escucharse mutuamente, como en una llamada telefónica normal.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/7a13dbe8972f0142130c3adad2e26434.jpg"></div><div class="pwhole" style="height: 660px;"><div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Vea más claro, incluso en la oscuridad.</p></div><div class="text-ele" style="position: absolute; width: 1000px; top: 130px; left: 50%; margin-left: -500px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">La cámara C6W utiliza dos potentes luces infrarrojas para obtener imágenes nocturnas nítidas a una distancia de hasta 10 metros. Es lo bastante inteligente como para cambiar automáticamente entre visión diurna y nocturna, para que pueda estar tranquilo sabiendo que su hogar y sus pertenencias están protegidas 24/7.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/809fbba75990209088fca94bfc904062.jpg"></div><div class="pwhole" style="height: 660px;"><div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">Compresión de Video H.265</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 130px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">La cámara cuenta con la avanzada tecnología de compresión de video H.265, logrando una mejor calidad de video con solo la mitad del ancho de banda y la mitad del espacio de almacenamiento del anterior estándar de compresión de video H.264.</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 310px; left: 530px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Almacenamiento</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 430px; left: 505px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Ancho de banda</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 290px; left: 970px;"><p style="font-size: 20px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">C6W H.265</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 410px; left: 970px;"><p style="font-size: 20px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">C6W H.265</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 337px; left: 1250px;"><p style="font-size: 20px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">H.264</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 455px; left: 1250px;"><p style="font-size: 20px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">H.264</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/7afbd4ade73718d34547ccc9dd8f7572.jpg"></div><div class="pwhole" style="height: 688px;"><div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Protegemos sus datos y su privacidad.</p></div><div class="text-ele" style="position: absolute; width: 700px; top: 130px; left: 50%; margin-left: -350px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">La protección de sus datos y su privacidad es nuestra mayor prioridad. La transmisión de datos entre la cámara y la Nube de EZVIZ está encriptada de extremo a extremo. Solo usted tiene las claves para desencriptar sus datos.</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 445px; left: 850px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Obturador de Privacidad</p></div><div class="text-ele" style="position: absolute; width: 130px; top: 445px; left: 1025px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Encriptación AES de 128 bits</p></div><div class="text-ele" style="position: absolute; width: 160px; top: 445px; left: 1185px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Protocolo de encriptación TLS</p></div><div class="text-ele" style="position: absolute; width: 150px; top: 445px; left: 1365px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">Múltiples pasos de autenticación</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/044389805c90814a8e43782bc8e4450c.jpg"></div><div class="pwhole" style="height: 808px;"><div class="text-ele" style="position: absolute; width: 900px; top: 20px; left: 50%; margin-left: -450px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">Múltiples opciones de almacenamiento.</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: center; font-style: normal; text-decoration: none;">Con múltiples opciones de almacenamiento, puede elegir dónde guardar sus grabaciones. La cámara puede incluso guardar en las tres ubicaciones al mismo tiempo para tener una copia de seguridad adicional en caso de que la cámara se dañe o la red se caiga.</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 510px; left: 590px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Soporta Tarjeta MicroSD</p></div><div class="text-ele" style="position: absolute; width: 350px; top: 510px; left: 1015px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Almacenamiento Encriptado en la Nube*</p></div><div class="text-ele" style="position: absolute; width: 600px; top: 560px; left: 50%; margin-left: -300px;"><p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">*El servicio de almacenamiento en la nube solo está disponible en ciertos mercados. Por favor, verifique la disponibilidad antes de hacer cualquier compra.</p></div><div class="text-ele" style="position: absolute; width: 600px; top: 670px; left: 50%; margin-left: -300px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Seguridad al alcance de su mano.</p></div><div class="text-ele" style="position: absolute; width: 800px; top: 730px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Con la aplicación EZVIZ, puede capturar, guardar, proteger y compartir lo que es valioso para usted.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/6bcb11fdbdb6e21deb10a3a01caf0c23.jpg"></div><div class="pwhole" style="height: 572px;"><div class="text-ele" style="position: absolute; width: 200px; top: 75px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Vista en Vivo</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 143px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(74, 74, 74); text-align: left; font-style: normal; text-decoration: none;">Recepción de Audio</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 210px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Alertas Instantáneas</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 283px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Historial de Videos</p></div><div class="text-ele" style="position: absolute; width: 200px; top: 350px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Zoom de hasta 4x</p></div><div class="text-ele" style="position: absolute; width: 300px; top: 410px; left: 1090px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">Habilitada para Hogar Inteligente</p></div><div class="text-ele" style="position: absolute; width: 600px; top: 515px; left: 50%; margin-left: -300px;"><p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">Las imágenes de la interfaz de la aplicación EZVIZ son solo para fines ilustrativos.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/d407b70c372cd47d9bc7189243684584.jpg"></div></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/next-sidebar.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

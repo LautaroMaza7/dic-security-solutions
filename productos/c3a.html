@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/c1c.css">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app " >
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" onclick="dictecno()">
+            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
+          </a>
+        </li>
+        <div class="mt-3">
+          <span class="icon-holder">
+          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
+          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
+          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
+        </span>
+        </div>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+        <a class="navbar-brand " href="../index.html">
+          <img class="logo-web" src="../img/LOGO-PNG -COLOR.png" alt="" />
+        </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <div id="contact-header">
+              <i class="fas fa-phone mx-2"></i>
+              <span>(+54) 11-6486-4919</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+
+
+
+    <div class="pcontainer" id="cp-5a8c03b24f1947e0922afa8351165b96" style="position: relative; width: 1920px; left: 50%; top: 0px; margin-left: -960px; margin-top: 0px; background-image: url('about:blank'); background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center;"><div class="pwhole" id="cp-2bc53afdb4f54bd38b2e70e57c863c0c" style="height: 766px;"><div class="text-ele" id="cp-b27fbf47d6ff423a8b6d62e4e559c613" style="position: absolute; width: 600px; top: 30px; left: 50%; margin-left: -300px;"><p style="font-size: 130px; font-weight: 400; line-height: 160px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+
+
+
+
+
+
+        C3A</p></div><div class="text-ele" id="cp-26172394aaeb47ff94fd116fe2a8648e" style="position: absolute; width: 800px; top: 159px; left: 50%; margin-left: -394px;"><p style="font-size: 40px; font-weight: 400; line-height: 100px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        La seguridad nunca ha sido tan fácil</p></div><div class="text-ele" id="cp-66cb0536f0614213b871178d0e8fc615" style="position: absolute; width: 800px; top: 676px; left: 50%; margin-left: -412px;"><p style="font-size: 35px; font-weight: 400; line-height: 100px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Cámara de Seguridad Inalámbrico HD 1080p</p></div><div class="text-ele" id="cp-0218965508284ac7905aeecbb72d7b24" style="position: absolute; width: 773px; top: 765px; left: 50%; margin-left: -386px;"><p style="font-size: 20px; font-weight: 400; line-height: 27px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Gracias a una batería recargable duradera de 5.500 mAh y a su diseño 100&nbsp;% inalámbrico, puede colocar la cámara autónoma C3A en cualquier lugar donde quiera.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/95b613c38aa4913ce52cae37a81f63ef.jpg"></div><div class="pwhole" id="cp-a040e403cfa441c7aa8411d9ddb68997" style="height: 514px;"><div class="text-ele" id="cp-1e5e13aeaccf4dea91a9de6d45b2260c" style="position: absolute; width: 174px; top: 141px; left: 50%; margin-left: -320px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Detección de movimiento (PIR)</p></div><div class="text-ele" id="cp-9e301602e8a14a1ebe772df70b5bba1f" style="position: absolute; width: 159px; top: 139px; left: 50%; margin-left: 18px;"><p style="font-size: 16px; font-weight: 400; line-height: 25px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Vídeo de 1080p</p></div><div class="text-ele" id="cp-dca0012141a4435aa1896f0c95b43e38" style="position: absolute; width: 159px; top: 262px; left: 50%; margin-left: -320px;"><p style="font-size: 16px; font-weight: 400; line-height: 25px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Audio bidireccional</p></div><div class="text-ele" id="cp-758bc06e45f44f4f8fdd47e246e3519f" style="position: absolute; width: 187px; top: 130px; left: 50%; margin-left: 288px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Batería de litio recargable de 5.500&nbsp;mAh</p></div><div class="text-ele" id="cp-366c93843390497091da70e2d7a50c99" style="position: absolute; width: 210px; top: 373px; left: 50%; margin-left: -320px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Visión nocturna</p></div><div class="text-ele" id="cp-4e59e41d185d403a8b2f18758e819aef" style="position: absolute; width: 210px; top: 393px; left: 50%; margin-left: -320px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        (hasta 7,5 metros)</p></div><div class="text-ele" id="cp-80e212bc9e8d4ffb89c128fec575cc0e" style="position: absolute; width: 131px; top: 253px; left: 50%; margin-left: 18px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Campo de visión diagonal de 125º</p></div><div class="text-ele" id="cp-6db916b117f74b0ba03334932d63ac1f" style="position: absolute; width: 111px; top: 380px; left: 50%; margin-left: 18px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        2,4&nbsp;GHz</p></div><div class="text-ele" id="cp-027b03cfe7e44572bd2f011db2f2d6d3" style="position: absolute; width: 165px; top: 250px; left: 50%; margin-left: 288px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Protección contra el agua y el polvo IP65</p></div><div class="text-ele" id="cp-779c8290bd3b4c49a0a9fe76537d4f80" style="position: absolute; width: 188px; top: 371px; left: 50%; margin-left: 288px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Soporta tarjetas microSD</p></div><div class="text-ele" id="cp-c8c3bc77843c454bbd4364a309cc6319" style="position: absolute; width: 188px; top: 391px; left: 50%; margin-left: 288px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        (hasta 128 GB)</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/fb61543a6c81c9d71d8f0d9fb811da71.jpg"></div><div class="pwhole" id="cp-b1c75eefca604fbea60e88e7c9636832" style="height: 600px;"><div class="text-ele" id="cp-ebef543e6390446d86baa8d3cb3e496b0" style="position: absolute; width: 481px; top: 188px; left: 50%; margin-left: 5px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(255, 255, 255); text-align: right; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Seguridad sin complicaciones y sin esfuerzos</p></div><div class="text-ele" id="cp-ed22a6445d284915b8d0909c7fa07db91" style="position: absolute; width: 485px; top: 298px; left: 50%; margin-left: 3px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: right; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Disfrute de una completa tranquilidad sin complicaciones. La cámara C3A alimentada por batería es 100 % inalámbrica. Tan solo colóquela donde quiera y ya está.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/8dcd8864b5aaa95981d7adc452a2984d.jpg"></div><div class="pwhole" id="cp-0ad2f7b8f646416cb0525cc3c64fd007" style="height: 750px;"><div class="text-ele" id="cp-ebef543e6390446d86baa8d3cb3e496b" style="position: absolute; width: 697px; top: 233px; left: 50%; margin-left: -520px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Protege cualquier lugar que necesite</p></div><div class="text-ele" id="cp-ed22a6445d284915b8d0909c7fa07db9" style="position: absolute; width: 531px; top: 296px; left: 50%; margin-left: -519px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Utilice la cámara impermeable C3A para supervisar cualquier lugar, ya sea en interiores o exteriores, llueva o brille el sol.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/20c01bac16dfacf4bfa512d18aa0f7d3.jpg"></div><div class="pwhole" id="cp-9f15463c56464e169b6af079ae12a791" style="height: 880px;"><div class="text-ele" id="cp-5e76979b88b4434b9817f90318144658" style="position: absolute; width: 700px; top: 103px; left: 50%; margin-left: -350px;"><p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Protección extra con detección precisa</p></div><div class="text-ele" id="cp-fcc099aa1b814f99a640cb6822017a75" style="position: absolute; width: 740px; top: 169px; left: 50%; margin-left: -370px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        La función de detección infrarroja pasiva (PIR) de movimiento de la cámara C3A le envía una alerta instantánea con las imágenes y vídeos capturados cuando visitante se acerque.</p></div><div class="text-ele" id="cp-02ec6ab36248488eb34cc7db398356d8" style="position: absolute; width: 168px; top: 324px; left: 50%; margin-left: -319px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Movimiento de mascotas</p></div><div class="text-ele" id="cp-223e5b162ae44a70a5d1cc749a8e30e0" style="position: absolute; width: 200px; top: 323px; left: 50%; margin-left: 171px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Movimiento de humanos</p></div><div class="text-ele" id="cp-d01393cf1ac8463aaad0f9f60a7b6083" style="position: absolute; width: 163px; top: 652px; left: 50%; margin-left: -71px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Movimiento de cortinas</p></div><div class="text-ele" id="cp-e62ac690d3004a1c99c8ba2de190f3ca" style="position: absolute; width: 183px; top: 724px; left: 50%; margin-left: -336px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Movimiento de insectos</p></div><div class="text-ele" id="cp-daba61cc759d4092ad910635fdb95271" style="position: absolute; width: 162px; top: 724px; left: 50%; margin-left: 186px;"><p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Movimiento de luces</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/a5c61f4bc622aef1f1af366c5967eec9.jpg"></div><div class="pwhole" id="cp-a371d82908e04de1b109de2526fa2e69" style="height: 639px;"><div class="text-ele" id="cp-d5ad7a7e8cbe40deb765b6fa3230c9d2" style="position: absolute; width: 700px; top: 243px; left: 50%; margin-left: -627px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Audio bidireccional asegura su casa</p></div><div class="text-ele" id="cp-5400dab34c0c4fc6a2d82170a1f5920b" style="position: absolute; width: 534px; top: 306px; left: 50%; margin-left: -563px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Hable con los visitantes y escuche lo que sucede en cualquier lugar y cualquier momento a través de su teléfono inteligente.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/7d417038e1197d887f6a00524587d8e5.jpg"></div><div class="pwhole" id="cp-430b9fa95c8e4f158945ed91102e62de" style="height: 800px;"><div class="text-ele" id="cp-e9b337e2b26e45d0bfc3de62ba4f446e" style="position: absolute; width: 813px; top: 89px; left: 50%; margin-left: -406px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Vigila lo que más importa</p></div><div class="text-ele" id="cp-9e5f8796c67a4393b14120da4d0881bf" style="position: absolute; width: 647px; top: 159px; left: 50%; margin-left: -323px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        La C3A ofrece imágenes nítidas incluso en zonas mal iluminadas, garantizando la protección de su porche o jardín trasero durante toda la noche.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/fb29c3e3f4cb62cc8dbb65a11e03f93e.jpg"></div><div class="pwhole" id="cp-e6d6d63451084e40890f2b36ca6019c5" style="height: 620px;"><div class="text-ele" id="cp-913a2039da4c42f7bc0bff51d48075c0" style="position: absolute; width: 700px; top: 42px; left: 50%; margin-left: -159px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(0, 0, 0); text-align: right; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Menos preocupación gracias a una mayor duración de la batería</p></div><div class="text-ele" id="cp-4f49d9a92df14dd29c24aa4a1055634e" style="position: absolute; width: 767px; top: 153px; left: 50%; margin-left: -225px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: right; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        La cámara C3A está equipada con una batería de litio extraíble y recargable de 5.500&nbsp;mAh.</p></div><div class="text-ele" id="cp-bc395ba7ce654bac9fad04294f916a9c" style="position: absolute; width: 222px; top: 266px; left: 50%; margin-left: 38px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(109, 182, 238); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Batería de litio recargable de 5.500 mAh</p></div><div class="text-ele" id="cp-828bb82363814445a647b292b8c13b7a" style="position: absolute; width: 200px; top: 391px; left: 50%; margin-left: 252px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(155, 155, 155); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Recarga por USB</p></div><div class="text-ele" id="cp-f53d9ed28a0946c1afdd965337778c58" style="position: absolute; width: 200px; top: 391px; left: 50%; margin-left: 432px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(155, 155, 155); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Batería extraíble</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/94cbe18eaba972a38e64732223688691.jpg"></div><div class="pwhole" id="cp-c44d05c462564ed4bc34a805593753ba" style="height: 720px;"><div class="text-ele" id="cp-23b5709ecb564e56a2b6cfab8ac9ec99" style="position: absolute; width: 700px; top: 80px; left: 50%; margin-left: -350px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Accesorios completos para elegir</p></div><div class="text-ele" id="cp-765e3e0abb254ea0865d8e37ea9f944c" style="position: absolute; width: 731px; top: 148px; left: 50%; margin-left: -365px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        También hay disponible una amplia gama de accesorios para mejorar su experiencia, incluido un cargador de batería de doble ranura, una batería de respaldo y un soporte de montaje para una protección duradera y una buena usabilidad.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/0feffeba2088a01ee1219a25de67307c.jpg"></div><div class="pwhole" id="cp-39c52a1ea9ac450e85681a00ecec8832" style="height: 950px;"><div class="text-ele" id="cp-32fbbb47d855469892b88a000186a286" style="position: absolute; width: 700px; top: 70px; left: 50%; margin-left: -350px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Distintas opciones de almacenamiento</p></div><div class="text-ele" id="cp-475e3ddda87743d383d31b3817f67e71" style="position: absolute; width: 800px; top: 160px; left: 50%; margin-left: -400px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Guarde sus grabaciones con distintas opciones flexibles y seguras. La cámara C3A cuenta con una ranura integrada para tarjetas microSD que permite el almacenamiento de hasta 128 GB de vídeo. También puede guardar sus imágenes en la nube EZVIZ para disponer de un respaldo adicional.</p></div><div class="text-ele" id="cp-07c139d042c44885bbb0e1d8efd07e87" style="position: absolute; width: 238px; top: 620px; left: 50%; margin-left: -347px;"><p style="font-size: 18px; font-weight: 400; line-height: 22px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Compatibles con tarjetas microSD</p></div><div class="text-ele" id="cp-e32495800c894aa6bf3cc417eef36588" style="position: absolute; width: 300px; top: 620px; left: 50%; margin-left: 99px;"><p style="font-size: 18px; font-weight: 400; line-height: 22px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Almacenamiento cifrado en la nube*</p></div><div class="text-ele" id="cp-5356847e0c2140a6b82f8bce66dfa037" style="position: absolute; width: 1200px; top: 680px; left: 50%; margin-left: -600px;"><p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        *El servicio de almacenamiento en la nube solo está disponible en algunos mercados. Compruebe la disponibilidad antes de realizar cualquier compra.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/ec4a6f29593fd977a7bee8563367c004.jpg"></div><div class="pwhole" id="cp-05014cb010af4ed5b8c119d785813964" style="height: 575px;"><div class="text-ele" id="cp-fc2d8f7c8443499daff19bcc8270c6b3" style="position: absolute; width: 700px; top: -100px; left: 50%; margin-left: -350px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Con la aplicación EZVIZ y el software EZVIZ Studio puede capturar, guardar, proteger y compartir lo que es valioso para usted.</p></div><div class="text-ele" id="cp-bc300edf973f4cd38cdee2020d978eb6" style="position: absolute; width: 700px; top: -180px; left: 50%; margin-left: -350px;"><p style="font-size: 35px; font-weight: 400; line-height: 45px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Seguridad en sus manos</p></div><div class="text-ele" id="cp-fab7ef52c40c4760af987c631eeba753" style="position: absolute; width: 200px; top: 70px; left: 50%; margin-left: 135px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Vista en vivo</p></div><div class="text-ele" id="cp-45456fd3c4ef40e8a7c4ee4b1f0530a2" style="position: absolute; width: 268px; top: 135px; left: 50%; margin-left: 135px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Conversación en tiempo real</p></div><div class="text-ele" id="cp-20e3bfb26cfe4f2c82e2a9941d3603f8" style="position: absolute; width: 200px; top: 205px; left: 50%; margin-left: 135px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Alertas instantáneas</p></div><div class="text-ele" id="cp-4c42c3a7cec047c9b0165b8ab793637d" style="position: absolute; width: 200px; top: 275px; left: 50%; margin-left: 134px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Vídeos historiales</p></div><div class="text-ele" id="cp-acbb44b0fe134b76a39c789424930dcf" style="position: absolute; width: 258px; top: 345px; left: 50%; margin-left: 135px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Zoom de hasta 8x</p></div><div class="text-ele" id="cp-69fd1ced828f4177a522338b2751112b" style="position: absolute; width: 248px; top: 410px; left: 50%; margin-left: 135px;"><p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Hogar inteligente habilitado</p></div><div class="text-ele" id="cp-d59287cdbdcc480c9e702e5a19b5b01a" style="position: absolute; width: 700px; top: 545px; left: 50%; margin-left: -350px;"><p style="font-size: 14px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+    
+    
+    
+    
+    
+    
+        Las imágenes de la interfaz de la app EZVIZ tienen solo fines ilustrativos.</p></div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/cc6981a6cec639897cd93304619ab5fb.jpg"></div></div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/next-sidebar.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

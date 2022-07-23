@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/c1c.css">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app " >
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Seguridad contra Incendios</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="/pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" onclick="dictecno()">
+            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
+          </a>
+        </li>
+        <div class="mt-3">
+          <span class="icon-holder">
+          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
+          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
+          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
+        </span>
+        </div>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white fixed-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+        <a class="navbar-brand " href="../index.html">
+          <img class="logo-web" src="../img/LOGO-PNG -COLOR.png" alt="" />
+        </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="#">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Seguridad contra Incendios</a>
+                    </li>
+
+                  </ul>
+                </li>
+    
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <div id="contact-header">
+              <i class="fas fa-phone mx-2"></i>
+              <span>(+54) 11-6486-4919</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+
+
+    <div class="pcontainer" style="position: relative; width: 1920px; left: 50%; top: 0px; margin-left: -960px; margin-top: 0px; background-image: url('about:blank'); background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center;">
+        <div class="pwhole" style="height: 600px;">
+            <div class="text-ele" style="position: absolute; width: 400px; top: 188px; left: 534px;">
+                <p style="font-size: 70px; font-weight: 400; line-height: 100px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    EZVIZ eLife
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 500px; top: 280px; left: 537px;">
+                <p style="font-size: 25px; font-weight: 400; line-height: 50px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    Cámara con batería BC1C
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/4106270d3e62436481fd8ce0bd44b276.jpg">
+        </div>
+        <div class="pwhole" style="height: 600px;">
+            <div class="text-ele" style="position: absolute; width: 1000px; top: 50px; left: 50%; margin-left: -500px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Protección del hogar sin complicaciones gracias a una mayor duración de la batería.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 800px; top: 140px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    La BC1C es una cámara con batería recargable y diseño 100% inalámbrico que ofrece una completa protección del hogar hasta por 210 días con una sola carga. Se puede instalar fácilmente en cualquier lugar para mejorar la seguridad, cuenta con las tecnologías más destacadas de EZVIZ de visión nocturna a color, audio bidireccional, defensa activa y más.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 70px; top: 325px; left: 426px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Video de 1080p
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 130px; top: 325px; left: 1375px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Detección Precisa del Movimiento Humano
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 325px; left: 1021px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Visión Nocturna a Color
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 470px; left: 1217px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Alertas de Voz Personalizables
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 144px; top: 325px; left: 800px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Almacenamiento de memoria eMMC de 32 GB incorporado
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 70px; top: 470px; left: 428px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Audio Bidireccional
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 180px; top: 325px; left: 570px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Batería de litio recargable de 7.800 mAh
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 92px; top: 470px; left: 826px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Soporta Wi-Fi de 2.4 GHz
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 120px; top: 325px; left: 1205px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Protección contra el Polvo y el Agua IP66
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 140px; top: 470px; left: 1367px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Funciona con el panel solar EZVIZ para cargar la batería
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 130px; top: 470px; left: 1005px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Compresión de Video H.265
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 470px; left: 618px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Defensa activa
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/ad06b0a0b9c66f5e23fc50e41e10d859.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 1100px; top: 70px; left: 50%; margin-left: -550px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+                    Menos preocupación gracias a una mayor duración de la batería.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 800px; top: 130px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+                    La cámara BC1C está equipada con una batería recargable de 7.800 mAh, tiene una duración de hasta 210 días* con una carga completa de la batería, garantizando un rendimiento estable durante todo el día y la noche. También puede conectarse al panel solar EZVIZ para obtener energía directamente.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 600px; top: 230px; left: 50%; margin-left: -300px;">
+                <p style="font-size: 14px; font-weight: 400; line-height: 25px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    *Los datos proceden de estrictas pruebas en el laboratorio de EZVIZ, en condiciones estándar.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 600px; top: 565px; left: 50%; margin-left: -300px;">
+                <p style="font-size: 14px; font-weight: 400; line-height: 25px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    *El panel solar se vende por separado.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/039d732227fc46c571fecb82d4517d77.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Visión nocturna nítida.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 700px; top: 130px; left: 50%; margin-left: -349px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Gracias a los dos reflectores incorporados, la cámara BC1C puede ofrecer imágenes en colores nítidos incluso en la más absoluta oscuridad. Esto le permite ver detalles cruciales que de otro modo se perderían.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 530px; left: 590px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 26px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Visión Nocturna a Color
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 300px; top: 530px; left: 1090px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 26px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Visión nocturna en blanco y negro
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/adea0246eaa7e7d652a75b9bb29fda22.jpg">
+        </div>
+        <div class="pwhole" style="height: 659px;">
+            <div class="text-ele" style="position: absolute; width: 460px; top: 70px; left: 450px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    Las alertas de movimiento son más precisas que nunca.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 440px; top: 180px; left: 450px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    Al integrar un Sensor Infrarrojo Pasivo (PIR) y un algoritmo de detección de contoro humano, la cámara BC1C es lo suficientemente inteligente como para distinguir a las personas de otros objetos en movimiento, lo que le da seguridad al tiempo que reduce las notificaciones no deseadas.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/a1a328ed63c5c60620ab01752f379733.jpg">
+        </div>
+        <div class="pwhole" style="height: 661px;">
+            <div class="text-ele" style="position: absolute; width: 1000px; top: 70px; left: 50%; margin-left: -500px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+                    Un vigilante de su propiedad.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 1000px; top: 130px; left: 50%; margin-left: -500px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+                    Los usuarios pueden establecer marcos de tiempo específicos para la detección. Una vez que la cámara detecta la forma de una persona, la cámara BC1C activará automáticamente una sirena y hará destellar dos reflectores* para hacerles saber que han sido detectados. Un vigilante de su propiedad.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 700px; top: 564px; left: 50%; margin-left: -350px;">
+                <p style="font-size: 14px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+                    *Los reflectores no destellarán cuando el modo de visión nocturna en color esté activado.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/0f39eea31114202c75c22573c62c6b6f.jpg">
+        </div>
+        <div class="pwhole" style="height: 661px;">
+            <div class="text-ele" style="position: absolute; width: 540px; top: 90px; left: 1000px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Mensajes de voz personalizables.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 410px; top: 155px; left: 1000px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    La BC1C, un producto con un diseño bien pensado, le permite crear mensajes de voz únicos* para saludar o disuadir.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 450px; top: 240px; left: 1000px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    *Soporta la grabación de tres mensajes de audio de 10 segundos.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 250px; top: 180px; left: 705px;">
+                <p style="font-size: 30px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: left; font-style: italic; text-decoration: none;">
+                    ¡Hola! ¡Bienvenido!
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/675d360e6a1b08dfc6a46a1d100bc7ee.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 460px; top: 90px; left: 450px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Hable, como si estuviera ahí.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 370px; top: 155px; left: 450px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Vea y escuche lo que sucede y charle con sus visitantes, ¡todo con un toque en la aplicación EZVIZ!.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/af372a7f43b41ad633ad148716230bfc.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+                    Configuración rápida y sencilla sin cables.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 680px; top: 130px; left: 50%; margin-left: -340px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+                    Con una batería de gran tamaño, conectividad Wi-Fi y una base magnética, la cámara BC1C no requiere ningún tipo de ayuda profesional para su instalación. Simplemente fije la cámara a cualquier superficie metálica y ¡listo!
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 780px; top: 571px; left: 50%; margin-left: -390px;">
+                <p style="font-size: 12px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: center; font-style: normal; text-decoration: none;">
+                    *También se incluye una base atornillable como una opción de instalación adicional para que pueda atornillar la cámara firmemente a la pared.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/9421e980bf2c714a65fb407e830d9087.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 370px; top: 63px; left: 1030px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    Construida para durar.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 435px; top: 120px; left: 1030px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(0, 0, 0); text-align: left; font-style: normal; text-decoration: none;">
+                    La cámara BC1C cuenta con una carcasa IP66, que ofrece altos niveles de protección contra el polvo y el agua y brinda una protección duradera incluso en las condiciones climáticas más severas.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/28fa0ad0c56f287562f1c5c316462cf8.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 900px; top: 70px; left: 50%; margin-left: -450px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+                    La cámara BC1C permite ahorrar dinero en almacenamiento y ancho de banda.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 900px; top: 170px; left: 50%; margin-left: -450px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(255, 255, 255); text-align: center; font-style: normal; text-decoration: none;">
+                    La cámara BC1C cuenta con la tecnología avanzada de compresión de video H.265, logrando una mejor calidad de video con solo la mitad del ancho de banda y la mitad del espacio de almacenamiento requerido por el estándar de compresión de video H.264 anterior.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 332px; left: 460px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(255, 255, 255); text-align: right; font-style: normal; text-decoration: none;">
+                    Almacenamiento
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 427px; left: 460px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 12px; color: rgb(255, 255, 255); text-align: right; font-style: normal; text-decoration: none;">
+                    Ancho de banda
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 316px; left: 995px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+                    H.265
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 408px; left: 995px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+                    H.265
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 445px; left: 1295px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+                    H.264
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 350px; left: 1295px;">
+                <p style="font-size: 20px; font-weight: 400; line-height: 15px; color: rgb(255, 255, 255); text-align: left; font-style: normal; text-decoration: none;">
+                    H.264
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/710a3e9108bdf7da2f633ebe4e0e1b03.jpg">
+        </div>
+        <div class="pwhole" style="height: 660px;">
+            <div class="text-ele" style="position: absolute; width: 800px; top: 70px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Protegemos sus datos y su privacidad.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 706px; top: 130px; left: 50%; margin-left: -353px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    La protección de sus datos y su privacidad es nuestra mayor prioridad. La transmisión de datos entre la cámara y la Nube EZVIZ está encriptada de extremo a extremo. Solo usted tiene las claves para desencriptar sus datos.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 100px; top: 470px; left: 705px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Encriptación AES de 128 bits
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 150px; top: 470px; left: 50%; margin-left: -75px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Protocolo de encriptación TLS
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 180px; top: 470px; left: 50%; margin-left: 122px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Autenticación de múltiples pasos
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/00b832b31b83b30cba44cc1fd2e632b2.jpg">
+        </div>
+        <div class="pwhole" style="height: 710px;">
+            <div class="text-ele" style="position: absolute; width: 800px; top: 10px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Un producto asequible con capacidad de almacenamiento gratuita incorporada.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 1000px; top: 110px; left: 50%; margin-left: -500px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    La cámara BC1C tiene incorporada una capacidad de almacenamiento de memoria eMMC de 32 GB, olvídese de los problemas y de los costos adicionales en tarjetas de almacenamiento de expansión. También puede guardar sus datos en EZVIZ CloudPlay al suscribirse al servicio, para una protección adicional en caso de daño o pérdida del dispositivo.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 180px; top: 560px; left: 770px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Almacenamiento de memoria eMMC de 32 GB incorporado
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 160px; top: 560px; left: 1005px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Soporta almacenamiento en EZVIZ CloudPlay*
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 800px; top: 650px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    *El servicio de almacenamiento en la nube solo está disponible en ciertos mercados. Por favor, verifique la disponibilidad antes de hacer cualquier compra.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/1323c1b2d1b7701fbf35dcf7e43bf039.jpg">
+        </div>
+        <div class="pwhole" style="height: 874px;">
+            <div class="text-ele" style="position: absolute; width: 600px; top: 5px; left: 50%; margin-left: -300px;">
+                <p style="font-size: 35px; font-weight: 400; line-height: 40px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Seguridad al alcance de su mano.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 1000px; top: 70px; left: 50%; margin-left: -500px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Con la aplicación EZVIZ, puede capturar, guardar, proteger y compartir lo que es valioso para usted.
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 216px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Vista en Vivo
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 281px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Recepción de Audio
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 350px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Alertas Instantáneas
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 424px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Historial de Videos
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 200px; top: 490px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Zoom de hasta 8x
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 300px; top: 558px; left: 1070px;">
+                <p style="font-size: 18px; font-weight: 400; line-height: 24px; color: rgb(51, 51, 51); text-align: left; font-style: normal; text-decoration: none;">
+                    Habilitada para Hogar Inteligente
+                </p>
+            </div>
+            <div class="text-ele" style="position: absolute; width: 800px; top: 671px; left: 50%; margin-left: -400px;">
+                <p style="font-size: 14px; font-weight: 400; line-height: 20px; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
+                    Las imágenes de la interfaz de la aplicación EZVIZ son solo para fines ilustrativos.
+                </p>
+            </div><img src="https://s3.amazonaws.com/mfs.ezvizlife.com/fc559f5d9f5185e61c65210cc963eacf.jpg">
+        </div>
+    </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/next-sidebar.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
