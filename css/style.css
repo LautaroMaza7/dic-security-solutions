@@ -1202,8 +1202,11 @@ button{
       #client-logo12 {
         padding-top: 8px!important;
       }
-      #client-logo13 , #client-logo14 {
+      #client-logo13 {
         padding-top: 0px!important;
+      }
+      #client-logo14{
+        padding-top: 5px!important;
       }
     .iconbox{
         margin-left:130px!important;
