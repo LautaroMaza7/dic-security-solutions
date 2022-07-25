@@ -1169,7 +1169,7 @@ button{
         font-size: 15px;
     }
     .place {
-        margin-left: 50px;
+        margin-left: 20px;
     }
     .alt-send-button{
         width: auto;
@@ -1187,11 +1187,23 @@ button{
       #client-logo7{
         padding-top: 12px!important;
       }
+      #client-logo8{
+        padding-top:20px!important ;
+      }
       #client-logo9{
         padding-top:8px!important ;
       }
       #client-logo10{
         padding-top:16px!important ;
+      }
+      #client-logo11{
+        padding-top:20px!important ;
+      }
+      #client-logo12 {
+        padding-top: 8px!important;
+      }
+      #client-logo13 , #client-logo14 {
+        padding-top: 0px!important;
       }
     .iconbox{
         margin-left:130px!important;
