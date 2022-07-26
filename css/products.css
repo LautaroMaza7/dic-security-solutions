@@ -7,7 +7,7 @@
     text-align: center;
  } */
 
- #J-prd__page{
+ .m-container{
    display: none;
  }
 
@@ -208,12 +208,20 @@ box-shadow:  20px 20px 60px #bebebe,
    }
 }
 @media (max-width: 900px){
-   #J-prd__page{
+   .m-container{
      display: block!important;
+     margin-top: 80px;
+     overflow: hidden;
    }
    #pcontainer{
      display: none!important;
    }
+   /* .m-whole{
+      position: relative!important;
+   }
+   .text-ele{
+      position: static!important;
+   } */
    .pcontainer{
       display: none!important;
     }
