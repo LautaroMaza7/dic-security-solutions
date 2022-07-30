@@ -93,6 +93,11 @@ a {
     text-decoration: none;
 }
 
+.carousel-item {
+  transition: linear 0.4s!important;
+}
+
+
 img {
     width: 100%;
 }
@@ -102,36 +107,18 @@ img {
     padding: 2px;
 }
 .navbar-brand{
-    margin-right: 200px;
+    margin-right: 50px;
 }
 .logo-web {
-    width: 60px;
-    padding-top: 5px;
+    width: 50px;
+    margin-right: 10px;
 }
 #iconosnav{
     margin-right: 150px!important;
 }
-/* .call{
-    display: inline-flex;
-    vertical-align: middle;
-    position: relative;
+#call{
+  padding-left: -2000px;
 }
-.call .call-header{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.call-header.contact-header {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    line-height: 1;
-    border-left: 1px solid #dcdde1;
-    padding: 5px 0 5px 40px;
-}*/
-
 #contact-header {
     font-size: 14px;
     font-weight: 600;
@@ -257,13 +244,16 @@ img {
       flex-wrap: wrap;
     }
   } */
-  
+  #control-access{
+    margin-bottom: 43px;
+  }
 
   .dropdown-item{
     color: var(--dark);
   }
   .dropdown-item:hover {
     background-color:var(--primary)!important;
+    color: white;
   }
   ul #dropdown-custom .dropdown-menu li .dropdown-item:hover {
     background-color:var(--primary)!important;
@@ -371,15 +361,6 @@ box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
 .iconbox {
     width: 54px;
     height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center!important;
-    background-color: transparent;
-    color: var(--primary);
-    margin-left: 120px;
-    /* font-size: 32px; */
-    border-radius: 100px;
-    flex: none;
 }
 
 .iconbox-proyect{
@@ -630,14 +611,14 @@ form .form-control {
   }
   
   .section-header {
-    margin: 0 auto;
-    padding: 40px 0;
+    margin: 10px;
+    padding: 10px 0;
     color: var(--dark);
     text-transform: uppercase;
-    margin-left: 170px;
+    margin-left: 230px;
   }
   .sub-header {
-    margin-left: 170px;
+    margin-left: 230px;
     color: var(--dark);
     text-transform: uppercase;
   }
@@ -647,7 +628,7 @@ form .form-control {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 auto;
     position: relative;
     max-width: 840px;
   }
@@ -663,6 +644,7 @@ form .form-control {
   .form-control, 
   textarea {
     max-width: 400px;
+    margin: 10px 0px;
     background-color: #000;
     color: #fff;
     letter-spacing: 1px;
@@ -724,7 +706,7 @@ form .form-control {
   }
   
   .place {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   
   .phone {
@@ -821,7 +803,7 @@ form .form-control {
       flex-direction: column;
     }
     .direct-contact-container, .form-horizontal {
-      margin: 0 auto;
+      margin: 30px;
     }  
     
     .direct-contact-container {
@@ -846,11 +828,6 @@ form .form-control {
       float: none;
       margin: 0 auto;
     }  
-    .form-control, textarea {
-      
-      margin: 0 auto;
-    }
-   
     
     .name, .localidad, textarea {
       width: 280px;
@@ -880,6 +857,35 @@ form .form-control {
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
+    }
+    .contact-list{
+      display: none!important;
+    }
+    .social-media-list{
+      margin-top: -50px;
+    }
+    #about{
+     margin-top: -120px!important;
+    }
+    #origin{
+      margin-top: -120px!important;
+    }
+    #team{
+      margin-top: -150px;
+    }
+    #wifi{
+      padding-bottom: 0px;
+    }
+    #especificaciones-wifi{
+      padding: 0px;
+      margin-bottom: -70px!important;
+    }
+    #text-wifi{
+      margin-top: -80px;
+    }
+    #nosotross{
+
+      overflow: hidden;
     }
   }
 /*CONTACTO INDEX*/
@@ -920,7 +926,7 @@ hr.solid {
 .line-divider{
     border-bottom:3px solid#DE0024;
     content: "";
-    position: absolute;
+    position: relative;
     display: block;
     width: 120px;
     height: 1px;
@@ -1063,6 +1069,9 @@ button{
         font-size: 25px;
         font-weight: 700;   
     }
+    .slider-card{
+      margin: 50px 50px 90px 50px!important;
+    }
     #call{
         display: none;
     }
@@ -1124,6 +1133,9 @@ button{
     }
 }
 @media (max-width:375px){
+  #titlelogo{
+    font-size: 14px;
+  }
     .navbar-brand{
         margin-right:30px;
         margin-left: 0px!important;
@@ -1160,7 +1172,20 @@ button{
         width: 160px!important;
         height: 320px!important;
     } */
+    /* section {
+      padding-top: 0px!important;
+      padding-bottom: 0px!important;
+  } */
+  #control-access{
+    margin-bottom: 0px!important;
+  }
+  #title-client{
+    margin-bottom: 40px;
+  }
 
+  #slider, #contact{
+    padding-top: 0!important;
+  }
     .btm-product{
       margin-bottom: 0!important;
     }
@@ -1208,9 +1233,9 @@ button{
       #client-logo14{
         padding-top: 5px!important;
       }
-    .iconbox{
+    /* .iconbox{
         margin-left:130px!important;
-    }
+    } */
     .iconbox > h5 p{
       text-align: center;
     }
@@ -1226,6 +1251,9 @@ button{
 
     #contact{
         margin-top: -150px;
+    }
+    .contact-page{
+      margin-top: 50px!important;
     }
     .section-header{
         margin-left: 0px!important;
@@ -1262,9 +1290,6 @@ button{
     .navbar-brand{
         margin-left: 0px;
         margin-right: 40px;
-    }
-    .navbar-expand {
-        padding: 8px;
     }
     #iconosnav{
         display: none;

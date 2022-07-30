@@ -9,18 +9,12 @@
       href="./img/favicon-transparent-16x16.png"
       type="image/x-icon"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/boxicons.min.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/slider-carousel.css" />
     <link rel="stylesheet" href="css/next-sidebar.css" />
@@ -36,13 +30,14 @@
           <a class="sidebar-link text-decoration-none" href="#">
             <div class="d-flex align-items-center flex-nowrap">
               <div class="logo-sm">
-                <div class="logo d-flex align-items-center justify-content-center">
-                  Logo
-                </div>
+                <!-- <div class="logo d-flex align-items-center justify-content-center">
+                  <img src="./img/FOTO-DE-PERFIL-UNIVERSAL.png" alt="">
+                </div> -->
               </div>
-  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
-                Logo
-              </div> -->
+              <div class="mx-auto logo-text">
+                <img class="mx-auto" src="./img/LOGO-PNG -COLOR.png"alt="">
+              </div>
+
             </div>
           </a>
           <div class="">
@@ -167,11 +162,6 @@
             </li>
           </ul> -->
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link wave-effect" onclick="dictecno()">
-            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
-          </a>
-        </li>
         <!-- <div class="mt-3">
           <span class="icon-holder">
           <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
@@ -193,8 +183,9 @@
           </li>
       </ul>
       <ul class="navbar-nav me-auto justify-content-center">
-        <a class="navbar-brand" href="./index.html">
-          <img class="logo-web" src="./img/LOGO-PNG -COLOR.png" alt="" />
+        <a href="./index.html" class="navbar-brand d-flex align-items-center">
+          <img src="./img/LOGO-PNG -COLOR.png" alt="" class="logo-web">
+          <strong id="titlelogo">Dic Security Solutions</strong>
         </a>
         <nav id="navbarweb">
           <div class="container">
@@ -230,7 +221,7 @@
                           </ul>
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Alarmas <span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          <a class="dropdown-item" href="#">Alarmas <span><i style="margin-left: 133px;" class="fas fa-chevron-right"></i>
                           </span> </a>
                           <ul class="dropdown-menu dropdown-submenu">
                             <li>
@@ -266,9 +257,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
                 </li>
               </ul>
     
@@ -319,11 +307,20 @@
 
     <div
       id="carouselExampleInterval"
-      class="carousel slide hero-slider"
+      class="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="6000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+      <div class="carousel-inner" data-bs-interval="10000">
+        <div class="carousel-item active" >
           <picture>
             <source srcset="./img/chico-c3wpro.jpg" media="(max-width:480px)" />
             <img
@@ -334,7 +331,7 @@
           </picture>
         </div>
 
-        <div class="carousel-item" data-bs-interval="6000">
+        <div class="carousel-item" data-bs-interval="2000">
           <picture>
             <source srcset="./img/slider-cel-1.jpg" media="(max-width:480px)" />
             <img
@@ -345,21 +342,21 @@
           </picture>
         </div>
 
-        <div class="carousel-item" data-bs-interval="6000">
+        <div class="carousel-item" data-bs-interval="2000">
           <picture>
             <source srcset="./img/lc1c-cel.jpg" media="(max-width:480px)" />
             <img src="./img/lc1c-grande.jpg" class="d-block w-100" alt="..." />
           </picture>
         </div>
 
-        <div class="carousel-item" data-bs-interval="6000">
+        <div class="carousel-item" data-bs-interval="2000">
           <picture>
             <source srcset="./img/slider-chico.jpg" media="(max-width:480px)" />
             <img src="./img/slider-1.jpg" class="d-block w-100" alt="..." />
           </picture>
         </div>
 
-        <div class="carousel-item" data-bs-interval="6000">
+        <div class="carousel-item" data-bs-interval="2000">
           <picture>
             <source srcset="./img/c3x-cel.jpg" media="(max-width:480px)" />
             <img src="./img/c3x-3.jpg" class="d-block w-100" alt="..." />
@@ -385,6 +382,10 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
+
+    
     <!-- //HERO -->
 
     <!-- SERVICES -->
@@ -399,7 +400,7 @@
         <div class="row g-4">
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect bounceInUp">
-              <div class="iconbox"">
+              <div class="iconbox rounded mx-auto">
                 <i><img src="./img/camara-de-cctv.png" alt="" /></i>
               </div>
               <h5 class="mt-4 mb-2 service-title">Cámaras</h5>
@@ -410,7 +411,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect">
-              <div class="iconbox">
+              <div class="iconbox rounded mx-auto">
                 <i><img src="./img/alarm.png" alt="" /></i>
               </div>
               <h5 class="mt-4 mb-2 service-title">Alarmas</h5>
@@ -421,8 +422,8 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect" style="padding:14px;">
-              <div class="iconbox">
-                <i><img style="margin-left:10px;" src="./img/video-puerta-telefono.png" alt="" /></i>
+              <div class="iconbox rounded mx-auto">
+                <i><img src="./img/video-puerta-telefono.png" alt="" /></i>
               </div>
               <h5 class="mt-4 mb-2 service-title">Video Porteria</h5>
               <p class="service-description">
@@ -432,18 +433,18 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect">
-              <div class="iconbox">
+              <div class="iconbox rounded mx-auto">
                 <i><img src="./img/access-control.png" alt="" /></i>
               </div>
               <h5 class="mt-4 mb-2 service-title">Control de Acceso</h5>
-              <p class="service-description">
+              <p id="control-access" class="service-description">
                 Nuestro servicio de control de accesos y personal está especialmente diseñado para hacer más simple y segura la operatoria de su hogar, comercio o empresa.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect">
-              <div class="iconbox">
+              <div class="iconbox rounded mx-auto">
                 <i
                   ><img src="./img/home-insurance.png" alt=""
                 /></i>
@@ -456,7 +457,7 @@
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="service-1 card-effect">
-              <div class="iconbox">
+              <div class="iconbox rounded mx-auto">
                 <i><img src="./img/technical-support.png" alt="" /></i>
               </div>
               <h5 class="mt-4 mb-2 service-title">Servicio Tecnico</h5>
@@ -470,12 +471,11 @@
     </section>
     <!-- SERVICES -->
 
-    <section id="client">
-      <div class="container">
-        <div class="row mb-5">
+    <section id="client" style="margin-bottom: -50px; margin-top: -80px;">
+      <div class="container" id="title-client">
+        <div class="row ">
           <div class="col-md-8 mx-auto text-center ">
-            <h4 style="letter-spacing: -1px; margin-bottom: -5px;" class="text-uppercase">Marcas que</h4>
-            <h1 style="letter-spacing: -2px;" class="text-uppercase">Trabajamos</h1>
+            <h1 style="letter-spacing: -1px; margin-bottom: 8px;">Marcas</h1>
             <div class="line-divider"></div>
           </div>
         </div>
@@ -531,10 +531,9 @@
     <!-- Soluciones -->
     <section id="slider" class="pt-5" >
       <div class="container">
-        <div class="row mb-5">
+        <div class="row">
           <div class="col-md-8 mx-auto text-center ">
-            <h2 style="letter-spacing: -1px; margin-bottom: -5px;" class="text-uppercase">Proyectos</h2>
-            <h1 style="letter-spacing: -2px;" class="text-uppercase">Nos adaptamos a tus necesidades</h1>
+            <h1 style="letter-spacing: -1px; margin-bottom: 8px;">Proyectos</h1>
             <div class="line-divider"></div>
           </div>
           <!-- <hr class="solid"> -->
@@ -644,11 +643,11 @@
 
     <!-- Contact -->
 
-    <section id="contact"> 
+    <section id="contact" style="margin-top: -150px;"> 
 
-      <div class="row mb-5">
+      <div class="row" id="tittle-contact">
         <div class="col-md-8 mx-auto text-center">
-          <h1 class="text-uppercase">Contacto</h1>
+          <h1>Contacto</h1>
           <div class="line-divider"></div>
         </div>
       </div>
@@ -772,18 +771,8 @@
     <script src="./js/index.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/carousel.js"></script>
-    <script src="./js/client-logo.js"></script>
     <script src="js/next-sidebar.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
   </body>
 </html>

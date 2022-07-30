@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="../css/boxicons.min.css" />
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <!-- <link rel="stylesheet" href="../css/products.css" /> -->
     <link rel="stylesheet" href="../css/next-sidebar.css" />
@@ -26,23 +25,12 @@
     <title>Dic Security Solutions</title>
   </head>
 
-  <body class="app " style="overflow-x: hidden;">
+  <body class="app">
     <div class="sidebar">
     <div class="sidebar-inner">
       <div class="sidebar-logo">
         <div class="d-flex align-items-center flex-nowrap">
-          <a class="sidebar-link text-decoration-none" href="#">
-            <div class="d-flex align-items-center flex-nowrap">
-              <div class="logo-sm">
-                <div class="logo d-flex align-items-center justify-content-center">
-                  Logo
-                </div>
-              </div>
-  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
-                Logo
-              </div> -->
-            </div>
-          </a>
+
           <div class="">
             <div class="mobile-toggle sidebar-toggle">
               <a href="#" class="text-decoration-none">
@@ -165,18 +153,6 @@
             </li>
           </ul> -->
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link wave-effect" onclick="dictecno()">
-            <button type="button" class="btn btn-tecno">Dic Tecnology Solutions</button>
-          </a>
-        </li>
-        <div class="mt-3">
-          <span class="icon-holder">
-          <i onclick="facebook()" class="fab fa-facebook ml-2"></i>
-          <i onclick="whatsapp()" class="fab fa-whatsapp ml-2"></i>
-          <i onclick="instagram()" class="fab fa-instagram ml-2"></i>      
-        </span>
-        </div>
         
       </ul>
     </div>
@@ -191,9 +167,10 @@
           </li>
         </ul>
         <ul class="navbar-nav me-auto justify-content-center">
-        <a class="navbar-brand " href="../index.html">
-          <img class="logo-web" src="../img/LOGO-PNG -COLOR.png" alt="" />
-        </a>
+          <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <img src="../img/LOGO-PNG -COLOR.png" alt="" class="logo-web">
+            <strong id="titlelogo">Dic Security Solutions</strong>
+          </a>
         <nav id="navbarweb">
           <div class="container">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -263,9 +240,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item">
-                  <button type="button" onclick="dictecno()" class="btn btn-tecno">Dic Tecnology Solutions</button>
-                </li>
               </ul>
     
               
@@ -296,125 +270,126 @@
       </div>
   </nav>
     <!-- NavbarMobile -->
-
-    <!-- about us -->
-    <div class="row mb-5" style="margin-top: 50px;">
-      <div class="col-md-8 mx-auto text-center">
-        <h1 class="text-uppercase">Nosotros</h1>
-        <div class="line-divider"></div>
-      </div>
-    </div>
-		<section id="about">
-			<div class="container-fluid" id="about-container">
-				<div class="row" id="banner-row">
-					<div class="col-md-5" id="about-col">
-						<ul style="font-size: 19px;">
-							<li>
-								<span class="text-danger">DIC Security Solutions</span> tiene que ver con brindar un servicio de exelente calidad,
-                rentable y con soluciones confiables.
-							</li>
-							<li>Tenemos gran capacitacion en nuestro oficio y nos actualizamos constantemente para siempre dar el mejor servicio.</li>
-							<li>
-								Permítanos ocuparnos de las necesidades de su negocio.
-                La productividad del cliente es nuestra prioridad.
-							</li>				
-						</ul>
-					</div>
-					<div class="col-md-7" id="banner-col2">
-						<img src="../img/instalacion-camm.jpg" class="img-nosotros rounded mx-5 d-block">
-					</div>
-				</div>
-			</div>
-		</section>
-		<hr/>
-
-		<!-- products -->
-		<!-- <section id="product">
-			<h3 class="text-center">OTROS PRODUCTOS</h3>
-			<div class="container-fluid" id="product-container">
-				<div class="row" id="banner-row">
-					<div class="col-md-6" id="about-col">
-						<img src="../img/personas-instalando.jpg" class="img-nosotros rounded mx-auto d-block">
-					</div>
-					<div class="col-md-6" id="product-col2">
-						<ul style="font-size: 19px;">
-							<li>CLINIC MANAGMENT SYSTEM</li>
-							<li>SCHOOL/COLLEGE MANAGEMENT
-								SOFTWARE (CAMPUS PRO)</li>
-							<li>SERVICE MANAGEMENT SOFTWARE</li>
-							<li>E-COMMERCE WEBSITE</li>
-				
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-    <section id="origin">
-      <div class="row mb-5">
+    <header id="nosotross">
+      <!-- about us -->
+      <div class="row mb-5" style="margin-top: 50px;">
         <div class="col-md-8 mx-auto text-center">
-          <h1 class="text-uppercase">Historia de Origen</h1>
+          <h1 class="text-uppercase">Nosotros</h1>
           <div class="line-divider"></div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-        <p>
-            While doing research work for their PhDs from the University of Auckland in 2014, our founders came across one of the API industry's pain points: SDKs. They realized that API providers who spent hundreds of thousands of dollars every year on improving developer experience, by providing SDKs and user-friendly documentation were able to reach a wider developer audience for their APIs compared to API providers who weren't able to do so.
-        </p>
-        <p>
-            It was so clear that even though writing SDKs and documentation was a difficult and expensive task, it followed repeatable patterns which could be defined as logic blocks in a code generation engine. So, as a research project, they started working on a code generation engine which dynamically generated SDKs using API description as input.
-        </p>
-        <p>
-            After a rigorous journey, this research project was selected as a candidate for commercialization by Return on Science (a NZ national research commercialization program focused on bringing new academic research to market) and the concept was transformed into a product i.e. APIMatic.
-        </p>
+      <section id="about">
+        <div class="container-fluid" id="about-container">
+          <div class="row" id="banner-row">
+            <div class="col-md-5" id="about-col">
+              <ul style="font-size: 19px;">
+                <li>
+                  <span class="text-danger">DIC Security Solutions</span> tiene que ver con brindar un servicio de exelente calidad,
+                  rentable y con soluciones confiables.
+                </li>
+                <li>Tenemos gran capacitacion en nuestro oficio y nos actualizamos constantemente para siempre dar el mejor servicio.</li>
+                <li>
+                  Permítanos ocuparnos de las necesidades de su negocio.
+                  La productividad del cliente es nuestra prioridad.
+                </li>				
+              </ul>
+            </div>
+            <div class="col-md-7" id="banner-col2">
+              <img src="../img/instalacion-camm.jpg" class="img-nosotros rounded mx-5 d-block">
+            </div>
+          </div>
         </div>
-    </div>
-    </section>
-
-    <!-- TEAM -->
-    <section id="team">
-      <div class="container">
+      </section>
+      <hr/>
+  
+      <!-- products -->
+      <!-- <section id="product">
+        <h3 class="text-center">OTROS PRODUCTOS</h3>
+        <div class="container-fluid" id="product-container">
+          <div class="row" id="banner-row">
+            <div class="col-md-6" id="about-col">
+              <img src="../img/personas-instalando.jpg" class="img-nosotros rounded mx-auto d-block">
+            </div>
+            <div class="col-md-6" id="product-col2">
+              <ul style="font-size: 19px;">
+                <li>CLINIC MANAGMENT SYSTEM</li>
+                <li>SCHOOL/COLLEGE MANAGEMENT
+                  SOFTWARE (CAMPUS PRO)</li>
+                <li>SERVICE MANAGEMENT SOFTWARE</li>
+                <li>E-COMMERCE WEBSITE</li>
+          
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> -->
+  
+      <section id="origin">
         <div class="row mb-5">
           <div class="col-md-8 mx-auto text-center">
-            <h6 class="text-danger">EQUIPO</h6>
-            <h1>Conozca nuestro equipo de profecionales</h1>
+            <h1 class="text-uppercase">Historia de Origen</h1>
             <div class="line-divider"></div>
           </div>
         </div>
-        <div class="row text-center g-4">
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-member card-effect">
-              <img src="../img/jo.jpg" alt="" />
-              <h5 class="mb-0 mt-4">Jo</h5>
-              <p>SEO - Tecnico Superior</p>
+        <div class="container">
+          <div class="row">
+          <p>
+              While doing research work for their PhDs from the University of Auckland in 2014, our founders came across one of the API industry's pain points: SDKs. They realized that API providers who spent hundreds of thousands of dollars every year on improving developer experience, by providing SDKs and user-friendly documentation were able to reach a wider developer audience for their APIs compared to API providers who weren't able to do so.
+          </p>
+          <p>
+              It was so clear that even though writing SDKs and documentation was a difficult and expensive task, it followed repeatable patterns which could be defined as logic blocks in a code generation engine. So, as a research project, they started working on a code generation engine which dynamically generated SDKs using API description as input.
+          </p>
+          <p>
+              After a rigorous journey, this research project was selected as a candidate for commercialization by Return on Science (a NZ national research commercialization program focused on bringing new academic research to market) and the concept was transformed into a product i.e. APIMatic.
+          </p>
+          </div>
+      </div>
+      </section>
+  
+      <!-- TEAM -->
+      <section id="team">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <h6 class="text-danger">EQUIPO</h6>
+              <h1>Conozca nuestro equipo de profecionales</h1>
+              <div class="line-divider"></div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-member card-effect">
-              <img src="../img/jorge-pic.jpg" alt="" />
-              <h5 class="mb-0 mt-4">Jorge</h5>
-              <p>Gefe Tecnico</p>
+          <div class="row text-center g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="../img/jo.jpg" alt="" />
+                <h5 class="mb-0 mt-4">Jo</h5>
+                <p>SEO - Tecnico Superior</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-member card-effect">
-              <img src="../img/random-person.jpg" alt="" />
-              <h5 class="mb-0 mt-4">Rafa</h5>
-              <p>Tecnico - Electricista</p>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="../img/jorge-pic.jpg" alt="" />
+                <h5 class="mb-0 mt-4">Jorge</h5>
+                <p>Gefe Tecnico</p>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="team-member card-effect">
-              <img src="../img/random-person-2.jpg" alt="" />
-              <h5 class="mb-0 mt-4">Juan</h5>
-              <p>Gerente en ventas</p>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="../img/random-person.jpg" alt="" />
+                <h5 class="mb-0 mt-4">Rafa</h5>
+                <p>Tecnico - Electricista</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                <img src="../img/random-person-2.jpg" alt="" />
+                <h5 class="mb-0 mt-4">Juan</h5>
+                <p>Gerente en ventas</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- TEAM -->
+      </section>
+      <!-- TEAM -->
+    </header>
 
     <footer>
       <div class="footer-bottom py-3">

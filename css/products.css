@@ -85,7 +85,8 @@ section[id]{
 .knowledge__paragraph{
    line-height: 1.7;
    margin-bottom: 15px;
-   text-align: justify;
+   text-align: initial;
+   background-color: #e5e5f7;
 }
 
 .knowledge__img{
@@ -210,7 +211,7 @@ box-shadow:  20px 20px 60px #bebebe,
 @media (max-width: 900px){
    .m-container{
      display: block!important;
-     margin-top: 80px;
+     margin-top: 60px;
      overflow: hidden;
    }
    #pcontainer{
