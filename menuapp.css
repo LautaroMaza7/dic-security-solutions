@@ -3,13 +3,13 @@
     width:100%;
     height:70px;
     bottom: 0;
-    background: #EEF0F4;
-box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+    background: #ffffff;
+    box-shadow: inset 20px 20px 60px #d9d9d9,
+            inset -20px -20px 60px #ffffff;
     position:fixed;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius: 50px;
 }
 .navigation ul{
     display: flex;
@@ -37,8 +37,9 @@ box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 2.2rem;
     text-align: center;
+    font-weight: 700;
     transition: 0.5s;
     color: #DE0024;
 }
