@@ -36,8 +36,8 @@
 .navigation ul li a .icon{
     position: relative;
     display: block;
-    line-height: 75px;
-    font-size: 2.2rem;
+    line-height: 95px;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 700;
     transition: 0.5s;
@@ -51,7 +51,7 @@
     position: absolute;
     color: #DE0024;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 10px;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
