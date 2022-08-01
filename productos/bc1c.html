@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/products.css" />
     <link rel="stylesheet" href="../css/next-sidebar.css" />
-    <link rel="stylesheet" href="../menuapp.css">
+    <link rel="stylesheet" href="../css/menuapp.css">
     <link rel="stylesheet" href="../css/camaras.css">
 
     <title>Dic Security Solutions</title>
@@ -668,14 +668,70 @@
                   Habilitada para Hogar Inteligente
               </p>
           </div>
-          <div class="text-ele" style="position: absolute; width: 90.667vw; top: 302.667vw; left: 50%; margin-left: -45.333vw;">
+          <div class="text-ele" id="especificaciones" style="position: absolute; width: 90.667vw; top: 302.667vw; left: 50%; margin-left: -45.333vw;">
               <p style="font-size: 2.667vw; font-weight: 400; line-height: 1em; color: rgb(51, 51, 51); text-align: center; font-style: normal; text-decoration: none;">
                   Las imágenes de la interfaz de la aplicación EZVIZ son solo para fines ilustrativos.
               </p>
           </div>
       </div>
-      
-      
+
+
+
+      <section id="menuapp" class="fixed-bottom">
+        <div class="navigation">
+          <ul>
+              <li class="list active">
+                <a href="#especificaciones">
+                    <span class="icon">
+                        <i class="bi bi-list-ul"></i>
+                    </span>
+                    <span class="text">Especificaciones</span>
+                </a>
+                <!-- <a href="#">
+                  <span class="icon">
+                    <i class="bi bi-house-door"></i>
+                  </span>
+                  <span class="text">Home</span>
+                </a> -->
+              </li>
+              <li class="list">
+                  <a href="../pages/contacto.html">
+                    <span class="icon">
+                        <i class="bi bi-chat-dots"></i>
+                    </span>
+                    <span class="text">Contactar</span>
+                  </a>
+              </li>
+              <li class="list">
+                <a href="../pages/productos-category.html">
+                    <span class="icon">
+                        <i class="bi bi-handbag"></i>
+                    </span>
+                    <span class="text">+ Productos</span>
+                </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-capslock-fill"></i>
+                    </span>
+                  </a>
+              </li>
+              <div class="indicator"></div>
+          </ul>
+        </div>
+      </section>
+  
+      <script>
+        const list=document.querySelectorAll('.list');
+        function activeLink(){
+          list.forEach((item)=>
+          item.classList.remove('active'));
+          this.classList.add('active');
+        }
+        list.forEach((item)=>
+        item.addEventListener('click', activeLink));
+      </script>
   </div>
 
 
