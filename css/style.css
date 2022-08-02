@@ -14,19 +14,52 @@
 .btn-danger{
     background-color: #DE0024!important;
 }
+section[id]{
+  scroll-margin-top: 50px!important;
+}
+.carouselfade{
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+    filter: blur(5px);
+  }
+  10%{
+    opacity: 1;
+    filter: brightness(1) blur(2px);
+  }
+}
+
+
+.reveal-fade{
+  animation: fadescroll 2s ease ;
+}
+@keyframes fadescroll{
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
 .reveal {
   position: relative;
   opacity: 0;
 }
-
 .reveal.active {
   opacity: 1;
 }
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
-section[id]{
-  scroll-margin-top: 50px!important;
+.active.fade-left {
+  animation: fade-left 1s ease-in;
 }
 
 @keyframes fade-bottom {
@@ -39,6 +72,17 @@ section[id]{
     opacity: 1;
   }
 }
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .btn-card {
   flex: 1 1 auto;
@@ -121,12 +165,6 @@ a {
     /* color: var(--dark); */
     text-decoration: none;
 }
-.carouselfade{
-    animation: fadeIn 3s ease;
-}
-@keyframes fadeIn{
-    0%{opacity:0;}
-   }
 
 .carousel-item {
   transition: linear 0.4s!important;

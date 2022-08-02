@@ -26,21 +26,16 @@ function whatsapp() {
     window.location.href = "https://api.whatsapp.com/send?phone=541164864919";
 }
 
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '100px',
+    duration: 2000,
+    delay: 300,
+    //reset: true
+});
 
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 100;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  
-  window.addEventListener("scroll", reveal);
+sr.reveal('.home__data, .contact__subtitule, .contact__text',{}); 
+sr.reveal('.slider__cards, .client__logo',{delay: 300}); 
+sr.reveal('.form-control',{ interval: 400}); 
+sr.reveal('.service__1',{interval: 300}); 
