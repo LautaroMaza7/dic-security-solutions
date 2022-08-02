@@ -17,6 +17,8 @@
 section[id]{
   scroll-margin-top: 50px!important;
 }
+
+
 .carouselfade{
   animation: fadeIn 2s ease;
 }
