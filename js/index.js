@@ -8,7 +8,7 @@ function camarasana() {
     window.location.href = "../pages/productos-camaras-analogicas.html";
 }
 function alarmassmart() {
-    window.location.href = "../pages/servicios.html";
+    window.location.href = "../pages/proyectos.html";
 }
 function alarmaspro() {
     window.location.href = "../pages/productos-alarmas.html";
