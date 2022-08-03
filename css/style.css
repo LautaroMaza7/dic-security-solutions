@@ -859,6 +859,9 @@ form .form-control {
   .social-media-list a:hover i {
     color: #000;
   }
+  #iconMail{
+    display: none;
+  }
   
   .copyright {
     font: 200 14px 'Oswald', sans-serif;
@@ -909,7 +912,7 @@ form .form-control {
     } 
     
     .direct-contact-container {
-      margin-top: 60px;
+      margin-top: 20px;
       max-width: 280px;
     }  
     .social-media-list {
@@ -927,17 +930,24 @@ form .form-control {
       line-height: 55px;
     }
     
+    
   }
   
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
     }
+    #contact{
+      margin-bottom: -60px!important;
+    }
     .contact-list{
       display: none!important;
     }
     .social-media-list{
       margin-top: -50px;
+    }
+    #iconMail{
+      display:inline-block;
     }
     #about{
      margin-top: -120px!important;
@@ -1329,7 +1339,11 @@ button{
         margin-left: 60px!important;
     }
     .contact-page{
-      margin-top: 50px!important;
+      margin-top: -30px!important;
+      margin-bottom: -100px!important;
+    }
+    .wrapper-page{
+      margin-top: -50px!important;
     }
     .section-header{
         margin-left: 0px!important;
