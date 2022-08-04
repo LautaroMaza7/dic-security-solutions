@@ -28,9 +28,9 @@
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
-    padding: 0px 0 50px;
+    padding: 0px 0 0px;
   }
-  .card
+  .carta
   {
     position: relative;
     min-width: 310px;
@@ -42,7 +42,7 @@
     border-radius: 15px;
     margin: 30px;
   }
-  .container .card .box
+  .container .carta .box
   {
     position: absolute;
     top: 20px;
@@ -59,17 +59,17 @@
     justify-content: center;
     align-items: center;
   }
-  .container .card:hover .box
+  .container .carta:hover .box
   {
     transform: translateY(-50px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
   }
-  .container .card .box .content
+  .container .carta .box .content
   {
     padding: 20px;
     text-align: center;
   }
-  .container .card .box .content .icon
+  .container .carta .box .content .icon
   {
     position: relative;
     width: 80px;
@@ -82,12 +82,12 @@
     border-radius: 50%;
     margin-bottom: 10px;
   }
-  .container .card .box .content .icon .fa
+  .container .carta .box .content .icon .fa
   {
     color: #fff;
     font-size: 2em;
   }
-  .container .card .box .content h3 
+  .container .carta .box .content h3 
   {
     font-size: 1.8em;
     color: #32a3b1;
@@ -95,37 +95,37 @@
     transition: 0.4s;
     font-weight: 300;
   }
-  .container .card .box .content h4
+  .container .carta .box .content h4
   {
       color: #32a3b1;
       font-size: 2.5em;
       font-weight: 700;
   }
-  .container .card .box .content h4 sup
+  .container .carta .box .content h4 sup
   {
     position: relative;
     font-size: 75%;
     font-weight: 300;
   }
-  .container .card .box .content ul
+  .container .carta .box .content ul
   {
     position: relative;
   }
-  .container .card .box .content ul li
+  .container .carta .box .content ul li
   {
     list-style: none;
     color: #32a3b1;
     margin: 5px 0;
   }
-  .container .card .box .content ul li .fa-check
+  .container .carta .box .content ul li .fa-check
   {
     color: #0f0;
   }
-  .container .card .box .content ul li .fa-times
+  .container .carta .box .content ul li .fa-times
   {
     color: #f00;
   }
-  .container .card .box .content a
+  .container .carta .box .content a
   {
     position: relative;
     display: inline-block;
@@ -137,72 +137,47 @@
     font-weight: 400;
     color: #fff;
   }
-  .container .card:nth-child(1) .box .content a,
-  .container .card:nth-child(1) .box .content .icon
+  .container .carta:nth-child(1) .box .content a,
+  .container .carta:nth-child(1) .box .content .icon
   {
     background: #121111;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
-  .container .card:nth-child(3) .box .content a,
-  .container .card:nth-child(3) .box .content .icon
+  .container .carta:nth-child(3) .box .content a,
+  .container .carta:nth-child(3) .box .content .icon
   {
     background:  #e4042c ;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
-  .container .card:nth-child(2) .box .content a,
-  .container .card:nth-child(2) .box .content .icon
+  .container .carta:nth-child(2) .box .content a,
+  .container .carta:nth-child(2) .box .content .icon
   {
     background:  #f39d24 ;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
+
   
-  .toggle
-  {
-    position: absolute;
-    top: 20px;
-    left: calc(50% - 30px);
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    color: #32a3b1;
-    z-index: 1;
-    cursor: pointer;
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .toggle:before
-  {
-    content: '\f185';
-    position: absolute;
-    font-family: fontAwesome;
-    font-size: 24px;
-  }
-  
-  
-  
-  .container .card
+  .container .carta
   {
     box-shadow: inset 10px 10px 10px rgba(0,0,0,0.03),
                 inset -10px -10px 15px rgba(255,255,255,0.5),
                 10px 10px 10px rgba(0,0,0,0.03),
                 -10px -10px 15px rgba(255,255,255,0.5);
   }
-  .container .card .box
+  .container .carta .box
   {
     background: #ebf5fc;
     border: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
-  .container .card .box:hover
+  .container .carta .box:hover
   {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
   }
   
-  .card .box .content h3,
-  .card .box .content h4,
-  .card .box .content ul li
+  .carta .box .content h3,
+  .carta .box .content h4,
+  .carta .box .content ul li
   {
     color: #32a3b1;
   }
