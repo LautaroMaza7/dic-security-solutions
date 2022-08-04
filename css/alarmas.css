@@ -13,8 +13,12 @@
     box-shadow: 0!important;
  }
 
-section[id]{
-    scroll-margin-top: 50px!important;
+
+
+section{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    scroll-margin-top: -50px!important;
 }
 
 .knowledge__container{
