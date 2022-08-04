@@ -18,7 +18,6 @@ section[id]{
   scroll-margin-top: 50px!important;
 }
 
-
 .carouselfade{
   animation: fadeIn 2s ease;
 }
@@ -585,10 +584,6 @@ box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     height: 125px;
     border-radius: 100px;
 }
-.card-header{
-    border-radius: 1rem!important;
-}
-
 
 .social-icons {
     display: flex;
