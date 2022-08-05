@@ -19,9 +19,10 @@
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/alarmas.css">
-    <!-- <link rel="stylesheet" href="../css/products.css" /> -->
+    <link rel="stylesheet" href="../css/menuapp-c1c.css">
     <link rel="stylesheet" href="../css/next-sidebar.css" />
 
     <title>Dic Security Solutions</title>
@@ -286,6 +287,63 @@
   </nav>
     <!-- NavbarMobile -->
 
+    <section id="menuapp" class="fixed-bottom menu-alarmas">
+      <div class="navigation">
+        <ul>
+            <li class="list active">
+              <a href="#servicio-smart-pro">
+                  <span class="icon">
+                    <i class="bi bi-briefcase"></i>
+                  </span>
+                  <span class="text">Servicios</span>
+              </a>
+              <!-- <a href="#">
+                <span class="icon">
+                  <i class="bi bi-house-door"></i>
+                </span>
+                <span class="text">Home</span>
+              </a> -->
+            </li>
+            <li class="list">
+              <a href="#sistema-smart-pro">
+                  <span class="icon">
+                    <i class="bi bi-cpu"></i>
+                  </span>
+                  <span class="text">Sistema</span>
+              </a>
+            </li>
+            <li class="list">
+                <a href="#beneficios">
+                  <span class="icon">
+                    <i class="bi bi-ui-checks-grid"></i>
+                  </span>
+                  <span class="text">Beneficios</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#seguridad">
+                  <span class="icon">
+                    <i class="bi bi-shield-check"></i>
+                  </span>
+                  <span class="text">+ Seguridad</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      const list=document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item)=>
+      item.addEventListener('click', activeLink));
+    </script>
+
     <!-- HERO -->
     <div
       id="carouselExampleSlidesOnly"
@@ -352,7 +410,6 @@
           <h2 class="subtitle">
             Que es el sistema SMART PRO de alarma de intrusión inalámbrico
           </h2>
-          <br><br>
           <p class="knowledge__paragraph">
             En Dic Security Solutions creemos que la innovación hace que los productos sean
             más funcionales y, al mismo tiempo, más fáciles de utilizar. El
@@ -714,7 +771,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/products.js"></script>
+    <script src="../js/menuapp.js"></script>
     <script src="../js/next-sidebar.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

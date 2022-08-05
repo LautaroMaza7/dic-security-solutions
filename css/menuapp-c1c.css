@@ -1,3 +1,6 @@
+.menu-alarmas{
+    display: none;
+}
 
 .navigation{
     width:100%;
@@ -86,4 +89,10 @@ box-shadow: inset 5px -5px 32px #b8001e,
 }
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translate(calc(70px * 4));
+}
+
+@media (max-width:480px){
+    .menu-alarmas{
+        display: block!important;
+    }
 }

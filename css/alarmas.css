@@ -49,9 +49,9 @@
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: #ebf5fc;
+    background: #FAF3F3;
     border-radius: 15px;
-    border: 2px solid #ebf5fc;
+    border: 2px solid #FAF3F3;
     box-shadow: 0 10px 40px rgba(0,0,0,0.07);
     transition: transform 0.4s, box-shadow 0.4s;
     overflow: hidden;
@@ -90,10 +90,9 @@
   .container .carta .box .content h3 
   {
     font-size: 1.8em;
-    color: #32a3b1;
+    color: white;
     z-index: 1;
     transition: 0.4s;
-    font-weight: 300;
   }
   .container .carta .box .content h4
   {
@@ -166,7 +165,12 @@
   }
   .container .carta .box
   {
-    background: #ebf5fc;
+    background: #EF3B36;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
     border: none;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
@@ -236,7 +240,12 @@ section{
     .knowledege__texts .subtitle{
         font-size: 20px;
     }
-    
+    .knowledege__texts{
+      margin-top: -60px!important;
+    }
+    #beneficios{
+      margin-top: -80px;
+    }
     .knowledge__picture{
         grid-row: 1/2;
         justify-self: center;
