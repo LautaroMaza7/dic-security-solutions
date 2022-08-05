@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/alarmas.css">
+    <!-- <link rel="stylesheet" href="../css/products.css" /> -->
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/cotizador.css">
+    <link rel="stylesheet" href="../css/menuapp-c1c.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <title>Dic Security Solutions</title>
+  </head>
+
+  <body class="app " data-bs-spy="scroll" data-bs-target="#navbarExample08">
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="arrow">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Cercos Eléctricos</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white sticky-top ">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+          <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <img src="../img/LOGO-PNG -COLOR.png" alt="" class="logo-web">
+            <strong id="titlelogo">Dic Security Solutions</strong>
+          </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/alarmas-smart.html">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cercos Eléctricos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Video Porteria</a>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <a href="tel:+54-11-6486-4919" class="text-black-50">
+              <div id="contact-header">
+                <i class="fas fa-phone mx-2"></i>
+                <span>(+54) 11-6486-4919</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+    <section id="menuapp" class="fixed-bottom menu-alarmas">
+      <div class="navigation">
+        <ul>
+            <li class="list active">
+              <a href="#servicio">
+                  <span class="icon">
+                    <i class="bi bi-briefcase"></i>
+                  </span>
+                  <span class="text">Servicios</span>
+              </a>
+              <!-- <a href="#">
+                <span class="icon">
+                  <i class="bi bi-house-door"></i>
+                </span>
+                <span class="text">Home</span>
+              </a> -->
+            </li>
+            <li class="list">
+                <a href="#beneficios">
+                  <span class="icon">
+                    <i class="bi bi-ui-checks-grid"></i>
+                  </span>
+                  <span class="text">Beneficios</span>
+                </a>
+            </li>
+            <li class="list">
+              <a href="#comparacion">
+                  <span class="icon">
+                    <i class="bi bi-table"></i>
+                  </span>
+                  <span class="text">Comparaciones</span>
+              </a>
+            </li>
+            <li class="list">
+                <a href="#cotizacion">
+                  <span class="icon">
+                    <i class="bi bi-piggy-bank"></i>
+                  </span>
+                  <span class="text">Cotización</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      const list=document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item)=>
+      item.addEventListener('click', activeLink));
+    </script>
+
+    <!-- HERO -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="../img/SMART-landing-page-mobile.jpg" media="(max-width:480px)" />
+            <img
+              src="../img/SMART-landing-page-es-4000x1333.jpg"
+              class="d-block w-100 slider-mobile"
+              alt="..."/>
+          </picture>
+        </div>
+      </div>
+    </div>
+    <!-- //HERO -->
+    
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top p-2 shadow-sm rounded-bottom" aria-label="Tenth navbar example">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#servicio">Lo que ofrecemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comparacion">Comparacion de Gamas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cotizacion">Cotización sin cargo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#utilizacion">Utilizacion del sistema</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <div id="slider-marshall">
+        <section class="py-5 text-center container " style="margin-top: -80px;">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto border-danger border-top">
+                <h1 class="fw-light mb-2 text-white">Simple, Segura y Confiable.</h1>
+                <img src="../img/marshall-removebg-preview.png" class="rounded mx-auto d-block" alt="...">
+              </div>
+            </div>
+            <div class="container">
+                <div id="icon-marshall" class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-4 text-center" style="margin-top: -60px;">
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="../img/barrerasmarshall-removebg-preview.png" style="width: 50px;" alt="">
+                      </div>
+                      <p class="mb-4" style="font-size: 13px; line-height: 20px;">Barreras</p>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="../img/sensor-ext-marshall-removebg-preview.png" style="width: 50px;" alt="">
+                      </div>
+                      <p style="font-size: 13px; line-height: 20px;">Sensor de movimiento exterior</p>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="../img/sensor-interior-marshall-removebg-preview.png" style="width: 50px; margin-top: 17px;" alt="">
+                      </div>
+                      <p style="font-size: 13px; line-height: 20px;">Sensor de movimiento interiores</p>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-2">
+                        <img src="../img/sensor-ap-marshall-removebg-preview.png" style="width: 50px;" alt="">
+                      </div>
+                      <p style="font-size: 13px; line-height: 20px;">Sensor de aperturas interior</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                          <img src="../img/sensor-ap-interior-marshall-removebg-preview.png" style="width: 50px; margin-top: 15px;" alt="">
+                        </div>
+                        <p style="font-size: 13px; line-height: 20px;">Sensor de aperturas interior</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                          <img src="../img/anti-entradera-marshall-removebg-preview.png" style="width: 50px;" alt="">
+                        </div>
+                        <p style="font-size: 13px; line-height: 20px;">Sistema Anti-entradera.</p>
+                    </div>
+                  </div>
+            </div>
+          </section>
+    </div>
+
+    <section id="proteccion">
+        <div class="px-4 pt-5 my-5 text-center">
+            <h1 class="fw-bold mb-5">Es momento de estar bien protegido</h1>
+            <div class="overflow-hidden">
+              <div class="container px-5">
+                <img src="https://alarmasmarshall.com.ar/images/img1.jpg" class="img-fluid mb-4" alt="Example image" loading="lazy">
+              </div>
+            </div>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-2">Nuestro sistema de seguridad es elegante
+                    y cuenta con un potente software que permite
+                    una comunicación inmediata a su celular mediante
+                    notificaciones inteligentes de eventos como robo,
+                    asalto, incendio o emergencia médica.</p>
+              </div>
+          </div>
+        <div class="px-4 my-5 text-center">
+            <h1 class=" fw-bold">Cualquier intruso
+                será detectado</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Sistema de seguridad inalámbrico
+                para máxima seguridad.</p>
+            </div>
+            <div class="overflow-hidden">
+              <div class="container px-5">
+                <img src="https://alarmasmarshall.com.ar/images/sensores.jpg" style="width: 500px;" alt="Example image" loading="lazy">
+              </div>
+            </div>
+            <div class="col-lg-6 mt-5 mx-auto">
+                <p class="lead mb-4">Los sensores inalámbricos Marshall son los encargados
+                    de mantener tu hogar seguro frente a intrusos.
+                    Gracias a su detección inteligente te proporcionan
+                    mayor seguridad evitando falsas alarmas.
+                    Además nuestro sensor de movimiento distingue tu
+                    mascota de un instruso real.</p>
+              </div>
+          </div>
+
+
+          <div class="px-4 my-5 text-center">
+            <div class="overflow-hidden">
+              <div class="container px-5">
+                <img src="https://alarmasmarshall.com.ar/images/marshallSmart.jpg" style="width: 500px;" alt="Example image" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 text-center ">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconProteccion.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p class="mb-4" style="font-size: 16px; line-height: 20px;">Protección
+                    para interior: <br>
+                    Todas las puertas,
+                    ventanas y ambientes
+                    estarán seguros con
+                    nuestros sensores
+                    internos.</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconProteccionExt.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 16px; line-height: 20px;">Protección
+                    para exterior: <br>
+                    Detecta al intruso
+                    antes de acercarse
+                    a tu propiedad.
+                    Ideal para patios,
+                    terrazas y jardines.</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconProteccionEsp.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 16px; line-height: 20px;">Protecciones
+                    especiales: <br>
+                    Alertas inmediatas
+                    frente a las primeras
+                    señales de incendio.</p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <section id="sistema" class="mt-4">
+        <div class="px-4 my-5  text-center">
+            <h1 class=" fw-bold">Ahora tenés
+                el control total.</h1>
+            <div class="col-lg-6 mx-auto" style="margin-bottom: -50px;">
+              <p class="lead">Sistema de seguridad inalámbrico
+                para máxima seguridad.</p>
+            </div>
+            <div class="overflow-hidden">
+              <div class="container ">
+                <img src="../img/app-teclado-control-fondo-removebg-preview.png" style="width: 500px;" alt="Example image" loading="lazy">
+              </div>
+            </div>
+            <div class="col-lg-6 mx-auto" style="margin-top: -50px;"">
+                <p class="lead mb-4">No importa qué método utilices para activar y
+                    desactivar tu panel Marshall, siempre lo
+                    vas a poder hacer de forma rápida y sencilla.</p>
+              </div>
+          </div>
+    </section>
+
+    <section id="formas">
+        <div class="px-4 my-5  text-center">
+            <h1 class=" fw-bold">Diferentes formas de
+                alertar lo que sucede.</h1>
+            <div class="overflow-hidden">
+              <div class="container ">
+                <img src="../img/marshallSmartIp-removebg-preview.png" style="width: 800px;" alt="Example image" loading="lazy">
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 text-center ">
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconSirenaExterior.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p class="mb-4" style="font-size: 16px; line-height: 20px;">Sirena exterior:
+                    Máxima potencia de sonido para alertar frente a un robo.</p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconAlertas.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 16px; line-height: 20px;">Alertas:
+                    Ante un evento te llegará una notificación acompañada
+                    de un potente sonido.
+                    
+                    </p>
+                </div>
+                <div class="feature col">
+                  <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+                    <img src="https://alarmasmarshall.com.ar/images/iconCartel.jpg" style="width: 50px;" alt="">
+                  </div>
+                  <p style="font-size: 16px; line-height: 20px;">Cartel de propiedad segura:
+                    La función del cartel es la de disuadir cualquier intento de robo a la propiedad.</p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <!-- <section>
+        <div class="container" style="max-width: 1140px;">
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 py-3">
+                    <h2 class="display-5">Another headline</h2>
+                    <p class="lead">And an even wittier subheading.</p>
+                  </div>
+                  <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+                <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Another headline</h2>
+                    <p class="lead">And an even wittier subheading.</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+              </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="footer-top text-center">
+          <div class="container">
+            <div class="row row align-items-center">
+              <div class="col">
+                <a href="../index.html"
+                  ><img class="logo-footer" src="../img/LOGO-PNG -COLOR.png" alt=""
+                /></a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-0 text-white-50">
+                  © 2022 Derechos reservados Dic Security Solutions | Diseñado x
+                  <span class="text-white">Lau7aro Maza</span>
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="social-icons">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/cotizador.js"></script>
+    <script src="../js/menuapp.js"></script>
+    <script src="../js/next-sidebar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

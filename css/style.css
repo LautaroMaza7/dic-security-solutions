@@ -612,17 +612,6 @@ box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
 }
 
 
-form input.form-control {
-    height: 56px;
-}
-
-form .form-control {
-    border: transparent;
-    border-radius: 20px;
-    background-color: rgba(0,0,0,0.11);
-}
-
-
 /* about us */
 #origin{
     margin-top: -60px;
@@ -666,312 +655,6 @@ form .form-control {
 }
 
 
-/*CONTACTO INDEX*/
-#contact {
-    width: 100%;
-    height: 100%;
-    overflow-x: clip;
-    background-image: linear-gradient(
-  180deg,
-  hsl(0deg 0% 100%) 7%,
-  hsl(0deg 99% 71%) 64%,
-  hsl(0deg 98% 42%) 100%
-);
-
-  }
-  
-  .section-header {
-    margin: 10px;
-    padding: 10px 0;
-    color: var(--dark);
-    text-transform: uppercase;
-    margin-left: 230px;
-  }
-  .sub-header {
-    margin-left: 230px;
-    color: var(--dark);
-    text-transform: uppercase;
-  }
-  
-  .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 auto;
-    position: relative;
-    max-width: 840px;
-  }
-  
-  /* Left contact page */
-  .form-horizontal {
-    /*float: left;*/
-    max-width: 400px;
-    font-family: 'Sora';
-    font-weight: 400;
-  }
-  
-  .form-control, 
-  textarea {
-    max-width: 400px;
-    margin: 10px 0px;
-    background-color: #000;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-
-  input::placeholder {
-    color: var(--dark)!important;
-  }
-  textarea::placeholder {
-    color: var(--dark)!important;
-  }
-
-  
-  .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-  }
-  
-  .alt-send-button {
-    width: auto;
-    height: 34px;
-    transition: all .2s ease-in-out;
-  }
-  
-  .send-text {
-    display: block;
-    margin-top: 10px;
-    font: 700 12px 'Sora';
-    letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
-  }
-  
-  /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 400px;
-  }
-  
-  /* Location, Phone, Email Section */
-  .contact-list {
-    list-style-type: none;
-    padding-right: 20px;
-  }
-  
-  .list-item {
-    line-height: 4;
-    color: var(--dark);
-  }
-  
-  .contact-text {
-    font: 300 18px 'Sora';
-    letter-spacing: 1.9px;
-    color: var(--dark);
-  }
-  
-  .place {
-    margin-left: 20px;
-  }
-  
-  .phone {
-    margin-left: 20px;
-  }
-  
-  .gmail {
-    margin-left: 20px;
-  }
-  
-  .contact-text a {
-    color:var(--dark);
-    text-decoration: none;
-    transition-duration: 0.2s;
-  }
-  
-  .contact-text a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  
-  /* Social Media Icons */
-  .social-media-list {
-    position: relative;
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .social-media-list a {
-    color: #fff;
-  }
-  
-  .social-media-list a {
-    position: relative; 
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
-    cursor: pointer; 
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list a:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list a:hover {
-    background-color: #fff; 
-  }
-  
-  .social-media-list a:hover:after {
-    opacity: 1;  
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list a:hover i {
-    color: #000;
-  }
-  #iconMail{
-    display: none;
-  }
-  
-  .copyright {
-    font: 200 14px 'Oswald', sans-serif;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  
-  hr {
-    border-color:var(--body);
-  }
-  
-  /* Begin Media Queries*/
-  @media screen and (max-width: 850px) {
-    .contact-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .direct-contact-container, .form-horizontal {
-      margin: 30px;
-    }  
-    
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 300px;
-    }    
-    .social-media-list li {
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-    }
-    .social-media-list li:after {
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-    }
-  }
-  
-  @media screen and (max-width: 569px) {
-  
-    .direct-contact-container, .form-wrapper {
-      float: none;
-      margin: 0 auto;
-    }  
-    
-    .name, .localidad, textarea {
-      width: 280px;
-    } 
-    
-    .direct-contact-container {
-      margin-top: 20px;
-      max-width: 280px;
-    }  
-    .social-media-list {
-      left: 0;
-    }
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
-    
-    
-  }
-  
-  @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
-    }
-    #contact{
-      margin-bottom: -60px!important;
-    }
-    .contact-list{
-      display: none!important;
-    }
-    .social-media-list{
-      margin-top: -50px;
-    }
-    #iconMail{
-      display:inline-block;
-    }
-    #about{
-     margin-top: -120px!important;
-    }
-    #origin{
-      margin-top: -120px!important;
-    }
-    #team{
-      margin-top: -150px;
-    }
-    #wifi{
-      padding-bottom: 0px;
-    }
-    #especificaciones-wifi{
-      padding: 0px;
-      margin-bottom: -70px!important;
-    }
-    #text-wifi{
-      margin-top: -80px;
-    }
-    #nosotross{
-
-      overflow: hidden;
-    }
-    #services{
-      margin-bottom: -120px;
-    }
-  }
-/*CONTACTO INDEX*/
 
 
 .footer-top {
@@ -995,14 +678,13 @@ form .form-control {
     background-color: #242933;
 }
 
-.form{
+/* .form{
 	width: 40%;
 	background-color: white;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	
-}
+} */
 hr.solid {
     border-top: 3px solid #bbb;
 }
@@ -1016,17 +698,17 @@ hr.solid {
     bottom: 1px;
     left: calc(50% - 60px);
 }
-.form h1{
+/* .form h1{
 	text-align: center;
 	margin-bottom: 20px;
 	width: 100%;
-}
-.form form{
+} */
+/* .form form{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-}
+} */
 .flex-rev {
     display: flex;
     flex-direction: column-reverse;
