@@ -36,6 +36,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.home__data, .contact__subtitule, .contact__text',{}); 
-sr.reveal('.slider__cards, .client__logo',{delay: 200}); 
+sr.reveal('.client__logo',{delay: 200});
+sr.reveal('.slider__cards',{delay: 600}); 
 sr.reveal('.form-control',{ interval: 400}); 
 sr.reveal('.service__1, .contact-icon, .list-item',{interval: 200}); 

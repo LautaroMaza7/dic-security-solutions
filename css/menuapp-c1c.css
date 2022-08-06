@@ -47,7 +47,7 @@
     color: #DE0024;
 }
 .navigation ul li.active a .icon{
-    transform: translateY(-25px);
+    transform: translateY(-22px);
     color: #EEF0F4;
 }
 .navigation ul li a .text{

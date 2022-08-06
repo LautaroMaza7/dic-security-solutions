@@ -250,4 +250,19 @@ section{
         width: 100%;
         margin-left: 0;
     }
+    #slider-marshall{
+     margin-top: 70px!important;
+    }
+}
+
+@media (max-width:480px) {
+  #proteccion{
+    margin-top: -50px;
+  }
+  #sistema{
+    margin-top: -50px!important;
+  }
+  #formas{
+    margin-top: -70px!important;
+  }
 }
