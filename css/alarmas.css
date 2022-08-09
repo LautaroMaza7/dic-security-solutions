@@ -222,6 +222,10 @@ section{
     letter-spacing: .08px;
 }
 
+.img-garnet{
+  width: 80px;
+}
+
 @media (max-width:800px){
     .knowledge__container{
         grid-template-columns: 1fr;

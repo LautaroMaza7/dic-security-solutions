@@ -43,6 +43,24 @@ $(document).ready(function(){
             }
         }
     })
-    
+
+    $('#alarmas-dispositivos .owl-carousel').owlCarousel({
+        loop:true,
+        margin:-100,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:2.5
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
 
   });
