@@ -10,6 +10,9 @@
  .m-container{
    display: none;
  }
+ #cams-analgcs{
+   display: none;
+ }
 
  .XUUsC{
    margin-left: 300px;
@@ -136,10 +139,9 @@ section[id]{
 }
 
 
-
 .products-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap:1rem;
  }
 .products-container .product{
@@ -181,6 +183,15 @@ box-shadow:  20px 20px 60px #bebebe,
 
  
  @media (max-width:480px){
+   #cams-analgcs{
+      display: block;
+      margin-top: -130px;
+      margin-bottom: -100px;
+      overflow: hidden;
+    }
+   #product-analg{
+      display: none;
+   }
    .product img{
       width: 140px!important;
    }
