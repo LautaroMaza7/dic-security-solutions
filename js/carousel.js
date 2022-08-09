@@ -44,6 +44,26 @@ $(document).ready(function(){
         }
     })
 
+    $('#alarmas-dispositivos .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        center: true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:5
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:6
+            }
+        }
+    })
+
     $(' #cams-analgcs .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
