@@ -127,6 +127,23 @@ box-shadow:  20px 20px 60px #bebebe,
      inset -5px -5px 6px 0px #fff9, inset 8px 8px 20px 0px #0003,
      inset 5px 5px 6px 0px #0001;
  }
+
+ .cams-analgcs .camsanalgcs-card .frente {
+    position: absolute;
+    transition: ease-out 0.5s;
+ }
+ .cams-analgcs .camsanalgcs-card:hover .frente{
+    opacity: 0;
+ }
+ .cams-analgcs .camsanalgcs-card:hover .detras_ {
+    background-color: transparent;
+    border-radius: 40%;
+    position: relative;
+    transition: ease-in 0.3s;
+    opacity: 1;
+ } 
+
+
 .camsanalgcs-card h5 b {
     color: black;
     margin-top: 20px;
@@ -135,16 +152,15 @@ box-shadow:  20px 20px 60px #bebebe,
 
   .camsanalgcs-card {
     padding: 0px 0px;
-    transform: scale(0.9);
+    transform: scale(0.7);
     transition: all 0.3s;
   }
   .camsanalgcs-card img {
-    width: 70%!important;
-    background: transparent;
-    border-radius: 60%;
-     margin-top: 20px;
+    background-color: transparent;
+    width: 180px!important;
+    border-radius: 90%;
+    margin-top: 20px;
 }
-
 .owl-nav .owl-prev {
     position: absolute;
     top: calc(50% - 50px);
