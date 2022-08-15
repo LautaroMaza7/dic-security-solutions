@@ -1,6 +1,19 @@
-
-/* @media (max-width:768px){
-    #cercos-industria{
-        width: 800px!important;
+.title-cercos{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+@media (max-width:480px){
+    .title-cercos{
+    top: -10%;
+    color: black;
+    background-color: white;
+    left: 15%;
     }
-} */
+}
+@media (max-width:370px){
+    .title-cercos{
+    top: 30%;
+    left: 7%;
+}
+}

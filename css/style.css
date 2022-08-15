@@ -950,6 +950,13 @@ button{
   #control-access{
     margin-bottom: 0px!important;
   }
+  .title-videoport{
+    margin-bottom: -40px!important;
+  }
+  .title-control{
+    margin-bottom: 60px!important;
+    text-align: center!important;
+  }
   #title-client{
     margin-bottom: 40px;
   }
