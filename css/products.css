@@ -10,6 +10,9 @@
  .m-container{
    display: none;
  }
+ .pcontainer{
+   margin-top: -70px!important;
+ }
  #cams-analgcs{
    display: none;
  }
@@ -279,7 +282,6 @@ section[id]{
 @media (max-width: 900px){
    .m-container{
      display: block!important;
-     margin-top: 60px;
      overflow: hidden;
    }
    #pcontainer{
