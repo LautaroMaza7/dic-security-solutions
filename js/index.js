@@ -28,11 +28,11 @@ function whatsapp() {
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
-    origin: 'top',
+   origin: 'top',
     distance: '100px',
-    duration: 2000,
-    delay: 300,
-    //reset: true
+   duration: 2000,
+   delay: 300,
+   //reset: true
 });
 
 sr.reveal('.home__data, .contact__subtitule, .contact__text',{}); 

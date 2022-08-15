@@ -28,7 +28,7 @@
 }
 
  .productos{
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 3px;
     font-weight: 500;
  }
@@ -150,6 +150,12 @@ section[id]{
     /* grid-template-rows: repeat(2, 1fr); */
  }
 
+ .container .productos-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   gap:2rem;
+}
+
 .producto{
    text-align: center;
    padding: 20px;
@@ -245,6 +251,9 @@ section[id]{
       margin-bottom: 10px;
       margin-left: 60px;
    }
+   #text-wifi , #especificaciones-wifi{
+      margin-top: -70px;
+   }
    .text-cams-cctv{
       font-size: 20px!important;
       margin-bottom: -20px;
@@ -262,6 +271,9 @@ section[id]{
    }
    .knowledge__paragraph{
       margin-top: -70px;
+   }
+   #wifi{
+      padding-bottom: 10px!important;
    }
 }
 @media (max-width: 900px){

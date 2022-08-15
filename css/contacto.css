@@ -270,7 +270,7 @@ form .form-control {
     
   }
   
-  @media screen and (max-width: 410px) {
+  @media screen and (max-width: 480px) {
     .send-button {
       width: 99%;
     }
