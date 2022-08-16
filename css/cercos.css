@@ -3,6 +3,10 @@
     top: 30%;
     left: 50%;
 }
+#cards-cercos{
+  pointer-events:fill; 
+            cursor: default; 
+}
 .container-cards-cercos {
     width: 100%;
     height: 100%;
