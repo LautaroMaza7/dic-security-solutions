@@ -1,4 +1,22 @@
 $(document).ready(function(){
+	//var altoVentana = $('#muestro').css('position').replace("relative","absolute");//usa este para que desaparezca despues de pasar el alto del div
+	var altoVentana = 1400;
+	var posicionVentana = document.getElementById("muestro").offsetTop;
+	$(window).scroll(function(event){
+		var posicionScroll = $(this).scrollTop();
+	   	if (posicionScroll > (parseInt(posicionVentana)+parseInt(altoVentana))){
+	    	$("#muestro").css("display","none");
+	   	} else {
+	    	$("#muestro").css("display","");
+	   	}
+		
+	});
+
+});
+
+
+
+/* $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
 	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
@@ -34,4 +52,4 @@ $(document).ready(function(){
 			$('.product-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
-});
+}); */
