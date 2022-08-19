@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	//var altoVentana = $('#muestro').css('position').replace("relative","absolute");//usa este para que desaparezca despues de pasar el alto del div
-	var altoVentana = 450;
+	var altoVentana = 400;
 	var posicionVentana = document.getElementById("muestro").offsetTop;
 	$(window).scroll(function(event){
 		var posicionScroll = $(this).scrollTop();
