@@ -240,16 +240,16 @@ section{
 }
 .post-slide .read-more{
   padding: 7px 20px;
-  float: right;
+  float: center;
   font-size: 12px;
-  background: #2196F3;
+  background: #DE0024;
   color: #ffffff;
-  box-shadow: 0px 10px 20px -10px #1376c5;
+  /* box-shadow: 0px 10px 20px -10px #d40c2d; */
   border-radius: 25px;
   text-transform: uppercase;
 }
 .post-slide .read-more:hover{
-  background: #3498db;
+  background: #DE0024;
   text-decoration:none;
   color:#fff;
 }

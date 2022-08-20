@@ -273,6 +273,9 @@ section{
 }
 
 @media (max-width:480px) {
+  #nav-smartpro{
+    display: none;
+  }
   #proteccion{
     margin-top: -50px;
   }

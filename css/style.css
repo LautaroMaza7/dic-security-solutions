@@ -849,6 +849,9 @@ button{
 .img-acusense{
   width: 80px;
 }
+.caption-acusense{
+  width: 300px!important;
+}
 
 @media screen and (max-width: 900px){
 	.content{
@@ -920,11 +923,7 @@ button{
         margin-left: 10px!important;
     }
 }
-@media (min-width:481px){
-  .carousel-caption{
-    display: none;
-  }
-}
+
 @media (max-width:375px){
   #titlelogo{
     font-size: 14px;
@@ -969,6 +968,9 @@ button{
       padding-top: 0px!important;
       padding-bottom: 0px!important;
   } */
+  .caption-acusense{
+    display: none!important;
+  }
   .hero__title {
     width: auto!important;
   }
