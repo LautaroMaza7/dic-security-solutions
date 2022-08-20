@@ -7,6 +7,7 @@
     --body: #888;
     --white: #ffffff;
     --box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+    --padding-container: 100px 0;
 }
 .text-danger{
     color: #DE0024!important;
@@ -792,48 +793,62 @@ button{
 }
 
 
-/* cercos */
-/* .owl-controls .owl-buttons{
-  text-align:center;
-  margin-top:20px;
-}
-.owl-controls .owl-buttons .owl-prev{
-  background: #fff;
-  position: absolute!important;
-  top:-13%;
-  left:15px;
-  padding: 0 18px 0 15px;
-  border-radius: 50px;
-  box-shadow: 3px 14px 25px -10px #92b4d0;
-  transition: background 0.5s ease 0s;
-}
-.owl-controls .owl-buttons .owl-next{
-  background: #fff;
-  position: absolute;
-  top:-13%;
-  right: 15px;
-  padding: 0 15px 0 18px;
-  border-radius: 50px;
-  box-shadow: -3px 14px 25px -10px #92b4d0;
-  transition: background 0.5s ease 0s;
-}
-.owl-controls .owl-buttons .owl-prev:after,
-.owl-controls .owl-buttons .owl-next:after{
-  content:"\f104";
-  font-family: FontAwesome;
-  color: #333;
-  font-size:30px;
-}
-.owl-controls .owl-buttons .owl-next:after{
-  content:"\f105";
-}
-@media only screen and (max-width:1280px) {
-  .post-slide .post-content{
-      padding: 0px 15px 25px 15px;
-  }
-} */
-/* cercos */
+.hero-img {
+  width: 100%;
 
+  min-height: 600px;
+  max-height: 200px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tecnologia-acusense-banner-1920x640.jpg);
+  background-size: cover;
+  /* clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%); */
+  z-index: -1;
+}
+.hero__container {
+  max-width: 800px;
+  --padding-container: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-top: 250px!important;
+  text-align: initial;
+}
+
+.hero__title {
+  width: 450px;
+}
+
+.hero__paragraph {
+  color: var(--dark);
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #2091F9;
+  justify-self: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+.img-acusense{
+  width: 80px;
+}
 
 @media screen and (max-width: 900px){
 	.content{
@@ -986,6 +1001,16 @@ button{
       padding-top: 0px!important;
       padding-bottom: 0px!important;
   } */
+  .hero__title {
+    width: auto!important;
+  }
+  .hero__paragraph{
+    width: auto!important;
+  }
+  .acusense-video {
+    width: 100%!important;
+    height: 200%!important;
+  }
   #titlelogo{
     font-size: 13px!important;
   }

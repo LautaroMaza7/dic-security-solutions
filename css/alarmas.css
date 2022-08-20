@@ -200,6 +200,12 @@ section{
     width: 90%;
     height: 100%;
 }
+.acusense-video{
+  display: inline-block;
+  max-width: 1140px;
+  width: 90%;
+  height: 150%;
+}
 .knowledege__texts .subtitle{
     font-size: 23px;
 }
@@ -238,6 +244,13 @@ section{
     }
     .knowledege__texts{
       margin-top: -60px!important;
+    }
+    .knowledege__texts2{
+      margin-top: 100px!important;
+      margin-bottom: -100px;
+    }
+    .knowledge__paragraph2{
+      text-align: initial!important;
     }
     #beneficios{
       margin-top: -80px;

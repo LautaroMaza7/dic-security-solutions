@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-transparent-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/boxicons.min.css" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/video-porteria.css">
+    <link rel="stylesheet" href="../css/alarmas.css">
+    <link rel="stylesheet" href="../css/menuapp-c1c.css">
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+
+    <title>Acusense - Dic Security Solutions</title>
+  </head>
+
+  <body class="app " data-bs-spy="scroll" data-bs-target="#navbarExample08">
+    <div class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-logo">
+        <div class="d-flex align-items-center flex-nowrap">
+          <a class="sidebar-link text-decoration-none" href="#">
+            <div class="d-flex align-items-center flex-nowrap">
+              <div class="logo-sm">
+                <div class="logo d-flex align-items-center justify-content-center">
+                  Logo
+                </div>
+              </div>
+  <!--             <div class="logo-text d-flex align-items-center justify-content-center">
+                Logo
+              </div> -->
+            </div>
+          </a>
+          <div class="">
+            <div class="mobile-toggle sidebar-toggle">
+              <a href="#" class="text-decoration-none">
+                <i class="far fa-times-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="sidebar-menu scrollable position-relative pt-3">
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../index.html">
+            <span class="icon-holder">
+              <i class="fas fa-home"></i>
+            </span>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">
+            <span class="icon-holder">
+              <i class="fas fa-briefcase"></i>
+            </span>
+            <span class="title">Servicios</span>
+            <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle">
+                <span class="title">Camaras de Seguridad</span>
+                <span class="mas">
+                  <i class="fas fa-plus"></i>
+                </span>
+                <span class="menos">
+                  <i class="fas fa-minus"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="camaraswifi()">Camaras Wifi</a>
+                </li>
+                <li>
+                  <a onclick="camarasana()">Camaras Analogicas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span class="title">Alarmas</span>
+                <span class="mas">
+                  <i class="fas fa-plus"></i>
+                </span>
+                <span class="menos">
+                  <i class="fas fa-minus"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a onclick="alarmassmart()">Alarmas Smart</a>
+                </li>
+                <li>
+                  <a onclick="alarmaspro()">Alarmas Smart Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/cercos.html">
+                <span>Cercos Eléctricos</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Servicio Tecnico</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">
+                <span>Redes</span>
+              </a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/control-acceso.html">
+                <span>Control de Acceso</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../pages/video-porteria.html">
+                <span>Video Porteria</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/nosotros.html">
+            <span class="icon-holder">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="title">Nosotros</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link wave-effect" href="../pages/proyectos.html">
+            <span class="icon-holder">
+              <i class="far fa-folder-open"></i>
+            </span>
+            <span class="title">Proyectos</span>
+          </a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link wave-effect dropdown-toggle" href="../pages/contacto.html">
+            <span class="icon-holder">
+              <i class="fas fa-inbox"></i>
+            </span>
+            <span class="title">Contacto</span>
+            <!-- <span class="arrow">
+              <i class="fas fa-angle-right"></i>
+            </span> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li>
+              <a class="sidebar-link" href="#">404</a>
+            </li>
+          </ul> -->
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+      <div class="container-wide">
+          <nav class="navbar navbar-expand navbar-light bg-white sticky-top shadow-none">
+      <ul class="navbar-nav me-auto">
+          <li class="nav-item active">
+              <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto justify-content-center">
+          <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <img src="../img/LOGO-PNG -COLOR.png" alt="" class="logo-web">
+            <strong id="titlelogo">Dic Security Solutions</strong>
+          </a>
+        <nav id="navbarweb">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto py-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    
+                        <li>
+                          <a class="dropdown-item" href="#">Camaras de Seguridad<span><i class="mx-3 fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-wifi.html">Camaras Wifi</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-camaras-analogicas.html">Camaras Analogicas</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Alarmas<span><i style="margin-left: 126px;" class="fas fa-chevron-right"></i>
+                          </span></a>
+                          <ul class="dropdown-menu dropdown-submenu">
+                            <li>
+                              <a class="dropdown-item" href="../pages/alarmas-smart.html">Alarmas Smart</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../pages/productos-alarmas.html">Alarmas Smart Pro</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../pages/cercos.html">Cercos Eléctricos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Servicio Tecnico</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../pages/control-acceso.html">Control de acceso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../pages/video-porteria.html">Video Porteria</a>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+    
+              
+            </div>
+            
+          </div>
+          
+        </nav>
+      </ul>
+      <div id="call">
+        <div class="call-header">
+          <div>
+            <ul class="navbar-nav" id="iconosnav">
+              <div class="social-icons">
+                <a href="https://facebook.com/DicSeguridad" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541164864919" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dicsecuritysolutions/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </ul>
+            
+            <a href="tel:+54-11-6486-4919" class="text-black-50">
+              <div id="contact-header">
+                <i class="fas fa-phone mx-2"></i>
+                <span>(+54) 11-6486-4919</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+  </nav>
+    <!-- NavbarMobile -->
+
+
+    <!-- HERO -->
+   <div>
+    <div class="img-contenedora">
+        
+    </div>
+   </div>
+
+   <section class=" hero-img">
+    <div class="hero__container container">
+        <h1 class="hero__title">Tecnología AcuSense de Hikvision</h1>
+        <p class="hero__paragraph">
+            La tecnología AcuSense le ayuda a llevar la seguridad al siguiente nivel mediante la detección de amenazas de una forma precisa y en tiempo real, que diferencia a las personas y a los vehículos de otros objetivos.
+        </p>
+        <!-- <a href="#" class="cta">Comienza ahora</a> -->
+    </div>
+  </section>
+    <!-- //HERO -->
+    
+    
+    <section id="servicio-smart-pro" class="knowledge">
+      <div class="knowledge__container container p-5 my-5">
+        <!-- <figure class="knowledge__picture">
+          <img src="./images/macbook.png" class="knowledge__img" />
+        </figure> -->
+        <iframe class="acusense-video" src="https://www.youtube.com/embed/_oiWSL5xSGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div  class="knowledege__texts knowledege__texts2">
+          <h2 class="subtitle mb-3">
+            Lleve su seguridad a un nivel más alto
+          </h2>
+          <p class="knowledge__paragraph knowledge__paragraph2">
+            La tecnología AcuSense de Hikvision incorpora algoritmos de aprendizaje profundo en las cámaras de seguridad y videograbadoras para que los negocios y propietarios dispongan de herramientas inteligentes que les permitan llevar la seguridad al siguiente nivel, tanto en interiores como en exteriores.
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section style="overflow: hidden;" class="album py-5 bg-light">
+    <div class="container my-5">
+        <div class="row mb-4">
+          <div class="col-md-8 mx-auto text-center">
+            <h4>Lleve su seguridad a un nivel más alto</h4>
+          </div>
+        </div>
+        <div class="row text-center">
+            <p>
+                La tecnología AcuSense de Hikvision incorpora algoritmos de aprendizaje profundo en las cámaras de seguridad y videograbadoras para que los negocios y propietarios dispongan de herramientas inteligentes que les permitan llevar la seguridad al siguiente nivel, tanto en interiores como en exteriores.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center py-5">
+                    <img src="../img/Faster-80x80.png" class="img-acusense" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Mayor rapidez</h5>
+                      <p class="card-text">
+                        La tecnología AcuSense detecta las amenazas de intrusión en tiempo real y activa alertas en los teléfonos celulares de sus usuarios para ofrecer una respuesta más rápida.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center py-5">
+                    <img src="../img/More-accurate-80x80.png" class="img-acusense" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Mayor precisión</h5>
+                      <p class="card-text">La tecnología AcuSense diferencia a las personas y los vehículos de otros objetos en movimiento, lo que permite que los equipos de seguridad se enfoquen en las amenazas reales.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center py-5">
+                    <img src="../img/More-efficient-80x80.png" class="img-acusense" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Mayor eficiencia</h5>
+                      <p class="card-text">La tecnología AcuSense aplica etiquetas a las grabaciones de video con personas y vehículos, lo que agiliza la búsqueda de video, minimiza el esfuerzo manual y reduce los costos generales.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 d-flex justify-content-center align-items-center py-5">
+                    <img src="../img/Easy-to-use-80x80.png" class="img-acusense" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Fácil de usar</h5>
+                      <p class="card-text">Las cámaras inteligentes que son compatibles con AcuSense se instalan rápidamente y son tan fáciles de configurar como las cámaras de seguridad convencionales.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section id="sistema-acusense">
+    <div >
+      <h4 class="mx-auto text-center">¿Cómo funciona AcuSense?</h4>
+    </div>
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.hikvision.com/content/hikvision/es-la/products/IP-Products/Network-Cameras/acusense-products/_jcr_content/root/responsivegrid/image_copy.coreimg.100.1918.jpeg/1647379615449/como-funciona-acusense-1440x640.jpeg"
+            class="d-block hero"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--   <section id="seguridad" style="overflow: hidden;" class="album bg-light">
+    <div class="row mb-3 mt-5">
+      <div class="col-md-8 mx-auto text-center">
+        <h4>Más que un sistema de alarma inteligente</h4>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+      <p>
+        El sistema SMART PRO ofrece servicios que van más allá de un sistema de alarma de intrusión común, integrando nuevas automatizaciones y funciones para brindar cada vez más protección, comodidad y posibilidades.
+      </p>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-4">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../img/Smart-automation.jpg" alt="" />
+
+            <div class="card-body">
+              <strong class="text-center" style="font-size: 13px; text-align:justify;">Automatización inteligente</strong>
+              <div class="d-flex mt-4 justify-content-center align-items-center">
+                <p class="card-text fw-light" style="font-size: 13px; margin-bottom: 21px;">
+                  Con la configuración de reglas personalizadas a través de SMART PRO, obtiene una gestión inteligente de sus luces, aire acondicionado y otros aparatos eléctricos, para un hogar más inteligente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../img/Integrated-system-with-flexible-linkage.jpg" alt="">
+
+            <div class="card-body">
+              <strong class="text-center" style="font-size: 13px; text-align:justify;">Sistema integrado con varillaje flexible</strong>
+              <div class="d-flex mt-4 justify-content-center align-items-center">
+                <p class="card-text fw-light" style="font-size: 13px;">
+                  Con una integración total con prácticamente todos los dispositivos y sistemas de Hikvision, incluidos video de seguridad, control de acceso, intercomunicador de video y más, SMART PRO brinda más comodidad a la vida cotidiana.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../img/Full-security-on-a-convenient-mobile-app.jpg" alt="">
+
+            <div class="card-body">
+              <strong class="text-center" style="font-size: 13px; text-align:justify;">Seguridad total en una fácil aplicación móvil</strong>
+              <div class="d-flex mt-4 justify-content-center align-items-center">
+                <p class="card-text fw-light" style="font-size: 13px; margin-bottom: 22px;">
+                  Con la aplicación Hik-Connect, ahora puede administrar todos los dispositivos SMART PRO, videoporteros, cámaras de seguridad y más, simplemente desde su teléfono inteligente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+ <!--  <section id="utilizacion" style="overflow: hidden;" class="album py-5 bg-light">
+    <div class="row mb-4 mt-5 ">
+      <div class="col-md-8 mx-auto text-center">
+        <h4>Utilizar el sistema SMART PRO es facilísimo</h4>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+      <p>
+        El sistema SMART PRO está diseñado para que sea fácil de instalar, utilizar y mantener. La amplia vida útil de los componentes y la prolongada duración de la batería ofrecen una experiencia óptima tanto para los instaladores como para los usuarios finales.
+      </p>
+      <p class="mb-2 fw-bold">
+        *Nota:
+      </p>
+      <p class="mb-2 fst-italic">
+        •  Actualice el firmware a la más reciente versión
+      </p>
+      <p class="fst-italic">
+        •  Para los instaladores, es recomendable instalar y mantener los dispositivos a través de Hik-ProConnect
+      </p>
+      </div>
+      <div class="container my-3">
+        <div class="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+          <div class="col-lg-6">
+              <img class="rounded-lg-3" src="../img/Installation-is-a-snap.jpg">
+          </div>
+          <div class="col-lg-6 p-2 p-lg-5 pt-lg-3">
+            <h4>La instalación en un instante</h4>
+            <p class="lh-base mt-4">Sin cables, sin preocupaciones El sistema SMART PRO es flexible y se instala fácilmente sin cables que dificulten la instalación Basta con instalar el concentrador, los PIRCAM, los detectores interiores y exteriores, y otros periféricos con tornillos o pegamento, según las superficies de montaje.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-3">
+        <div class="row p-0 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+          <div class="col-lg-6 p-lg-4 pt-lg-2">
+            <h4>Mantenimiento de forma sencilla</h4>
+            <p class="lh-base mt-4">El sistema SMART PRO puede administrarse y recibir mantenimiento fácilmente a través de la aplicación Hik Pro-Connect o del portal web para instaladores. Los instaladores y las estaciones de monitoreo pueden supervisar el estado del sistema de alarma en cualquier momento y desde cualquier lugar con la autorización del usuario final. Además, el informe de estado de salud es una gran herramienta para las actualizaciones del servicio de mantenimiento del instalador.</p>
+          </div>
+          <div class="col-lg-6 ">
+              <img class="rounded-lg-3" src="../img/Maintenance-in-a-simple-way.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <footer>
+      <div class="footer-top text-center">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <a href="../index.html"
+                ><img class="logo-footer" src="../img/LOGO-PNG -COLOR.png" alt=""
+              /></a>
+            </div>
+            <div class="col-lg-2">
+              <h5 class="text-white">Marca</h5>
+              <ul class="list-unstyled">
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white">Contacto</h5>
+              <ul class="list-unstyled">
+                <li class="text-white-50">Buenos Aires, Argentina</li>
+                <li class="text-white-50">Email: dic.sscontacto@gmail.com</li>
+                <li class="text-white-50">Celular: (+54) 11-6486-4919</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0 text-white-50">
+                © 2022 Derechos reservados Dic Security Solutions | Diseñado x
+                <span class="text-white">Lau7aro Maza</span>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/menuapp.js"></script>
+    <script src="../js/next-sidebar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
