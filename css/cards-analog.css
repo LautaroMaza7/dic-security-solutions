@@ -40,7 +40,9 @@
     height: auto;
     transition: all 0.5s ease;
 }
-.box:hover img{ transform: scale(1.2); }
+.box:hover img{ 
+    transform: scale(1.2); 
+}
 .box .box-content{
     text-align: right;
     transform: translateY(-50%);

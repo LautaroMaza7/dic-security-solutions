@@ -900,49 +900,12 @@ button{
     #call{
         display: none;
     }
-    /* .accordion-body {
-        padding:0px!important ;
-        margin-top: 10px;
-    }
-    .accordion-item{
-        text-align: justify!important;
-      }
-    .accordion-body ul a {
-        padding-left: -10px;
-        font-size: 13px;
-        text-transform: uppercase;
-        padding: 5px;
-        padding-left: 0px;
-        font-weight: bold;
-    }
-    .accordion-button:not(.collapsed) {
-        color: #DE0024;
-    }
-    .accordion-button::after {
-        color: #DE0024;
-        margin-left:15px;
-    }
-    ul a .dropdown-item{
-        white-space: inherit;
-    }
-    
-    .dropdown:hover .dropdown-menu {
-        pointer-events: none;
-        width: 100%;
-      }
-      .dropdown-menu.show {
-        pointer-events: none;
-        width: 100%;
-      } */
     .hero{
         background-position: center;
     }
     .hero-banner{
         margin-top: 0px;
     }
-    /* .logo-web{
-        margin-left: 100px;
-    } */
     .iconbox {
         width: 42px;
         height: 42px;
@@ -956,6 +919,11 @@ button{
     #iconosnav {
         margin-left: 10px!important;
     }
+}
+@media (min-width:481px){
+  .carousel-caption{
+    display: none;
+  }
 }
 @media (max-width:375px){
   #titlelogo{
