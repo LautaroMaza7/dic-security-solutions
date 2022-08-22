@@ -6,9 +6,9 @@
  * Author : Nelh Amstrong (https://github.com/Nelh/)
  */.container-wide{min-height:100vh;
     padding-left:0px;
-    -webkit-transition:all .2s ease;
-    -o-transition:all .2s ease;
-    transition:all .2s ease}
+    -webkit-transition:all .2s ease-in-out;
+        -o-transition:all .2s ease-in-out;
+        transition:all .2s ease-in-out;}
 
     #sidebar-toggle{
         display: none!important;
@@ -48,7 +48,7 @@
         .is-collapsed .container-wide{
             padding-left:70px;
             filter: blur(4px);
-            overflow-y:inherit!important;
+            transition: 0.3s;
         }}
         a{text-decoration:none}
         .sidebar{
@@ -64,9 +64,8 @@
         width:280px;
         background-color:white;
         color:#21252f;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-top-right-radius: 20px 20px;
-        border-bottom-right-radius: 20px 20px;
-        box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
         z-index:9999}
         .sidebar ul{
         list-style-type:none}
