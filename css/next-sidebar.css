@@ -46,7 +46,10 @@
 
     @media screen and (max-width:992px){
         .is-collapsed .container-wide{
-            padding-left:70px}}
+            padding-left:70px;
+            filter: blur(4px);
+            overflow-y:inherit!important;
+        }}
         a{text-decoration:none}
         .sidebar{
             display: none;
@@ -57,8 +60,11 @@
         top:0;
         -webkit-transition:all .2s ease;-o-transition:all .2s ease;
         transition:all .2s ease;width:280px;
-        background-color:#21252f;
-        color:white;
+        background-color:white;
+        color:#21252f;
+        border-top-right-radius: 20px 20px;
+        border-bottom-right-radius: 20px 20px;
+        box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
         z-index:9999}
         .sidebar ul{
         list-style-type:none}
@@ -116,7 +122,7 @@
             font-size:18px;
             line-height:64px}
         .sidebar-logo .mobile-toggle a{
-            color:#fff}
+            color:#21252f!important}
         .sidebar-inner{
             position:relative;
             height:100%}
@@ -191,8 +197,8 @@
                 .sidebar-menu li.dropdown .menos{
                     right:25px}
             }
-            .sidebar-menu li.dropdown.open>a{
-                color:#fff}
+            /* .sidebar-menu li.dropdown.open>a{
+                 color:#21252f } */
             /* .sidebar-menu li.dropdown.open>a .icon-holder{
                 color:#21252f} */
             .sidebar-menu li.dropdown.open>a>.arrow{
@@ -223,7 +229,7 @@
                 -o-transition:all .3s ease;
                 transition:all .3s ease}
             .sidebar-menu li a:focus,.sidebar-menu li a:hover{
-                /* color:#fff; */
+                color:#fff;
                 text-decoration:none;
                 background-color:#d32845}
             .sidebar-menu>li.dropdown ul.dropdown-menu{
@@ -238,7 +244,7 @@
                 width:100%}
 
             .sidebar-menu>li.dropdown ul.dropdown-menu>li>a{
-                color: white;
+                color: #21252f;
                 display:block;
                 padding:10px 20px;
                 font-size:14px}
