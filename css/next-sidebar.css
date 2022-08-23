@@ -45,7 +45,7 @@
     @media screen and (max-width:992px){
         .is-collapsed .container-wide{
             padding-left:70px;
-            opacity: 0.4;
+ 
         }}
         a{text-decoration:none}
         .sidebar{
