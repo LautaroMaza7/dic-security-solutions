@@ -46,6 +46,7 @@
         .is-collapsed .container-wide{
             padding-left:70px;
             filter: blur(4px);
+            transition: all .3s ease-in-out;
         }}
         a{text-decoration:none}
         .sidebar{
