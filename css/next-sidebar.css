@@ -225,9 +225,7 @@
                     line-height:25px}
             .sidebar-menu li a{
                 /* color:#fff; */
-                -webkit-transition:all .3s ease;
-                -o-transition:all .3s ease;
-                transition:all .3s ease}
+                transition: all .1s ease-in;}
             .sidebar-menu li a:focus,.sidebar-menu li a:hover{
                 color:#fff;
                 text-decoration:none;
