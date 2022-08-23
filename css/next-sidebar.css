@@ -18,8 +18,8 @@
             display: block!important;
 
         }
-        .fa-times-circle:before {
-            width: 200px;
+        .bi-x-circle-fill{
+            font-size: 30px;
         }
         sidebar{
             display: block!important;
@@ -118,6 +118,7 @@
         .sidebar-logo a .logo-text img{
             width:120px}
         .sidebar-logo .mobile-toggle{
+            color: #21252f;
             display:block;
             float:right;
             font-size:18px;
@@ -168,7 +169,7 @@
             line-height:40px;
             position:absolute;
             right:30px;
-            transition: all .3s ease-in}
+            transition: all .1s ease-in;}
             .sidebar-menu li.dropdown .mas{
                 font-size:10px;
                 line-height:40px;
