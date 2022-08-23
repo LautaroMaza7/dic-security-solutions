@@ -6,7 +6,7 @@
  * Author : Nelh Amstrong (https://github.com/Nelh/)
  */.container-wide{min-height:100vh;
     padding-left:0px;
-    transition: .7s ease-out;}
+    transition: .4s ease-out;}
 
     #sidebar-toggle{
         display: none!important;
@@ -168,9 +168,7 @@
             line-height:40px;
             position:absolute;
             right:30px;
-            -webkit-transition:all .03s ease-in;
-            -o-transition:all .03s ease-in;
-            transition:all .03s ease-in}
+            transition: all .3s ease-in}
             .sidebar-menu li.dropdown .mas{
                 font-size:10px;
                 line-height:40px;
@@ -211,7 +209,7 @@
                     -ms-transform:rotate(90deg);
                     transform:rotate(90deg)} */
             .sidebar-menu li.dropdown.open>a>.mas{
-                transition:all .2s ease-out;
+                transition:all .2s ease;
                    opacity: 0!important;}
                    .sidebar-menu li.dropdown.open>a>.menos{
                     transition:all .2s ease-in;
