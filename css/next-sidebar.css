@@ -94,9 +94,9 @@
         .sidebar{
             left:-280px;
             width:250px;
-           -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+           /* -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-left 0.5s;
-            transition: all .4s ease-out;
+            transition: all .4s ease-out; */
         }}
         .sidebar-logo{
             line-height:0;
@@ -324,6 +324,7 @@
                     .is-collapsed .sidebar{
                         width:280px;
                         transform: translateX(100%);
+                        transition: all .4s ease;
                     }
                     .is-collapsed .sidebar .sidebar-inner .sidebar-logo{
                         padding:0 20px}
