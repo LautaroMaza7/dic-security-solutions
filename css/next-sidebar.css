@@ -6,7 +6,7 @@
  * Author : Nelh Amstrong (https://github.com/Nelh/)
  */.container-wide{min-height:100vh;
     padding-left:0px;
-    -webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}
+    transition: .7s ease-out;}
 
     #sidebar-toggle{
         display: none!important;
@@ -45,7 +45,7 @@
     @media screen and (max-width:992px){
         .is-collapsed .container-wide{
             padding-left:70px;
- 
+            filter: blur(5px);
         }}
         a{text-decoration:none}
         .sidebar{
@@ -55,10 +55,10 @@
         height: 100%;
         position:fixed;
         top:0;
-        -webkit-transition: all .2s ease;
-        -o-transition: all .2s ease;
-        transition: all .2s ease;
         width:280px;
+        transition-delay: .2s;
+        transition-duration: .7s ease-in;
+        transition-property:linear;
         background-color:white;
         color:#21252f;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -93,7 +93,10 @@
         @media screen and (max-width:768px){
         .sidebar{
             left:-280px;
-            width:250px}}
+            width:250px;
+           -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-left 0.5s
+        }}
         .sidebar-logo{
             line-height:0;
             padding:0 20px}
@@ -165,9 +168,9 @@
             line-height:40px;
             position:absolute;
             right:30px;
-            -webkit-transition:all .05s ease-in;
-            -o-transition:all .05s ease-in;
-            transition:all .05s ease-in}
+            -webkit-transition:all .03s ease-in;
+            -o-transition:all .03s ease-in;
+            transition:all .03s ease-in}
             .sidebar-menu li.dropdown .mas{
                 font-size:10px;
                 line-height:40px;
