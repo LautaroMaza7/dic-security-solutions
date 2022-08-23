@@ -322,7 +322,9 @@
 
                 @media screen and (max-width:991px){
                     .is-collapsed .sidebar{
-                        width:280px;left:0}
+                        width:280px;
+                        transform: translateX(100%);
+                    }
                     .is-collapsed .sidebar .sidebar-inner .sidebar-logo{
                         padding:0 20px}
                     .is-collapsed .sidebar .sidebar-inner .sidebar-logo .logo-sm{
