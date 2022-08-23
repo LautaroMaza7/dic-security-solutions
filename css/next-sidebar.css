@@ -6,9 +6,7 @@
  * Author : Nelh Amstrong (https://github.com/Nelh/)
  */.container-wide{min-height:100vh;
     padding-left:0px;
-    -webkit-transition:all .2s ease-in-out;
-        -o-transition:all .2s ease-in-out;
-        transition:all .2s ease-in-out;}
+        transition:all 0.1s cubic-bezier(0.4, 0, 1, 1);}
 
     #sidebar-toggle{
         display: none!important;
@@ -48,7 +46,6 @@
         .is-collapsed .container-wide{
             padding-left:70px;
             filter: blur(4px);
-            transition: 0.3s;
         }}
         a{text-decoration:none}
         .sidebar{
@@ -58,9 +55,7 @@
         height: 100%;
         position:fixed;
         top:0;
-        -webkit-transition:all .2s ease-in-out;
-        -o-transition:all .2s ease-in-out;
-        transition:all .2s ease-in-out;
+        transition:all 0.1s cubic-bezier(0.4, 0, 1, 1);
         width:280px;
         background-color:white;
         color:#21252f;
