@@ -6,7 +6,7 @@
  * Author : Nelh Amstrong (https://github.com/Nelh/)
  */.container-wide{min-height:100vh;
     padding-left:0px;
-    transition: .2s ease-in;}
+    transition: .4s ease-out;}
 
     #sidebar-toggle{
         display: none!important;
@@ -45,7 +45,7 @@
     @media screen and (max-width:992px){
         .is-collapsed .container-wide{
             padding-left:70px;
-            filter: opacity(3px);
+            filter: blur(5px);
         }}
         a{text-decoration:none}
         .sidebar{
@@ -94,9 +94,8 @@
         .sidebar{
             left:-280px;
             width:250px;
-           /* -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-left 0.5s;
-            transition: all .4s ease-out; */
+           -webkit-animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-left 0.5s
         }}
         .sidebar-logo{
             line-height:0;
@@ -169,7 +168,7 @@
             line-height:40px;
             position:absolute;
             right:30px;
-            transition: all .2s ease-in}
+            transition: all .3s ease-in}
             .sidebar-menu li.dropdown .mas{
                 font-size:10px;
                 line-height:40px;
@@ -204,19 +203,16 @@
             .sidebar-menu li.dropdown.open>a>.arrow{
                 -webkit-transform:rotate(90deg);
                 -ms-transform:rotate(90deg);
-                transform:rotate(90deg);
-                transition: all .1S;
-                
-            }
+                transform:rotate(90deg)}
                 /* .sidebar-menu li.dropdown.open>a>.mas-menos{
                     -webkit-transform:rotate(90deg);
                     -ms-transform:rotate(90deg);
                     transform:rotate(90deg)} */
             .sidebar-menu li.dropdown.open>a>.mas{
-                transition:.1s ease-out;
+                transition:all .2s ease;
                    opacity: 0!important;}
                    .sidebar-menu li.dropdown.open>a>.menos{
-                    transition: .1s ease-in;
+                    transition:all .2s ease-in;
                     opacity: 1!important;}
             .sidebar-menu li.dropdown.open>.dropdown-menu{
                 display:block}
@@ -228,9 +224,9 @@
                     line-height:25px}
             .sidebar-menu li a{
                 /* color:#fff; */
-                -webkit-transition:all .1s ease;
-                -o-transition:all .1s ease;
-                transition:all .1s ease}
+                -webkit-transition:all .3s ease;
+                -o-transition:all .3s ease;
+                transition:all .3s ease}
             .sidebar-menu li a:focus,.sidebar-menu li a:hover{
                 color:#fff;
                 text-decoration:none;
@@ -242,7 +238,6 @@
                 box-shadow:none;
                 float:none;
                 padding-left:50px;
-                transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
                 padding-top:0;
                 position:relative;
                 width:100%}
@@ -322,10 +317,7 @@
 
                 @media screen and (max-width:991px){
                     .is-collapsed .sidebar{
-                        width:280px;
-                        transform: translateX(100%);
-                        transition: all .4s ease;
-                    }
+                        width:280px;left:0}
                     .is-collapsed .sidebar .sidebar-inner .sidebar-logo{
                         padding:0 20px}
                     .is-collapsed .sidebar .sidebar-inner .sidebar-logo .logo-sm{
