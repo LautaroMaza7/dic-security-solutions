@@ -332,48 +332,50 @@
     </div>
 
       <div class="carousel-inner" data-bs-interval="10000">
-        <div class="carousel-item active" >
-          <picture>
-            <source srcset="./img/chico-c3wpro.jpg" media="(max-width:480px)" />
-            <img
-              src="./img/grande-c3wpro.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </picture>
-        </div>
+        <a href="./productos/c3wpro.html">
+          <div class="carousel-item active" >
+            <picture>
+              <source srcset="./img/chico-c3wpro.jpg" media="(max-width:480px)" />
+              <img
+                src="./img/grande-c3wpro.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </picture>
+          </div>
+        </a>
 
-        <div class="carousel-item" data-bs-interval="2000">
-          <picture>
-            <source srcset="./img/slider-cel-1.jpg" media="(max-width:480px)" />
-            <img
-              src="./img/slider-grande-5.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </picture>
-        </div>
+        <a href="./productos/c6n.html">
+          <div class="carousel-item" data-bs-interval="2000">
+            <picture>
+              <source srcset="./img/c6n-ciber-cel.jpg" media="(max-width:480px)" />
+              <img
+                src="./img/c6n-ciber-grand.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </picture>
+          </div>
+        </a>
 
-        <div class="carousel-item" data-bs-interval="2000">
-          <picture>
-            <source srcset="./img/lc1c-cel.jpg" media="(max-width:480px)" />
-            <img src="./img/lc1c-grande.jpg" class="d-block w-100" alt="..." />
-          </picture>
-        </div>
+        <a href="./productos/lc1c.html">
+          <div class="carousel-item" data-bs-interval="2000">
+            <picture>
+              <source srcset="./img/lc1c-cel.jpg" media="(max-width:480px)" />
+              <img src="./img/lc1c-grande.jpg" class="d-block w-100" alt="..." />
+            </picture>
+          </div>
+        </a>
 
-        <div class="carousel-item" data-bs-interval="2000">
-          <picture>
-            <source srcset="./img/slider-chico.jpg" media="(max-width:480px)" />
-            <img src="./img/slider-1.jpg" class="d-block w-100" alt="..." />
-          </picture>
-        </div>
+        <a href="./productos/c8c.html">
+          <div class="carousel-item" data-bs-interval="2000">
+            <picture>
+              <source srcset="./img/slider-chico.jpg" media="(max-width:480px)" />
+              <img src="./img/slider-1.jpg" class="d-block w-100" alt="..." />
+            </picture>
+          </div>
+        </a>
 
-        <div class="carousel-item" data-bs-interval="2000">
-          <picture>
-            <source srcset="./img/c3x-cel.jpg" media="(max-width:480px)" />
-            <img src="./img/c3x-3.jpg" class="d-block w-100" alt="..." />
-          </picture>
-        </div>
       </div>
       <button
         class="carousel-control-prev"
@@ -409,7 +411,7 @@
         </div>
         <div class="row g-4 home__data ">
           <div class="col col-lg-4 col-sm-6">
-            <div class="service-1 service__1 card-effect bounceInUp">
+            <div style="cursor: pointer;" class="service-1 service__1 card-effect bounceInUp">
               <div class="iconbox rounded mx-auto">
                 <i><img src="./img/camara-de-cctv.png" alt="" /></i>
               </div>
@@ -417,10 +419,15 @@
               <p class="service-description">
                 Controle remotamente desde cualquier sitio todo lo que sucede en su hogar, comercio o empresa.
               </p>
+              <div class="service-camaras text-center">
+                <a class="btn btn-light m-1" href="./pages/productos-camaras-wifi.html">Cámaras Wi-Fi</a>
+                <a class="btn btn-light m-1" href="./pages/productos-camaras-analogicas.html">Cámaras Analogicas</a>
+              </div>
+
             </div>
           </div>
           <div class="col col-lg-4 col-sm-6">
-            <div class="service-1 service__1 card-effect">
+            <div style="cursor: pointer;" class="service-1 service__1 card-effect">
               <div class="iconbox rounded mx-auto">
                 <i><img src="./img/alarm.png" alt="" /></i>
               </div>
@@ -428,42 +435,52 @@
               <p class="service-description">
                 Reciba una alerta a su celular en caso de intrusión a su domicilio. Actívelas o desactiva remotamente.
               </p>
+              <div class="service-camaras text-center">
+                <a class="btn btn-light m-1" href="./pages/alarmas-smart.html">Alarmas Smart</a>
+                <a class="btn btn-light m-1" href="./pages/productos-alarmas.html">Alarmas SmartPro</a>
+              </div>
             </div>
           </div>
           <div class="col col-lg-4 col-sm-6">
-            <div class="service-1 service__1 card-effect">
-              <div class="iconbox rounded mx-auto">
-                <i><img src="./img/video-puerta-telefono.png" alt="" /></i>
+            <a href="./pages/video-porteria.html">
+              <div class="service-1 service__1 card-effect">
+                <div class="iconbox rounded mx-auto">
+                  <i><img src="./img/video-puerta-telefono.png" alt="" /></i>
+                </div>
+                <h5 class=" service-title">Video Porteria</h5>
+                <p class="service-description">
+                  Visualice a través de un monitor o desde su celular quien se encuentra en la puerta de su hogar. Responda al llamado incluso estando fuera de su hogar.
+                </p>
               </div>
-              <h5 class=" service-title">Video Porteria</h5>
-              <p class="service-description">
-                Visualice a través de un monitor o desde su celular quien se encuentra en la puerta de su hogar. Responda al llamado incluso estando fuera de su hogar.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col col-lg-4 col-sm-6">
-            <div class="service-1 service__1 card-effect">
-              <div class="iconbox rounded mx-auto">
-                <i><img src="./img/access-control.png" alt="" /></i>
+            <a href="./pages/control-acceso.html">
+              <div class="service-1 service__1 card-effect">
+                <div class="iconbox rounded mx-auto">
+                  <i><img src="./img/access-control.png" alt="" /></i>
+                </div>
+                <h5 class=" service-title">Control de Acceso</h5>
+                <p id="control-access" class="service-description">
+                  Nuestro servicio de control de accesos y personal está especialmente diseñado para hacer más simple y segura la operatoria de su hogar, comercio o empresa.
+                </p>
               </div>
-              <h5 class=" service-title">Control de Acceso</h5>
-              <p id="control-access" class="service-description">
-                Nuestro servicio de control de accesos y personal está especialmente diseñado para hacer más simple y segura la operatoria de su hogar, comercio o empresa.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col col-lg-4 col-sm-6">
-            <div class="service-1 service__1 card-effect">
-              <div class="iconbox rounded mx-auto">
-                <i
-                  ><img src="./img/cerca.png" alt=""
-                /></i>
+            <a href="./pages/cercos.html">
+              <div class="service-1 service__1 card-effect">
+                <div class="iconbox rounded mx-auto">
+                  <i
+                    ><img src="./img/cerca.png" alt=""
+                  /></i>
+                </div>
+                <h5 class=" service-title">Cercos Eléctricos</h5>
+                <p class="service-description">
+                  Una barrera perimetral, física, eficiente y de muy buena relación costo / beneficio. Los cercos energizados son en la actualidad la mejor barrera electrónica contra el ingreso de intrusos a una propiedad.
+                </p>
               </div>
-              <h5 class=" service-title">Cercos Eléctricos</h5>
-              <p class="service-description">
-                Una barrera perimetral, física, eficiente y de muy buena relación costo / beneficio. Los cercos energizados son en la actualidad la mejor barrera electrónica contra el ingreso de intrusos a una propiedad.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col col-lg-4 col-sm-6">
             <div class="service-1 service__1 card-effect">

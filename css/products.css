@@ -234,7 +234,12 @@ section[id]{
    margin-top:-10px;
    color:#444;
  }
-
+ 
+ .caption_cams{
+   text-align: initial!important;
+   position: absolute;
+   bottom: 100px;
+ }
  
  @media (max-width:480px){
    #cams-analgcs{
@@ -246,13 +251,15 @@ section[id]{
    #product-analg{
       display: none;
    }
-   .product img{
-      width: 140px!important;
+   .container .productos-container{
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 8fr))!important;
    }
-   .text-cams{
-      font-size: 20px!important;
-      margin-bottom: 10px;
-      margin-left: 60px;
+   .producto img{
+      width: 100%!important;
+   }
+   .caption_cams{
+      top: -7px;
+      left: 40%;
    }
    #text-wifi , #especificaciones-wifi{
       margin-top: -70px;
@@ -266,11 +273,14 @@ section[id]{
          font-size: 11px;
          margin-bottom: -80px;
    }
+   .text-cams{
+      font-size: 1.2rem;
+      word-wrap: break-word;
+   }
 
    .text-cams2{
       font-size: 11px;
-      margin-left: 90px;
-      margin-bottom: -20px;
+      word-wrap: break-word;
    }
    .knowledge__paragraph{
       margin-top: -70px;

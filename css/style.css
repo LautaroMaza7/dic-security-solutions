@@ -471,8 +471,8 @@ box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
       position: relative;
       z-index: 2;
       overflow: hidden;
-      user-select: none;
       height: 290px;
+      text-decoration: none;
   }
   
   
@@ -487,14 +487,21 @@ box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     z-index: -1;
     opacity: 0.92;
     transition: all 0.4s ease-out;
-    
   }
+
+.service-1 .service-camaras{
+display: none;
+}
+.service-1:hover .service-camaras {
+  display: block!important;
+}
   .service-title{
     text-align: center;
     margin: 17px;
     padding: 5px;
   }
 .service-description{
+  color: #21252f;
     line-height: 1.5;
     text-align: center;
 }
@@ -981,6 +988,9 @@ button{
     padding: 20px 0px 15px!important;
     margin: 0%;
     font-size: 16px;
+  }
+  .service-camaras .btn{
+    font-size: 13px;
   }
   .caption-acusense{
     display: none!important;
