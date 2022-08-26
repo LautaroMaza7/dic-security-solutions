@@ -64,6 +64,21 @@ $(function () {
       $('.app').toggleClass('is-collapsed');
       e.preventDefault();
     });
+
+   /*  $(document).ready(function () {
+      $(document).on('mouseup', function(e){
+        const container = $(".sidebar-toggle");
+        if(!container.is(e.target) && container.has(e.target).length === 0) {
+          $('.app').hide('slide');
+        }
+      });
+    
+      $('.sidebar-toggle').on('click', function () {
+        $('.app').show('slide');
+      });
+    });
+ */
+
 }());
 
  /* function windowSize() {

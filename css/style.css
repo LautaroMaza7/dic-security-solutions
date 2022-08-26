@@ -978,19 +978,20 @@ button{
       padding-bottom: 0px!important;
   } */
   .service-1{
-    padding-top: 40px;
-    height: auto;
+    padding: 20px;
+    height: 98%;
   }
   .service-description{
+    text-align: right!important;
     font-size: 12px;
   }
   .service-title{
     padding: 20px 0px 15px!important;
     margin: 0%;
-    font-size: 16px;
+    font-size: 18px;
   }
   .service-camaras .btn{
-    font-size: 13px;
+    font-size: 11px;
   }
   .caption-acusense{
     display: none!important;
