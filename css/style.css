@@ -159,9 +159,6 @@ h1,h2,h3,h4,h5,h6,
     font-weight: 700;
     
 }
-h1{
-    font-size: 2.5rem;
-}
 
 a {
     /* color: var(--dark); */
@@ -495,8 +492,15 @@ display: none;
 .service-1:hover .service-camaras {
   display: block!important;
 }
+.title{
+  color: var(--dark)!important;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
   .service-title{
     text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin: 17px;
     padding: 5px;
   }
@@ -978,7 +982,7 @@ button{
       padding-bottom: 0px!important;
   } */
   .service-1{
-    padding: 20px;
+    padding: 15px;
     height: 98%;
   }
   .service-description{
@@ -986,9 +990,9 @@ button{
     font-size: 12px;
   }
   .service-title{
-    padding: 20px 0px 15px!important;
+    padding: 18px 0px 12px!important;
     margin: 0%;
-    font-size: 18px;
+    font-size: 15px;
   }
   .service-camaras .btn{
     font-size: 11px;
@@ -1179,9 +1183,6 @@ button{
     #team{
       margin-top: -150px!important;
   }
-    h1{
-        font-size: 1.5rem;
-    }
     .title-over{
         font-size: 13px!important;
     }
