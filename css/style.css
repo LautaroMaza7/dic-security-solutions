@@ -492,7 +492,7 @@ display: none;
 .service-1:hover .service-camaras {
   display: block!important;
 }
-.title{
+.tittle{
   color: var(--dark)!important;
   font-size: 1.25rem;
   font-weight: 700;
