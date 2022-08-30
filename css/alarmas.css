@@ -232,6 +232,7 @@ section{
   width: 80px;
 }
 
+
 @media (max-width:800px){
     .knowledge__container{
         grid-template-columns: 1fr;
@@ -284,5 +285,9 @@ section{
   }
   #formas{
     margin-top: -70px!important;
+  }
+  .card-body .card-title{
+    font-size: 15px!important;
+    text-align: center;
   }
 }
