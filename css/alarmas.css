@@ -290,4 +290,11 @@ section{
     font-size: 15px!important;
     text-align: center;
   }
+  #icons-garnet .col{
+    display: block!important;
+    text-align: center;
+  }
+  #icons-garnet .col p{
+    text-align: initial;
+  }
 }
