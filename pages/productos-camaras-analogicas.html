@@ -662,6 +662,206 @@
         </div>
       </div>
     </section>
+
+    <section id="cotizacion">
+      <div class="container">
+        <div class="text-center">
+          <h2>Armamos tu presupuesto
+          </h2>
+          <button type="button" class="text-center btn btn-danger mt-3" data-toggle="modal" data-target="#modalSignin">
+            Empezar
+        </button>
+        <!-- Button to Open the Modal --> 
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modalSignin">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header p-5 pb-4 border-bottom-0">
+                <!-- <h5 class="modal-title">Modal title</h5> -->
+                <h2 class="fw-bold mb-0">Completa el formulario</h2>
+                <button type="button" class="btn-close" data-dismiss="modal"></button>
+              </div>
+        
+              <div class="modal-body p-5 pt-0">
+                <form class="row g-3" action="https://formspree.io/f/myyvgwpy" method="POST">
+                  <div class="col-md-6 position-relative">
+                    <label for="validationTooltip01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationTooltip01" name="Nombre" required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-6 position-relative">
+                    <label for="validationTooltip02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationTooltip02" name="Apellido" required>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col position-relative">
+                    <label for="validationTooltipUsername" class="form-label">Telefono</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="validationTooltipUsernamePrepend"><i class="bi bi-telephone"></i></span>
+                      <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" name="Numero de telefono" required>
+                      <div class="invalid-tooltip">
+                        Please choose a unique and valid username.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 position-relative mb-4">
+                    <label for="validationTooltip03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationTooltip03" name="Ciudad" required>
+                    <div class="invalid-tooltip">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="validationTooltipUsername" class="form-label text-left">Producto</label>
+                    <select class="form-control" id="marca" name="Modelo de alarma" required>
+                      <option value="">- Opcion de Gama -</option>
+                      <option value="marshal">Marshall</option>
+                      <option value="garnet">Garnet</option>
+                      <option value="dsc">DSC</option>
+                   </select>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="cables" name="Metros de cables" required>
+                  <label for="floatingInput">Metros de Cables</label>
+                </div>
+                <!-- <div class="form-group mb-3">
+                  <select class="form-control" id="cables" name="Metros de Cable" required>
+                    <option value="">- Metros de Cables -</option>
+                    <option value="1 a 5metros">1mtr a 5mtr</option>
+                   <option value="5 a 10 metros">5mtr a 10mtr</option>
+                   <option value="3">Más de 15mtrs</option>
+                 </select>
+              </div> -->
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="alarmas" name="Cantidad de alarmas" required>
+                <label for="floatingInput">Cantidad de Alarmas</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="sensores" name="Cantidad de sensores" required>
+                <label for="floatingInput">Cantidad de Sensores</label>
+              </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" type="submit">Cosultar</button>
+                  <small class="text-muted text-center">Te responderemos a la brevedad.</small>
+                  <hr class="my-4">
+                  <!-- <button class="w-100 py-2 mb-2 btn btn-outline-success rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+                    Por cualquier duda o consulta comunicate con nuestro WhatsApp
+                  </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-danger rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                    Seguinos en Instagram
+                  </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                    Seguinos en Facebook
+                  </button> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        
+    </div>
+
+
+      <!-- <div class="container mb-5">
+        <div class="row">
+          <div class="col col-md-10 ms-md-auto xl-md-auto" >
+            <div class="pricing-header p-3 pb-md-4 mx-4 text-center">
+              <h2 class="">Cotizacion de tu alarma</h2>
+            </div>
+            <div id="contenido">
+                  <div class="row contenido-formulario">
+                    <div class="col col-md-10 ms-md-auto xl-md-auto" >
+                        <form class="w-100" action="#" id="cotizar-seguro">
+                          <div class="form-group">
+                             <label for="marca">Marca:</label>
+                             <select class="form-control" id="marca">
+                               <option value="">- Seleccionar -</option>
+                               <option value="1">Marshall</option>
+                               <option value="1">Garnet</option>
+                              <option value="2">DSC</option>
+                            </select>
+                         </div>
+
+                         <fieldset class="form-group">
+                          <div class="row">
+                               <legend class="col-form-legend col-12">Sensores</legend>
+
+                            <div class="col12">
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="tipo" value="sensoresi" checked>
+                                    Si
+                                  </label>
+                              </div>
+                              <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="tipo" value="sensoresno">
+                                    No
+                                  </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                          <label for="cable">Cableado por mtrs:</label>
+                            <select class="form-control" id="cable">
+                                <option value="">- Seleccionar -</option>
+                                <option value="1">1 a 5 metros </option>
+                                <option value="1">5 a 10 metros </option>
+                                <option value="1">10 a 20 metros </option>
+                                <option value="1">20 a 30 metros</option>
+                                <option value="2">40 a 50 metros</option>
+                            </select>
+                        </div>
+                        <fieldset class="form-group">
+                          <div class="row">
+                               <legend class="col-form-legend col-12">Tipo Seguro</legend>
+  
+                            <div class="col12">
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="tipo" value="basico" checked>
+                                    Básico
+                                  </label>
+                              </div>
+                              <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="tipo" value="completo">
+                                    Completo
+                                  </label>
+                              </div>
+                            </div>
+                          </div>
+                      </fieldset>
+      
+                      <div id="cargando">
+                        <img src="img/spinner.gif">
+                      </div>            
+                      <div id="resultado"></div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                        </button>
+                      </div>             
+                        </form> 
+                      </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
     <!-- Products -->
 
     <!-- PRICING -->

@@ -568,64 +568,69 @@
       </div>
     </section>
 
-    <section id="comparacion">
+    <section style=" background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px); ">
       <div class="container">
-        <main>
-          <h2 class="text-center mb-4">Comparación de gamas</h2>
-          <div class="table-responsive">
-            <table class="table text-center">
-              <thead>
-                <tr>
-                  <th style="width: 20%;"></th>
-                  <th style="width: 30%;">Entrada de Gama</th>
-                  <th style="width: 30%;">Gama Media</th>
-                  <th style="width: 30%;">Gama Alta</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-              </tbody>
-      
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row" class="text-start">etc</th>
-                  <td></td>
-                  <td></td>
-                  <td><i class="bi bi-check-lg"></i></td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="row">
+          <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+              <h1>Preguntas Frecuentes</h1>
+            </div>
           </div>
-        </main>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Si se corta la luz, la alarma se apaga?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" style="margin-bottom: 3px; color:red;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
+                    Todas nuestras centrales cuentas con una batería de respaldo de 12 a 48hs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Cuando se dispara la alarma, recibo una notificación al celular?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" style="margin-bottom: 3px; color:green;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                    Por lo general las centrales vienen con comunicador WIFI-IP-GPRS para tener siempre comunicación de respaldo si alguna falla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Solo puedo activar la alarma si estoy en mi casa?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" style="margin-bottom: 3px; color:red;" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
+                    Nuestros sistemas de alarma, tiene la comodidad de contar con una aplicación, por la cual vas a poder activar y desactivar desde donde te encuentres.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
