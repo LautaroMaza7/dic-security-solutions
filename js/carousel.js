@@ -1,5 +1,6 @@
 // Owlcarousel
 $(document).ready(function(){
+    
     $("#slider .owl-carousel").owlCarousel({
         loop:true,
       margin:10,
